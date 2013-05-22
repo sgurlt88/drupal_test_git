@@ -1,0 +1,12 @@
+name = feature_layout
+core = 7.x
+package = HZD
+version = 7.x-1.0
+project = feature_layout
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = strongarm
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = panels_everywhere_site_template_enabled
