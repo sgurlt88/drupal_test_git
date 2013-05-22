@@ -1,6 +1,7 @@
 name = feature_layout
 core = 7.x
 package = HZD
+php = 5.2.4
 version = 7.x-1.0
 project = feature_layout
 dependencies[] = ctools
@@ -10,3 +11,4 @@ features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[variable][] = panels_everywhere_site_template_enabled
+features[variable][] = theme_default
