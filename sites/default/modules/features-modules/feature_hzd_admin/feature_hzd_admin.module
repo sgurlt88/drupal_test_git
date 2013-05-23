@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_hzd_admin feature.
+ */
+
+include_once 'feature_hzd_admin.features.inc';

@@ -1,0 +1,173 @@
+<?php
+// $Id: day_counter.install,v 1.1.2.2.4.1 2013/03/05 andi schwarz Exp $
+
+/**
+ * @file
+ * Installs the necessary fields for the day_counter module.
+ */
+
+/**
+ * Implementation of hook_scema_alter().
+ */
+function day_counter_schema_alter(&$schema) {
+  $schema['node_counter']['fields']['Mon'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current or last Monday'),
+  );
+  $schema['node_counter']['fields']['Tue'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current or last Tuesday'),
+  );
+  $schema['node_counter']['fields']['Wed'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current or last Wednesday'),
+  );
+  $schema['node_counter']['fields']['Thu'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current or last Thursday'),
+  ); 
+	$schema['node_counter']['fields']['Fri'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current or last Friday'),
+  );
+	$schema['node_counter']['fields']['Sat'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current or last Saturday'),
+  );
+	$schema['node_counter']['fields']['Sun'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current or last Sunday'),
+  );
+	$schema['node_counter']['fields']['sevendaycount'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the Seven Day Count'),
+  );
+	
+} // end function day_counter_schema_alter()
+
+/**
+ * Implementation of hook_install().
+ */
+function day_counter_install() {
+  // setup new fields to be created
+  $fields = array(
+    'Mon' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current or last Monday'),
+    ),
+	  'Tue' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current or last Tuesday'),
+    ),
+	  'Wed' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current or last Wednesday'),
+    ),
+	  'Thu' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current or last Thursday'),
+    ),
+	  'Fri' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current or last Friday'),
+    ),
+	  'Sat' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current or last Saturday'),
+    ),
+	  'Sun' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current or last Sunday'),
+    ),
+	  'sevendaycount' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the Seven Day Count'),
+    ),
+	
+  ); // end $fields
+  
+  // iterate over these fields and add them to the {node_counter} table
+  foreach ($fields as $name => $specs) {
+    db_add_field('node_counter', $name, $specs);
+  } // end for each field
+ 
+} // end function day_counter_install()
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function day_counter_uninstall() {
+  // remove fields from the {node_counter} table
+  db_drop_field('node_counter', 'Mon');
+  db_drop_field('node_counter', 'Tue');
+  db_drop_field('node_counter', 'Wed');
+  db_drop_field('node_counter', 'Thu');
+  db_drop_field('node_counter', 'Fri');
+  db_drop_field('node_counter', 'Sat');
+  db_drop_field('node_counter', 'Sun');
+  db_drop_field('node_counter', 'sevendaycount');
+} // end function day_counter_uninstall()

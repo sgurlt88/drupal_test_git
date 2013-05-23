@@ -1,0 +1,126 @@
+<?php
+// $Id: day_counter.module,v 1.1.2.2.4.1 2013/03/05 andi schwarz Exp $
+
+/**
+ * Implementation of hook_cron().
+ */
+function day_counter_cron() {
+$day = variable_get('day_counter_day', '');
+
+
+if(date('D') != $day){
+variable_set('day_counter_day', date('D'));
+
+$day = variable_get('day_counter_day', '');
+db_update('node_counter')
+	->fields(array(
+    $day => 0,
+  ))
+   ->expression($day, $day)
+    ->execute();
+
+}
+
+  // get the last cleared variables
+  
+/*   // check to see if it's the first of the week and we haven't reset the count
+  // yet
+  if (date('w') == 0 && $last_week != date('W')) {
+    db_query('UPDATE {node_counter} SET weekcount = 0');
+    variable_set('day_counter_last_week', date('W'));
+  } // end if we need to clear the week counts
+  
+  // check to see if it's the first of the month and we haven't reset the count
+  // yet
+  if (date('d') == '01' && $last_month != date('m')) {
+    db_query('UPDATE {node_counter} SET monthcount = 0');
+    variable_set('day_counter_last_month', date('m'));
+  } // end if we need to clear the month counts
+  
+  // check to see if it's the first of the year and we haven't reset the count
+  // yet
+  if (date('z') == 0 && $last_year != date('Y')) {
+    db_query('UPDATE {node_counter} SET yearcount = 0');
+    variable_set('day_counter_last_year', date('Y'));
+  } // end if we need to clear the year counts */
+  
+} // end function day_counter_cron()
+
+/**
+ * Implementation of hook_exit().
+ */
+function day_counter_exit() {
+drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
+$day = variable_get('day_counter_day', '');
+if(date('D') != $day){
+variable_set('day_counter_day', date('D'));
+
+$day = variable_get('day_counter_day', '');
+db_update('node_counter')
+	->fields(array(
+    $day => 0,
+  ))
+   ->expression($day, $day)
+    ->execute();
+
+
+}
+if (variable_get('statistics_count_content_views', 0)) {
+if ((arg(0) == 'node') && is_numeric(arg(1)) && arg(2) == '') {
+db_merge('node_counter')
+        ->key(array('nid' => arg(1)))
+        ->fields(array(
+          $day => 1,
+        ))
+        ->expression($day, $day. '+ 1')
+        ->execute();
+db_merge('node_counter')
+        ->key(array('nid' => arg(1)))
+        ->fields(array(
+          'Mon' => 1,
+          'Tue' => 1,
+          'Wed' => 1,
+          'Thu' => 1,
+          'Fri' => 1,
+          'Sat' => 1,
+          'Sun' => 1,
+		  'sevendaycount' => 1,
+        ))
+        ->expression('Mon', 'Mon')
+        ->expression('Tue', 'Tue')
+        ->expression('Wed', 'Wed')
+        ->expression('Thu', 'Thu')
+        ->expression('Fri', 'Fri')
+        ->expression('Sat', 'Sat')
+        ->expression('Sun', 'Sun')
+        ->expression('sevendaycount', 'Mon + Tue + Wed + Thu + Fri + Sat + Sun')
+        ->execute();
+}
+}
+}
+  /* if (variable_get('statistics_count_content_views', 0)) {
+    // We are counting content views.
+    if ((arg(0) == 'node') && is_numeric(arg(1)) && arg(2) == '') {
+      // A node has been viewed, so update the node's counters.
+      db_merge('node_counter')
+        ->key(array('nid' => arg(1)))
+        ->fields(array(
+          'weekcount' => 1,
+          'monthcount' => 1,
+          'yearcount' => 1,
+        ))
+        ->expression('weekcount', 'weekcount + 1')
+        ->expression('monthcount', 'monthcount + 1')
+        ->expression('yearcount', 'yearcount + 1')
+        ->execute();
+    }
+  } */// end day_counter_exit()
+
+/**
+ * Implementation of hook_views_api().
+ */
+function day_counter_views_api() {
+  return array(
+    'api' => 2,
+  );
+} // end function day_counter_views_api()

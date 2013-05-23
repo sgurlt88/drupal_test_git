@@ -1,0 +1,58 @@
+<?php
+
+function pmautofill_basti_menu() {
+	$items['admin/pmautofill_basti'] = array(
+		'title' => 'Die Nachricht',
+		'description' => 'Diese Nachricht steth auf jeder Inhaltsseite',
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('pmautofill_basti_admin_settings'),
+		'access arguments' => array('administer site configuration'),
+		'type' => MENU_NORMAL_ITEM,
+		'file' => 'pmautofill_basti.admin.inc',
+	);
+	
+	return $items;
+}
+
+function pmautofill_basti_form_alter(&$form, &$form_state, $form_id) {
+ 
+if ($form_id == 'pressemitteilung_node_form') { 
+  
+global $_domain;
+
+$url = $_domain['domain_id'];
+switch($url){
+
+		case '2':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hessen');
+		break;
+		case '5':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('stk');
+		break;		
+		case '6':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hmdi');
+		break;
+		case '7':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hmdf');
+		break;
+		case '8':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hmdj');
+		break;
+		case '9':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hkm');
+		break;
+		case '10':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hmwk');
+		break;
+		case '11':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hmwvl');
+		break;
+		case '12':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hmuelv');
+		break;
+		case '13':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('hsm');
+		break;
+	}
+	}
+}

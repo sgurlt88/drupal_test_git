@@ -1,0 +1,76 @@
+<?php
+function pmautofill_permission() {
+  return array(
+    'access pmautofill' => array(
+      'title' => t('Administration der Vorauswahl f&uuml;r Pressestelle & Pressesprecher'),
+      'description' => t('Administration der Vorauswahl f&uuml;r Pressestelle & Pressesprecher'),
+    ),
+  );
+}
+
+function pmautofill_menu() {
+  $items['admin/content/pmautofill'] = array(
+    'title' => 'Vorauswahl Pressestelle & Pressesprecher',
+    'description' => 'Vorauswahl Pressestelle & Pressesprecher',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('admin_pmautofill'),
+    'access arguments' => array('access pmautofill'),
+    'type' => MENU_NORMAL_ITEM,
+	'file' => 'pmautofill.admin.inc',
+   );
+
+  return $items;
+}
+
+function pmautofill_form_alter(&$form, &$form_state, $form_id) {
+ 
+if ($form_id == 'pressemitteilung_node_form') { 
+  
+global $_domain;
+$domainID = $_domain['domain_id'];
+switch($domainID){
+
+		case '2':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_hessen_de');
+		break;
+		case '5':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_stk_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_stk_hessen_de');
+		break;
+		case '6':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_hmdis_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_hmdis_hessen_de');
+		break;
+		case '7':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_hmdf_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_hmdf_hessen_de');
+		break;
+		case '8':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_hmdj_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_hmdj_hessen_de');
+		break;
+		case '9':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_kultusministerium_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_kultusministerium_hessen_de');
+		break;
+		case '10':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_hmwk_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_hmwk_hessen_de');
+		break;
+		case '11':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_wirtschaft_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_wirtschaft_hessen_de');
+		break;
+		case '12':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_hmuelv_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_hmuelv_hessen_de');
+		break;
+		case '13':
+			$form['field_nref_pressestelle']['und']['#default_value'] = variable_get('pressestelle_hsm_hessen_de');
+			$form['field_nref_pressesprecher']['und']['#default_value'] = variable_get('pressesprecher_hsm_hessen_de');
+		break;
+
+		}
+	}
+}

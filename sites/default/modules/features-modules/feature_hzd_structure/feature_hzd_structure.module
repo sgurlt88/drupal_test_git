@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_hzd_structure feature.
+ */
+
+include_once 'feature_hzd_structure.features.inc';

@@ -1,0 +1,13 @@
+name = socialSharePrivacy
+description = A two-click extension to social network sharing
+core = 7.x
+
+configure = admin/config/user-interface/socialshareprivacy
+
+
+; Information added by drupal.org packaging script on 2012-11-26
+version = "7.x-1.10"
+core = "7.x"
+project = "socialshareprivacy"
+datestamp = "1353933845"
+

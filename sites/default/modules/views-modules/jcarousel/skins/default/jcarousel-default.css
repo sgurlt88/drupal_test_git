@@ -1,0 +1,383 @@
+
+/**
+ * A simple sample carousel skin.
+ *
+ * This skin includes a sample arrows.svg file that may be edited with the free
+ * illustration application InkScape (http://inkscape.org).
+ *
+ * CSS and icons by Nathan Haug.
+ 
+ 
+ 
+ ORGINAL
+ */
+
+.jcarousel-skin-default {
+  text-align: center;
+}
+
+.jcarousel-skin-default .jcarousel-container-horizontal {
+  width: 440px;
+  height: 102px;
+  padding: 20px 40px;
+  margin: auto;
+}
+
+.jcarousel-skin-default .jcarousel-container-vertical {
+  width: 102px;
+  height: 440px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.jcarousel-skin-default .jcarousel-clip-horizontal {
+  width: 440px;
+  overflow: hidden;
+}
+
+.jcarousel-skin-default .jcarousel-clip-vertical {
+  height: 440px;
+  overflow: hidden;
+}
+
+.jcarousel-skin-default .jcarousel-item {
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  list-style: none;
+  background: #fff none;
+}
+
+.jcarousel-skin-default .jcarousel-item-horizontal {
+  margin: 0 4px;
+}
+
+.jcarousel-skin-default .jcarousel-item-vertical {
+  margin: 4px 0;
+}
+
+.jcarousel-skin-default .jcarousel-item-placeholder {
+  background: #fff url(throbber.gif) no-repeat center center;
+  color: #000;
+}
+
+/**
+ * Buttons
+ */
+.jcarousel-skin-default .jcarousel-next,
+.jcarousel-skin-default .jcarousel-prev {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(arrows.png);
+}
+
+.jcarousel-skin-default .jcarousel-next-disabled,
+.jcarousel-skin-default .jcarousel-prev-disabled {
+  display: none;
+}
+
+/**
+ * Horizontal Buttons
+ */
+.jcarousel-skin-default .jcarousel-prev-horizontal {
+  position: absolute;
+  
+  left: 10px;
+  background-position: 0 0;
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal:hover {
+  background-position: -32px 0;
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal:active {
+  background-position: -64px 0;
+}
+
+.jcarousel-skin-default .jcarousel-next-horizontal {
+  position: absolute;
+  right: 10px;
+  background-position: 0 -32px;
+}
+.jcarousel-skin-default .jcarousel-next-horizontal:hover {
+  background-position: -32px -32px;
+}
+.jcarousel-skin-default .jcarousel-next-horizontal:active {
+  background-position: -64px -32px;
+}
+
+/**
+ * Vertical Buttons
+ */
+.jcarousel-skin-default .jcarousel-prev-vertical {
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  background-position: 0 -64px;
+}
+.jcarousel-skin-default .jcarousel-prev-vertical:hover {
+  background-position: -32px -64px;
+}
+.jcarousel-skin-default .jcarousel-prev-vertical:active {
+  background-position: -64px -64px;
+}
+
+.jcarousel-skin-default .jcarousel-next-vertical {
+  position: absolute;
+  bottom: 10px;
+  left: 55px;
+  background-position: 0 -96px;
+}
+.jcarousel-skin-default .jcarousel-next-vertical:hover {
+  background-position: -32px -96px;
+}
+.jcarousel-skin-default .jcarousel-next-vertical:active {
+  background-position: -64px -96px;
+}
+
+.jcarousel-skin-default .jcarousel-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel-skin-default .jcarousel-navigation li {
+  display: inline;
+  margin: 0 2px 0 0;
+  padding: 0;
+  background: none;
+}
+
+.jcarousel-skin-default .jcarousel-navigation li.active a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* #### Empfehlung der Redaktion ### */
+ 
+
+#block-views-frontpage-empfehlung-block-3 .block-title {
+    margin-bottom: 10px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default {
+    background: none repeat scroll 0 0 #FFFFFF;
+    text-align: center;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-container-horizontal {
+    height: 184px;
+    margin: auto;
+    padding: 0;
+    width: 690px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-container-vertical {
+    height: 578px;
+    margin: auto;
+    padding: 40px 20px;
+    width: 102px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-clip-horizontal {
+    margin: auto;
+    overflow: hidden;
+    padding-top: 27px;
+    width: 578px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-clip-vertical {
+    height: 578px;
+    overflow: hidden;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-item {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    list-style: none outside none;
+    padding: 0;
+height: auto;
+    width: 183px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-item-horizontal {
+    margin: 0 4px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-item-vertical {
+    margin: 4px 0;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-item-placeholder {
+    background: url("throbber.gif") no-repeat scroll center center #FFFFFF;
+    color: #000000;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow.png");
+    display: block;
+    height: 35px;
+    width: 35px;
+	background-position:0 0;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow.png");
+    display: block;
+    height: 35px;
+    left: 18px;
+    position: absolute;
+    top: 75px;
+    width: 35px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next-disabled, .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev-disabled {
+    display: none;
+}
+.view-frontpage-empfehlung .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev-horizontal {
+    background-position: 0 0;
+    left: -40px;
+    position: absolute;
+    top: 75px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next-horizontal {
+    position: absolute;
+    right: 18px;
+    top: 75px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev-vertical {
+    background-position: 0 -64px;
+    left: 55px;
+    position: absolute;
+    top: 10px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev-horizontal:hover {
+    background-position: 0px 0px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev-vertical:hover {
+    background-position: -32px -64px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev-vertical:active {
+    background-position: -64px -64px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next-vertical {
+    background-position: 0 -96px;
+    bottom: 10px;
+    left: 55px;
+    position: absolute;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next-vertical:hover {
+    background-position: -32px -96px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next-vertical:active {
+    background-position: -64px -96px;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-navigation {
+    margin: 0;
+    padding: 0;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-navigation li {
+    background: none repeat scroll 0 0 transparent;
+    display: inline;
+    margin: 0 2px 0 0;
+    padding: 0;
+}
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-navigation li.active a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*  HEADER SLIDER */
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-container-horizontal {
+    height: auto;
+    margin: auto;
+    padding: 0;
+    width: 960px;
+}
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-clip-horizontal {
+    margin: auto;
+    padding-top: 27px;
+    width: 840px;
+}
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-item-horizontal {
+    margin: 0 1px;
+}
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-item {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 240px;
+    list-style: none outside none;
+    padding: 0;
+    position: relative;
+    width: 183px;
+}
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-prev-horizontal {
+    background-position: 0 0;
+    bottom: 0px;
+    left: 10px;
+    position: absolute;
+
+}
+
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-next-horizontal {
+    background-position: 0 -32px;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+
+}
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-next {
+	right: 13px;
+	background: #2f2f2f url("/sites/default/themes/hessen_web_omega/css/images/bt-teaser_spread.png") no-repeat 0 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=95);
+	opacity: .95;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+	width:39px;
+	height: 55px;
+}
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-prev {
+	background: #2f2f2f url("/sites/default/themes/hessen_web_omega/css/images/bt-teaser_spread.png") no-repeat 0px -53px;
+	left: 20px;
+	width:39px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=95);
+	opacity: .95;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+	height: 55px;
+}
+
+/** Social Media und Centerpage Slider */
+
+#block-views-frontpage-empfehlung-block-1 .block-title {
+    margin: 55px 0 10px 0;
+}
+
+#block-views-frontpage-empfehlung-block-2 .block-title {
+	margin: 0 0 10px 0;
+}
+
+#block-views-frontpage-empfehlung-block-1 .jcarousel-prev, #block-views-frontpage-empfehlung-block-2 .jcarousel-prev {
+	top: 75px;
+	left: 28px;
+}
+
+#block-views-frontpage-empfehlung-block-1 .jcarousel-next, #block-views-frontpage-empfehlung-block-2 .jcarousel-next {
+	top: 75px;
+	right: 28px;
+}
+
+#block-views-frontpage-empfehlung-block-1 .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-container-horizontal, #block-views-frontpage-empfehlung-block-2 .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-container-horizontal {
+	height: 184px;
+    margin: auto;
+    padding: 0;
+    width: 780px;
+}
+
+#block-views-frontpage-empfehlung-block-1 .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-clip-horizontal, #block-views-frontpage-empfehlung-block-2 .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-clip-horizontal {
+    margin: auto;
+    overflow: hidden;
+    padding-top: 27px;
+    width: 626px;
+}
+
+#block-views-frontpage-empfehlung-block-1 .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-item-horizontal, #block-views-frontpage-empfehlung-block-2 .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-item-horizontal{
+    margin: 0 12px;
+}

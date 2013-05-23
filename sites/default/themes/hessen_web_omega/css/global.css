@@ -1,0 +1,3661 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/** last edit marcus morba 2013-02-25 @ 13:01 **/
+
+body {
+	background: #efefef;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
+	/* font-size: 80% !important; -> no textresize possible */
+	font-size: 80%; /* Drupal Setting -> admin/config/user-interface/textsize */
+	color: #5b5b5b;
+}
+
+.zone { /* background-color: #efefef; */ }
+
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-webfont.woff') format('woff'),
+         url('fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('fonts/DroidSans-Bold-webfont.eot');
+    src: url('fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Links */
+a, a:link {
+  text-decoration: none;
+}
+a, a:link, a:visited, a:active {
+  color: #d62029;
+}
+a:hover {
+	color: #D62029;
+  text-decoration: underline;
+}
+
+a.grey_link {
+	color: #5B5B5B;
+}
+a.grey_link:hover {
+	color: #5B5B5B;
+	text-decoration: underline;
+}
+
+.tsrBlockKarriereportal a.ext, .tsrBlockRSS p a {
+	background: url("images/bullet_red.png") no-repeat scroll 0 5px transparent;
+	margin: 0;
+	padding: 0px 0 0 10px!important;
+	}
+
+#admin-menu { font-size: 1.2em; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'DroidSansRegular', Verdana, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 130%;
+	color: #303030;
+}
+
+/* Menu */
+	#region-menu nav.navigation > ul.menu > li > a {
+  font-size: 1.8em;
+  line-height: 1em;
+}
+#region-menu nav.navigation > ul.menu > li > ul,
+#region-menu nav.navigation > ul.menu > li > div,
+#region-menu nav.navigation-secondary > ul.menu > li > a {
+	font-size: 1.2em;
+}
+
+/* Blocks */
+div.block-title h2.block-title {
+	/* font-size: 2.4em; */
+	color: #5b5b5b;
+}
+
+/* Content */
+#messages,
+ul.action-links,
+ul.tabs,
+#zone-preface .region-inner > .block > .content,
+#zone-content .region-inner > .block > .content,
+#zone-postfix .region-inner > .block > .content {
+ font-size: 1.4em;
+}
+#zone-footer .region-inner > .block > .content {
+	font-size: 1.2em;
+}
+
+/* Headers h1-h6 em classes removed */
+
+/* Hessennavigator */
+
+.hessennavigator {
+	background: #D62129;
+	padding: 10px;
+}
+
+.hessennavigator h4 {
+	color: #ffffff;
+}
+
+.hessennavigator a,.hessennavigator a:link {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+/* FRONTPAGE: ZITAT DES TAGES */
+
+.zitat_block_sprecher img {
+    float: left;
+	padding: 0 7px 0 0;
+}
+
+.zitat_block_sprecher {
+    margin: 10px;
+}
+
+.zitat_block_text {
+    background: none repeat scroll 0 0 #EEEEEE;
+    margin: 10px;
+    padding: 7px;
+}
+
+/* Global */
+
+sup { /* Hochgestellt */
+	position: relative;
+	font-size: 0.75em;
+	top: -0.5em;
+	}
+sub { /* Tiefgestellt */
+	position: relative;
+	font-size: 0.75em;
+	bottom: -0.5em;
+	}
+
+/* Links mit Pfeil */
+.more_link, ul.listLinks li a  {
+	background: url("images/bullet_red.png") no-repeat scroll 0 8px transparent;
+  padding: 3px 0 0 12px;
+	margin-left: 5px; /* REVIEW THIS -> in most cases the margin should not be when the link is not an inline element */
+}
+.themendossier_infos .more_link, ul.listLinks li a, .topthema_infos_links  .more_link, ul.listLinks li a {
+	background: url("images/bullet_red.png") no-repeat scroll 0 8px transparent;
+  padding: 3px 0 0 12px;
+  margin-left: 0;
+}
+.themendossier_infos_links div.more_link { /* better values for div.more_link a combinations */
+  padding: 1px 0 0 12px!important;
+}
+ul.listLinks li a, .view-bildergalerie-teaser .more_link, .themendossier_infos_links .more_link a { margin-left: 0; }
+
+ul.download-file li a, ul.listLinks li a { margin-left: 0; }
+ul.download-file, ul.listLinks, ul.listDownloads,
+ul.download-file li, ul.listLinks li, ul.listDownloads li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-image: none;
+	}
+ul.download-file, ul.listLinks, ul.listDownloads { margin-bottom: 30px; }
+ul.listDownloads .file-icon { margin-right: 5px; }
+
+.more_link_white {
+	background: url("images/bullet_white.png") no-repeat scroll 0 10px transparent;
+  padding: 3px 0 0 12px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+.more_link_white a {
+	color: #fff;
+}
+
+.more_link_white a:hover {
+	color: #fff;
+}
+.more_link_grey_left {
+	background: url("images/bullet_grey_left.png") no-repeat scroll 0 8px transparent;
+  padding: 3px 0 0 12px;
+	margin-left: 5px;
+}
+
+
+p span .more_link {
+    margin-left: 5px !important;
+}
+
+.prev {
+	background: url("images/arrow_prev_red.png") no-repeat scroll 0 8px transparent;
+    padding: 3px 0 0 12px;
+}
+
+.next {
+	background: url("images/arrow_next_red.png") no-repeat scroll right 8px transparent;
+	float: right;
+    padding: 3px 10px 0 0;
+}
+
+/*a span.more_link { 
+	padding: 1px 0 0 9px; 
+}*/
+
+.float_left {
+	float: left;
+	margin-right: 0 !important;
+}
+
+.clear { 
+	clear: both;
+}
+
+#block-system-main .content {
+	padding: 15px;
+}
+
+#block-system-main .block-inner {
+	background: #fff;
+}
+
+.views-exposed-form label {
+	font-weight: bold;
+}
+
+.views-exposed-form label.option {
+	font-weight: normal;
+}
+
+.print_html, .print_mail, .print_pdf { margin-left: 0; }
+/* 
+
+/* Ajax Throbber Orginal
+.ajax-progress-throbber {
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.65);
+	z-index: 600;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	}
+.ajax-progress-throbber .message {}
+.ajax-progress-throbber .throbber {
+	display: block;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #333;
+	width: 120px;
+	height: 120px;
+	margin: auto;
+	position: relative;
+	background: #fff url(images/hessen-loader.gif) center center no-repeat;
+	} */
+
+/* Ajax Throbber */
+.ajax-progress-throbber {
+	position:absolute;
+	top: none;
+	left: none;
+	width:20px;
+	height: 20px;
+	background-color: rgba(0,0,0,0.65);
+	z-index: 600;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	}
+.ajax-progress-throbber .message {}
+.ajax-progress-throbber .throbber {
+	display: block;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #333;
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	position: relative;
+	background: #fff url(images/hessen-loader.gif) center center no-repeat;
+	}
+	
+/** Forms **/
+
+.page-filter-tips #block-system-main .content {
+	padding: 15px;
+}
+
+#simplenews-confirm-removal-form, #simplenews-confirm-add-form, #print-mail-form, #user-login, .profile {
+	padding: 15px;
+}
+
+#simplenews-confirm-removal-form .form-submit, #simplenews-confirm-add-form .form-submit,#print-mail-form .form-submit, #user-login .form-submit {
+	margin-bottom: 15px !important;
+}
+
+#section-content #block-system-main .webform-confirmation{
+	padding: 15px 15px 0 15px;
+}
+
+#section-content #block-system-main .links {
+	/* padding: 0 15px 15px 15px; -> kills layout for footer-links print etc. */
+}
+
+
+
+/***** ANDREAS SCHWARZ *****/	
+
+.service-string
+ {
+  background: url("images/bg_sectionHeadlineRed.png") no-repeat scroll 0 5px transparent;
+    font-size: 12px;
+    margin-top: 27px;
+    padding-left: 83px;
+    text-transform: uppercase;
+	coloir:#777777;
+}
+
+
+/***** NADINE GEISS *****/
+
+/** last edit marcus morba 2013-02-12 @ 10:28 **/
+
+/* BIOGRAFIE INHALTSSEITE */
+
+.biografie_portraitbild {
+    float: left;
+    padding: 0 20px 0 0;
+}
+
+.float_left {
+    float: left;
+    margin-right: 5px;
+}
+
+
+.biografie_head {
+	/* height: 200px; -> must be variable */
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 30px;
+}
+.biografie_head .biografie_daten {
+	bottom: 0;
+  left: 240px;
+  margin-bottom: 13px;
+  position: absolute;
+  width: 240px;
+}
+
+.biografie_lebenslauf {
+  clear: both;
+	padding: 0;
+}
+#region-content article .biografie_lebenslauf h5 { 
+	font-size: 18px; 
+	font-weight: normal;
+	margin-bottom: 10px;
+	}
+
+table.cntTable { border: none; background: none; margin-bottom: 30px; }
+table.field-name-field-lebenslauf {}
+table.field-name-field-lebenslauf tr.odd, table.field-name-field-lebenslauf tr.even {
+	background: none;
+	vertical-align: top;
+	text-align: left;
+	border-top: 1px dotted #D3D7D9;
+	border-bottom: none;
+	}
+table.field-name-field-lebenslauf tr td {
+	background: none;
+	vertical-align: top;
+	text-align: left;
+	padding: 0;
+	padding: 10px 0 5px 0;
+	}
+table.field-name-field-lebenslauf tr.first { border-top: none; }
+table.field-name-field-lebenslauf tr td.first { width: 150px; }
+
+
+.field.field-name-field-ereignis-taetigkeit.field-type-text-long.field-label-hidden.second {
+    padding-left: 10px;
+}
+
+.biografie_anhang {
+	margin: 0 0 10px 0;
+	border-top: 1px dotted #D3D7D9;
+	padding-top: 10px;
+}
+.biografie_anhang ul { margin-bottom: 0; }
+
+.biografie_link {
+    float: left;
+		min-width: 40%;
+}
+.biografie_downloads {
+	float: left;
+	max-width: 60%;
+}
+
+/* Videouebersicht */
+
+.videouebersicht {
+    background-color: #FFFFFF;
+}
+
+
+/* Meistgelesen */
+.tsrBlockMeistgelesen p { margin: 0; }
+.meistgelesen-item { margin-top: 15px; }
+.meistgelesen-item a { margin-left: 0; }
+
+
+/* VIEW BILDERGALERIEN */
+
+
+/*.bildergalerien_teaser_bild {
+	float: left;
+    padding: 0 15px 0 0;
+}
+
+.bildergalerien_teaser{
+	padding: 15px 0 0 0;
+	clear: both;
+}*/
+
+/*
+body {
+background-color: #15645F !important;
+}
+*/
+
+.field-name-field-nref-video .node-title {
+ display:none;
+}
+
+.field-name-field-nref-video .node-links {
+ display:none;
+}
+
+.site-map-box-menu .title {
+display:none;
+}
+
+.site-map-box-front .title {
+display:none;
+}
+
+
+/* BILDERGALERIE-DETAILANSICHT */
+
+.node-bildergalerie .field-name-field-link-zum-artikel, .node-video .field-name-field-link-zum-artikel {
+float:right;
+}
+
+.node-bildergalerie .field-name-field-link-zum-artikel a, .node-video .field-name-field-link-zum-artikel a {
+    background: url("images/bullet_red.png") no-repeat scroll 0 8px transparent;
+    margin-left: 5px;
+    padding: 3px 0 0 12px;
+}
+
+
+/* SOCIAL MEDIA ÜBERSICHT */
+
+
+.socialMediaUebersicht .ext {
+    text-transform: uppercase;
+}
+
+
+/* KONTRASTANSICHT White-Black*/
+
+/* LINKS */
+
+.pagestyle_white_black .more_link {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 8px transparent !important;
+}
+
+.pagestyle_white_black .more_link_white {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 10px transparent !important;
+}
+
+.pagestyle_white_black .tsrBlockUniversal .relatedLinksWrapper ul li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 5px transparent !important;
+}
+
+.pagestyle_white_black .more_link ul.listLinks li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 8px transparent !important;
+}
+
+.pagestyle_white_black ul.listenelementeListenseite li .wrapperCopy a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 6px transparent !important;
+}
+
+
+.pagestyle_white_black .trigger p {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 2px 7px transparent !important;
+}
+
+
+.pagestyle_white_black .view-pressemitteilung .tsrText span.more_link {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 9px transparent !important;
+}
+
+
+.pagestyle_white_black .tsrBlockKarriereportal a.ext, .pagestyle_white_black .tsrBlockRSS p a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 5px transparent !important;
+}
+
+
+.pagestyle_white_black .block-views-marginal-bloecke-block-2 button, .pagestyle_white_black .block-views-marginal-bloecke-block-2 input[type="reset"], .pagestyle_white_black .block-views-marginal-bloecke-block-2 input[type="submit"], .pagestyle_white_black .block-views-marginal-bloecke-block-2 input[type="button"] {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 8px transparent !important;
+}
+
+
+.pagestyle_white_black .topthema_infos_rechts .inner a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 2px center transparent !important;
+}
+
+
+.pagestyle_white_black nav.node-links .links li {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 2px 5px transparent !important;
+    list-style: none outside none;
+    padding-left: 12px;
+}
+
+.pagestyle_white_black .themendossier_infos .more_link, .pagestyle_white_black ul.listLinks li a, .pagestyle_white_black .topthema_infos_links .more_link, .pagestyle_white_black ul.listLinks li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 8px transparent !important;
+}
+
+
+
+/* ICONS*/
+
+.pagestyle_white_black .region-sidebar-second .tsrBlockSocialMedia h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_social_white.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.pagestyle_white_black .region-sidebar-second .tsrBlockZitatDesTages h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_zitat_white.png") no-repeat scroll 0 3px transparent !important;
+}
+
+
+.pagestyle_white_black .region-sidebar-second .tsrBlockVideo h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_video_white.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.pagestyle_white_black .region-sidebar-second .tsrBlockKontakt h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_zitat_white.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.pagestyle_white_black .region-sidebar-second .tsrBlockKarriereportal h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_karriere_white.png") no-repeat scroll 0 2px transparent !important;
+}
+
+/* MENU */
+
+.pagestyle_white_black #zone-menu a.menu-depth-1 {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt_arrow_right.png") no-repeat scroll 12px 13px / 17px auto transparent !important;
+}
+
+/* SONSTIGE PFEILE */
+
+.pagestyle_white_black .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow_white.png") !important;
+}
+
+.pagestyle_white_black .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow_white.png") !important;
+}
+
+.pagestyle_white_black .jcarousel-skin-tango .jcarousel-prev-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow_redmiddle_white.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.pagestyle_white_black .jcarousel-skin-tango .jcarousel-next-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow_redmiddle_white.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.pagestyle_white_black .view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-prev {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt-teaser_spread_white.png") no-repeat scroll 0 -53px #2F2F2F !important;
+}
+
+
+.pagestyle_white_black .view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-next {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt-teaser_spread_white.png") no-repeat scroll 0 0 #2F2F2F !important;
+}
+
+.pagestyle_white_black div.headerSlider .arrow_up {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/buttons/arrow_up.png") !important;
+}
+
+.pagestyle_white_black div.headerSlider .arrow_up.active {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/close_down.png") !important;
+}
+
+.pagestyle_white_black .view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_arrow_white.png") no-repeat scroll 0 5px transparent !important;
+
+}
+
+.pagestyle_white_black .view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li.active a {
+    background: none repeat scroll 0 0 transparent !important;
+}
+
+
+/* KONTRASTANSICHT Black-White*/
+
+/* LINKS */
+
+.pagestyle_black_white .more_link {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 8px transparent !important;
+}
+
+.pagestyle_black_white .more_link_white {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 10px transparent !important;
+}
+
+.pagestyle_black_white .tsrBlockUniversal .relatedLinksWrapper ul li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 5px transparent !important;
+}
+
+.pagestyle_black_white .more_link ul.listLinks li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 8px transparent !important;
+}
+
+.pagestyle_black_white ul.listenelementeListenseite li .wrapperCopy a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 6px transparent !important;
+}
+
+
+.pagestyle_black_white .trigger p {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 2px 7px transparent !important;
+}
+
+
+.pagestyle_black_white .view-pressemitteilung .tsrText span.more_link {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 9px transparent !important;
+}
+
+
+.pagestyle_black_white .tsrBlockKarriereportal a.ext, .pagestyle_black_white .tsrBlockRSS p a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 5px transparent !important;
+}
+
+
+.pagestyle_black_white .block-views-marginal-bloecke-block-2 button, .pagestyle_black_white .block-views-marginal-bloecke-block-2 input[type="reset"], .pagestyle_black_white .block-views-marginal-bloecke-block-2 input[type="submit"], .pagestyle_black_white .block-views-marginal-bloecke-block-2 input[type="button"] {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 8px transparent !important;
+}
+
+
+.pagestyle_black_white .topthema_infos_rechts .inner a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 2px center transparent !important;
+}
+
+
+.pagestyle_black_white nav.node-links .links li {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 2px 5px transparent !important;
+    list-style: none outside none;
+    padding-left: 12px;
+}
+
+.pagestyle_black_white .themendossier_infos .more_link, .pagestyle_black_white ul.listLinks li a, .pagestyle_black_white .topthema_infos_links .more_link, .pagestyle_black_white ul.listLinks li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_black.png") no-repeat scroll 0 8px transparent !important;
+}
+
+
+
+
+
+/* ICONS*/
+
+.pagestyle_black_white .region-sidebar-second .tsrBlockSocialMedia h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_social_black.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.pagestyle_black_white .region-sidebar-second .tsrBlockZitatDesTages h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_zitat_black.png") no-repeat scroll 0 3px transparent !important;
+}
+
+
+.pagestyle_black_white .region-sidebar-second .tsrBlockVideo h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_video_black.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.pagestyle_black_white .region-sidebar-second .tsrBlockKontakt h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_zitat_black.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.pagestyle_black_white .region-sidebar-second .tsrBlockKarriereportal h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_karriere_black.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+/* MENU */
+.pagestyle_black_white #zone-menu a.menu-depth-1 {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt_arrow_right_black.png") no-repeat scroll 12px 13px / 17px auto transparent !important;
+}
+
+
+/* SONSTIGE PFEILE */
+
+.pagestyle_black_white .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow_black.png") !important;
+}
+
+.pagestyle_black_white .view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow_black.png") !important;
+}
+
+
+.pagestyle_black_white .jcarousel-skin-tango .jcarousel-prev-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow_redmiddle_black.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.pagestyle_black_white .jcarousel-skin-tango .jcarousel-next-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow_redmiddle_black.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.pagestyle_black_white .view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-prev {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt-teaser_spread.png") no-repeat scroll 0 -53px #2F2F2F !important;
+}
+
+.pagestyle_black_white .view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-next {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt-teaser_spread.png") no-repeat scroll 0 0 #2F2F2F !important;
+}
+
+.pagestyle_black_white div.headerSlider .arrow_up {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/arrow_up_black.png") !important;
+}
+
+.pagestyle_black_white div.headerSlider .arrow_up.active {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/close_down_black.png") !important;
+}
+
+.pagestyle_black_white .view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_arrow_gray.png") no-repeat scroll 0 5px transparent !important;
+
+}
+
+.pagestyle_black_white .view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li.active a {
+    background: none repeat scroll 0 0 transparent !important;
+}
+
+.node-allgemeine-seite table{
+            border: none;
+}
+
+.node-allgemeine-seite tr{
+            border-bottom: 1px solid #CCCCCC; 
+}
+
+
+/** Unpublied Frontpage **/
+
+.unpublished_front #region-header-second {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/headerbilder/front/infoportal-front.jpg") no-repeat scroll 0 0 transparent !important;
+    height: 352px !important;
+}
+
+.unpublished_front_ressorts #region-header-second {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/headerbilder/spezifisch/header-front-unpublished.jpg") no-repeat scroll 0 0 transparent !important;
+    height: 190px !important;
+}
+
+.unpublished_front .view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-clip-horizontal {
+    padding-top: 97px;
+}
+
+
+/***** SEBASTIAN GURLT *****/
+
+/** last edit marcus 2013-02-06 @ 17:42 **/
+
+/* Youtube/Vimeo 2 Click */
+
+.youtube_2click_overlay {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 417px;
+    left: 5px;
+    opacity: 0.7;
+    position: absolute;
+    width: 740px;
+	bottom: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.view-views-videodetailseite {
+	position: relative;
+}
+
+.youtube_2click_wrapper {
+	position: relative;
+}
+
+.youtube_2click_url {
+	display: none;
+}
+
+.youtube-2click {
+	width: 750px;
+	height: 422px;
+	background: #000;
+	opacity: 0.7;
+	position: absolute;
+	z-index: 500;
+	color: #fff;
+	text-align: center;
+	display: table;
+}
+
+.youtube-2click-detail {
+    position: absolute;
+    top: 180px;
+    width: 750px;
+}
+
+
+.youtube-2click-text {
+    color: #000000;
+    margin-left: 25px;
+    opacity: 1.3;
+    text-align: center;
+    width: 700px;
+    z-index: 501;
+}
+
+.youtube-2click-button{cursor:pointer;}
+.youtube-2click-button {
+    background-image: linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -o-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -moz-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -webkit-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -ms-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    left: 317px;
+    margin: 12px auto auto;
+    min-width: 50px;
+    padding: 7px 0 6px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    width: 115px;
+} 
+
+.view-views-videodetailseite span.ext,.blockVideouebersicht  span.ext {
+	display: none;
+}
+
+/* Gebärdensprache 2 Click */
+
+.gebaerdensprache_2click_overlay {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 366px;
+    left: 5px;
+    opacity: 0.7;
+    width: 650px;
+	bottom: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: absolute;
+}
+
+#block-views-videouebersicht-block-4 {
+	position: relative;
+}
+
+.gebaerdensprache_2click_wrapper {
+	position: relative;
+}
+
+.gebaerdensprache_2click_url {
+	display: none;
+}
+
+.gebaerdensprache-2click {
+	width: 660px;
+	height: 376px;
+	background: #000;
+	opacity: 0.7;
+	position: absolute;
+	z-index: 500;
+	color: #fff;
+	text-align: center;
+	display: table;
+}
+
+.gebaerdensprache-2click-detail {
+    top: 160px;
+    width: 660px;
+	position: absolute;
+}
+
+.gebaerdensprache_2click {
+	position: relative;
+}
+
+.gebaerdensprache-2click-text {
+    color: #000000;
+    margin-left: 25px;
+    opacity: 1.3;
+    text-align: center;
+    width: 625px;
+    z-index: 501;
+}
+
+.gebaerdensprache-2click-button{cursor:pointer;}
+.gebaerdensprache-2click-button {
+    background-image: linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -o-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -moz-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -webkit-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -ms-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#444444,endColorstr=#CECECE,GradientType=1)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#444444,endColorstr=#CECECE,GradientType=1);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    left: 317px;
+    margin: 12px auto auto;
+    min-width: 50px;
+    padding: 7px 0 6px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    width: 115px;
+} 
+
+/* Edit View Button */
+
+.view-edit-themenslider {
+    left: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.view-edit-themendossier {
+    left: 72px;
+    position: relative;
+    top: 10px;
+}
+
+.themendossier_infos .view-edit-themendossier{
+	line-height: 145%;
+}
+
+.edit-link-wrapper {
+    position: relative;
+}
+
+.view-edit-zitat-des-tages {
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: -15px;
+}
+
+.view-edit a {
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+}
+
+.view-edit a:hover {
+    text-decoration: none;
+}
+
+.view-edit {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-weight:bold;
+	padding: 0 5px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #b23e35;
+	opacity: 0.6;
+}
+
+
+
+
+/* Print optimierung Biografie */
+
+.print-content .biografie_head .biografie_portraitbild {
+    float: left;
+    padding-right: 15px;
+}
+
+.print-content .biografie_beschreibung {
+    clear: both;
+}
+
+/* Centerpage */
+#block-views-centerpage-top-thema-block-3 .content, #block-views-centerpage-top-thema-block-6 .content {
+    padding: 0 !important;
+}
+
+
+#block-views-centerpage-top-thema-block-3 .topthema_teaser, #block-views-centerpage-top-thema-block-6 .topthema_teaser {
+    margin-bottom: 0;
+}
+
+#block-views-centerpage-top-thema-block-3 .topthema_teaser img, #block-views-centerpage-top-thema-block-6 .topthema_teaser img {
+    margin-right: 15px;
+}
+
+#block-views-centerpage-top-thema-block-3 .topthema_text ,#block-views-centerpage-top-thema-block-6 .topthema_text {
+	margin: 15px 10px 15px 0;
+}
+
+#block-views-centerpage-top-thema-block-5 .view-content {
+	/* margin-top: -5px; */
+}
+
+#block-views-centerpage-top-thema-block-5 .view-content .last .unterthema_teaser {
+	margin-bottom: 0;
+}
+
+#block-views-centerpage-top-thema-block-1 .topthema_infos {
+    padding-top: 10px;
+}
+
+/* Empfehlung der Redaktion - Social Media*/
+
+#views_slideshow_cycle_main_frontpage_empfehlung-block_1 {
+	background: none repeat scroll 0 0 #FFFFFF;
+	padding: 20px 106px 15px;
+}
+
+#views_slideshow_controls_text_frontpage_empfehlung-block1 {
+	height: 0px;
+}
+
+
+#views_slideshow_controls_text_previous_frontpage_empfehlung-block_1 {
+    left: 10px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+}
+	
+#views_slideshow_controls_text_next_frontpage_empfehlung-block_1 {
+    margin-top: -15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    z-index: 20;
+} *
+
+/* Centerpage Empfehlung der Redaktion - Centerpage */
+
+#views_slideshow_cycle_teaser_section_frontpage_empfehlung-block_2 {
+    width: 573px !important;
+}
+
+#views_slideshow_cycle_main_frontpage_empfehlung-block_2 {
+	background: none repeat scroll 0 0 #FFFFFF;
+	padding: 20px 106px 15px;
+}
+
+#views_slideshow_controls_text_frontpage_empfehlung-block2 {
+	height: 0px;
+}
+
+
+#views_slideshow_controls_text_previous_frontpage_empfehlung-block_2 {
+    left: 10px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+}
+	
+#views_slideshow_controls_text_next_frontpage_empfehlung-block_2 {
+    margin-top: -15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    z-index: 20;
+}
+
+.ic_category span.spitzmarke {
+	margin-bottom: 0;
+	padding-bottom: 8px;
+}
+
+/* Frontpage Themendossier */
+
+
+/* Frontpage Themendossier Ende */
+
+
+/* Social Media Übersicht und Block Startseite*/
+.blockSocialMediaUebersicht {
+	background-color: #FFF;
+	/* padding: 15px; */
+	}
+.blockSocialMediaUebersicht ul.tsrListe li {	
+	padding-bottom: 12px;
+	border-bottom: 1px solid #D9DADA;
+  margin-bottom: 15px;
+}
+.blockSocialMediaUebersicht ul.tsrListe li h2.socialmedia_titel { margin-bottom: -3px; }
+.blockSocialMediaUebersicht ul.tsrListe li .tsrText { margin: 5px 0 0 0; }
+.blockSocialMediaUebersicht ul.tsrListe li .tsrText p { margin-bottom: 10px; }
+
+.social_media_favicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.social_media_favicon_block {
+    position: absolute;
+    right: 10px;
+}
+/* Social Media Übersicht Ende*/
+
+/* Frontpage */
+
+.front .content {
+	padding: 0px !important;
+}
+
+/* Frontpage */
+
+
+/* Pager */
+.view-pressemitteilung .item-list {
+	display: block;
+	overflow: hidden;
+	}
+
+.item-list ul.pager {
+  border: none;
+	right: 0;
+  font-size: 10px;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-align: left;
+	display: inline-block;
+	float: right;
+	background: none;
+}
+.pager li {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif !important;
+	font-weight: bold;
+  font: bold 12px/1.2 Arial,sans-serif;
+  outline: 0 none;
+  margin: 0 5px 0 5px!important;
+	border-radius: 0!important;
+	background: #EDECEC!important;
+	border: 1px solid  #EDECEC!important;
+	color: #303030;
+	padding: 4px 8px !important;
+}
+.pager li.pager-first { margin-left: 0!important; }
+.pager li.pager-last { margin-right: 0!important; }
+
+.pager li:hover { background: #efefef; border: 1px solid #D62029!important; }
+.pager li a {
+	background: none!important;
+	padding: 0!important;
+  cursor: pointer;
+	border-radius: 0;
+	width: inherit!important;
+}
+.pager li.pager-current {
+    background: #D62029!important;
+		border: 1px solid #D62029!important;
+    color: #FFFFFF;
+	}
+.pager li.pager-next, .pager li.pager-last {
+	position: relative!important;
+	right: inherit;
+	top: inherit;
+	}
+
+/* Pager Ende */
+
+/* Pressesetelle */
+/*
+.node-pressestelle h2.node-title, .node-pressestelle .statistics_counter {
+	display: none;
+}
+
+
+
+/* Newsletter */
+#webform-component-e-mail-themennewsletter .form-item-submitted-e-mail-themennewsletter-newsletter-email-address {
+	display: none; 
+}
+
+#edit-submitted-e-mail-newsletter-selection .form-item.form-type-checkbox {
+	padding-bottom: 5px;
+}
+
+#webform-component-e-mail .form-item-submitted-e-mail-newsletter-email-address {
+	padding-bottom: 15px;
+}
+
+.submit-inaktiv {
+	float: right;
+}
+.not-enough{cursor:pointer;}
+.not-enough, .webform-client-form input.form-submit-disabled {
+    background-image: linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -o-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -moz-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -webkit-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -ms-linear-gradient(-82deg, rgb(206, 206, 206) -80%, rgb(68, 68, 68) 100%);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CECECE,endColorstr=#444444,GradientType=1)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CECECE,endColorstr=#444444,GradientType=1);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    min-width: 146px;
+    padding: 7px 0 6px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.node-newsletter-anmeldung .clearfix {
+	padding-top: 15px;
+}
+
+#simplenews-confirm-add-form a#edit-cancel {
+    padding: 5px 0;
+}
+/* Newsletter Ende */
+
+
+/** Social Share - Weiterempfehlen **/
+nav.node-links {
+	position: relative;
+	padding-top: 10px;
+	border-top: 1px solid #C7C8C8;
+	color: #5A5A5A;
+	}
+nav.node-links .links a { color: #5A5A5A; }
+nav.node-links .links a:hover { color: #D62029 !important; }
+nav.node-links .links li {
+	background: url("images/bullet_standard.png") no-repeat scroll 2px 5px transparent;
+  list-style: none outside none;
+  padding-left: 12px;
+	}
+
+
+li.statistics_counter {
+	display: none !important;
+}
+	
+nav.node-links .links li:hover {
+	background: url("images/bullet_red.png") no-repeat scroll 2px 5px transparent;
+	}
+	
+.trigger { float: left; margin-right: 8px; }
+.trigger p {
+	background: url("images/bullet_standard.png") no-repeat scroll 2px 7px transparent;
+  list-style: none outside none;
+  padding-left: 12px;
+	}
+
+.trigger p:hover {
+	background: url("images/bullet_red.png") no-repeat scroll 2px 7px transparent;
+	}
+.trigger p:hover {
+	color: #D62029 !important;
+	text-decoration: underline;
+	}
+
+#secureshare {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C2C2C2;
+    box-shadow: 0 0 1px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+#secureshare:after {
+    border-bottom: 6px solid #FFFFFF;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 24px;
+    position: absolute;
+    top: -6px;
+}
+
+.settings_info span.ext {
+	display: none;
+}
+
+.social_share_privacy_area {
+	width: 530px;
+}
+
+/** Social Share - Weiterempfehlen Ende  **/
+
+/** Weiterempfehlen per Mail **/
+
+#edit-txt-to-addrs {
+	width: 464px;
+}
+
+#print-mail-form .form-type-textarea .description {
+    left: 175px;
+    padding-top: 5px;
+    position: relative;
+    width: 465px;
+}
+
+#print-mail-form #edit-btn-submit {
+	float: right;
+	background-image: linear-gradient(-82deg, #A44248 1%, #69070C 99%);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+    min-width: 150px;
+    padding: 7px 10px 5px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+
+#print-mail-form #edit-btn-clear {
+	float:right;
+	background-image: linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+    min-width: 150px;
+    padding: 7px 10px 5px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+#print-mail-form #edit-btn-cancel {
+	background-image: linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+    min-width: 150px;
+    padding: 7px 10px 5px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+	float: left;
+}
+
+
+/** Weiterempfehlen per Mail Ende **/
+
+/** Scroll Top - Menü **/
+
+#block-menu-menu-footer-menu ul.menu li.first {
+    left: 0;
+    position: absolute;
+}
+
+/** Scroll Top - Menü Ende **/
+
+/** Suche **/
+
+#suchfeld {
+	background-image: url(images/search_zoom.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	padding-right: 20px;
+	box-shadow: 0 0 1px #777777 inset;
+}
+
+#suchfeld_submit {
+	display: none;
+}
+
+#block-block-1 input[type="submit"] {
+	display: none;
+}
+
+
+
+/** Suche Ende **/
+
+/** ZoooooooooooooooooM Funktion **/
+
+#wrapper {
+            background-position: 50% 0px;
+            margin: 0px auto 0 auto;
+}
+
+body {
+	transform-origin: center top 0;
+}
+
+/** ZoooooooooooooooooM Funktion Ende **/
+
+
+/** Layout **/
+
+#colorbox h2.node-title, #colorbox .zusammenfassung{
+	display: none;
+}
+
+.zone-postscript {
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+	background-color: #EFEFEF !important;
+}
+
+.logo-img #logo {
+	box-shadow: 5px 5px 5px -4px #C9CACA;
+}
+
+/** Banner Subsites -> Jetzt in hessen-web-omega-alpha-default **/
+/** Banner und Farben  **/
+/** Banner Subsites Ende **/
+
+
+/** Layout Ende **/
+
+/** Hessennavigator **/
+
+/* Tag cloud */
+
+
+
+.tags h3 {
+    background: url("images/hessennavigator_pfeil.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    height: 30px;
+    margin-bottom: 0;
+    padding-top: 3px;
+}
+
+.tags h5 {
+	color: #ffffff;
+	margin-bottom: 5px;
+	font-family: DroidSansRegular,DroidSansRegular,sans-serif;
+	font-size: 16px;
+    font-weight: normal;
+    line-height: 103%;
+}
+
+.tags {
+    background: none repeat scroll 0 0 #D61021;
+    padding: 10px 10px 0;
+}
+
+.tags span.ext {
+	background: none;
+	padding-right: 0;
+	}
+
+.tags a {
+	color: #ffffff;
+	opacity: 0.8;
+}
+
+.tags a:hover {
+	text-decoration: underline;
+	opacity: 1;
+} 
+
+.tags ul {
+    text-align: center;
+    width: 235px;
+}
+.tags li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:inline;
+	}
+.tags li a{
+	text-decoration:none;
+	color:#fff;
+	padding:0 2px;
+	}
+.tags li a:hover{	
+	color:#ffffff;
+	text-decoration: none;
+	opacity: 1;
+	}		
+
+.tag1{font-size:100%; opacity: 0.5;}
+.tag2{font-size:120%; opacity: 0.6;}
+.tag3{font-size:140%; opacity: 0.7;}
+.tag4{font-size:160%; opacity: 0.8;}
+.tag5{font-size:180%; opacity: 0.9;}
+
+.tag1:hover{opacity: 1;}
+.tag2:hover{opacity: 1;}
+.tag3:hover{opacity: 1;}
+.tag4:hover{opacity: 1;}
+.tag5:hover{opacity: 1;}
+
+.hessenavi_footer {
+	text-align: center;
+}
+
+.hessenavi_footer a {
+	font-size: 13px;
+}
+
+	
+/** Hessennavigator Ende **/
+
+/** Gebärdensprachvideos **/
+
+.page-node-1484 #region-content article {
+	padding: 20px 15px 0 15px;
+}
+
+.page-node-1484 #section-content #block-system-main .links {
+	padding: 15px 15px 0 15px;
+}
+
+/** Gebärdensprachvideos Ende **/
+
+/** Pressemitteilungsfilter **/
+
+#views-exposed-form-pressemitteilung-presseressortspage #edit-field-datum-default-value-min-wrapper label, #views-exposed-form-pressemitteilung-page #edit-field-datum-default-value-min-wrapper label {
+	padding-bottom: 5px
+}
+
+#views-exposed-form-pressemitteilung-presseressortspage #edit-field-datum-default-value-max-wrapper label, #views-exposed-form-pressemitteilung-page #edit-field-datum-default-value-max-wrapper label {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#edit-field-datum-default-value-min-date, #edit-field-datum-default-value-max-date {
+	width: 150px;
+}
+
+.filterPressemitteilungen .description {
+	display: none;
+}
+
+/** Pressemitteilungsfilter Ende **/
+
+/** Webform Validation **/
+
+
+#webform-component-pooh-baers-speisekammer {
+    display: none;
+}
+
+/** Webform Validation Ende **/
+
+/**  Bildergalerie Teaser **/
+
+.view-bildergalerie-teaser .views-field-field-titel {
+	display: none;
+} 
+
+/**  Bildergalerie Teaser Ende **/
+
+/** Bildergalerie Detailansicht **/
+
+/** Bildergalerie Detailansicht Thumbnail Pager **/
+
+
+ul.jcarousel-list .activeSlide img {
+	border-bottom: 2px solid #D62029;
+	opacity: 1;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	width: 400px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 400px;
+	height: 87px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+	height: 87px;
+}
+
+.jcarousel-clip.jcarousel-clip-horizontal {
+    padding-left: 5px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-container {
+    background: #EFEFEF;
+    border: none;
+    border-radius: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow_redmiddle.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 25px;
+    left: 5px;
+    position: absolute;
+    top: 50px;
+    width: 25px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow_redmiddle.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    width: 25px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-horizontal:focus {
+    background-position: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
+    background-position: 0;
+}
+
+
+/** Bildergalerie Detailansicht Thumbnail Pager Ende **/
+
+.view-bildergalerie {
+    position: relative;
+}
+.bildergalerie_container {
+	background-color: #EFEFEF;
+	/*
+	padding-top: 15px; 
+	min-height: 490px;
+	*/
+	}
+
+.node-type-bildergalerie #region-content article { padding-bottom: 10px; }
+
+.bildergalerieDetail { /* -> wrapper for the whole Block */
+	background: none repeat scroll 0 0 #FFFFFF;
+	padding: 0 0 35px 15px;
+	}
+.bildergalerieDetail .views_slideshow_cycle_main { margin-right: 10px; }
+
+.views-slideshow-pager-field-item {
+    float: left;
+    height: 89px;
+    padding: 0 10px 10px 0;
+    width: 88px;
+}
+.views-slideshow-pager-field-item  img { border: 1px solid #CCCCCC; }
+.views-slideshow-pager-field-item .active img { opacity: 1.0!important; border: 1px solid #666; box-shadow: 1px 1px #999; }
+
+.node-type-bildergalerie article nav.node-links {
+	border: none;
+    padding-top: none;
+}
+
+.node-type-bildergalerie .views-slideshow-cycle-main-frame .bildergalerie_bild {
+	text-align: center;
+	vertical-align: middle;
+	}
+	
+.node-type-bildergalerie .views_slideshow_slide { margin: auto; }
+
+.node-type-bildergalerie .views-slideshow-cycle-main-frame-row-item .views-field {
+	color: #777777;
+}
+
+#widget_pager_bottom_bildergalerie-block  img {
+    opacity: 0.7;
+}
+
+.view-bildergalerie .views-slideshow-controls-top {
+	position: relative;
+	height: auto;
+	width: auto;
+	padding-bottom: 15px;
+}
+
+.view-bildergalerie #views_slideshow_controls_text_next_bildergalerie-block > font {
+    float: right;
+    margin-left: -12px;
+    margin-right: 15px;
+}
+
+.view-bildergalerie #views_slideshow_controls_text_next_bildergalerie-block > a {
+    float: right;
+    padding-right: 15px;
+}
+
+.bildergalerie_container .bildergalerie_bild {
+	height: 360px;
+	width: 480px;
+	background: #EFEFEF;
+	position: relative;
+}
+
+.bildergalerie_container .bildergalerie_text {
+	height: auto;
+  padding: 5px 10px 5px 10px;
+  width: 450px;
+	background: #EFEFEF;
+	position: relative;
+}
+
+.view-bildergalerie .bildergalerie_bild a {
+    display: table-cell;
+    height: 360px;
+    text-align: center;
+    vertical-align: middle;
+    width: 480px;
+}
+
+.view-bildergalerie #views_slideshow_slide_counter_bildergalerie-block {
+	font-weight: bold;
+    left: 197px;
+    position: absolute;
+    top: 0;
+}
+
+.view-bildergalerie #views_slideshow_slide_counter_bildergalerie-block:before {
+	content: "Bild";
+}
+
+.view-bildergalerie .views-slideshow-controls-bottom #views_slideshow_controls_text_previous_bildergalerie-block {
+    position: absolute;
+    top: 205px;
+    z-index: 400;
+    left: 10px;
+	opacity: 0.5;
+}
+
+.view-bildergalerie .views-slideshow-controls-bottom #views_slideshow_controls_text_next_bildergalerie-block {
+    position: absolute;
+    top: 205px;
+    z-index: 400;
+	opacity: 0.5;
+	right: 25px;
+}
+
+.view-bildergalerie #widget_pager_bottom_bildergalerie-block .active .views-field-field-images{
+	border-bottom: 2px solid #D62029;
+}
+
+.view-bildergalerie .views-slideshow-controls-bottom {
+	padding-top: 15px;
+}
+
+.view-bildergalerie .view-footer {
+    width: 480px;
+}
+
+.view-bildergalerie .bildergalerie_download {
+	float: left;
+}
+
+/* von marcus.css */
+/* Views Teaser Bildergalerien */
+.view-bildergalerie-teaser {
+	margin-bottom: 30px;
+}
+.view-bildergalerie-teaser .field-slideshow-wrapper {
+	/*
+	background-color: #F2F2F2;
+	box-shadow: #666 0 2px 3px;
+	padding: 5px;
+	margin-bottom: 8px;
+	*/
+	display: inline-block;
+	}
+	
+.view-bildergalerie-teaser .field-slideshow-slide {}
+
+.view-bildergalerie-teaser ul.field-slideshow-pager { margin: 10px 0 0 -1px; padding: 0; }
+
+.view-bildergalerie-teaser ul.field-slideshow-pager li { margin: 0 18px 5px 0; padding: 0; }
+.view-bildergalerie-teaser ul.field-slideshow-pager li.last { margin-right: 0; }
+
+.view-bildergalerie-teaser ul.field-slideshow-pager img { border: 1px solid #fff; }
+
+body.node-type-bildergalerie .field-slideshow {
+	background-color: #F2F2F2;
+	margin: auto;
+	margin-bottom: 8px;
+	padding: 5px;
+	display: inline-block;
+	box-shadow: #666 0 2px 3px;
+	overflow: visible;
+	}
+body.node-type-bildergalerie .field-slideshow-slide {
+	border: 2px solid #fff;
+	}
+body.node-type-bildergalerie ul.field-slideshow-pager img { border: 1px solid #ccc; }
+
+/** Bildergalerie Detailansicht Ende **/
+
+/** Video im Artikel / Pressemitteilung **/
+
+.node-video.node-teaser {
+	padding: 0 0 15px 0 !important;
+}
+
+.video_preview_overlay {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/buttons/video_overlay.png");
+    background-repeat: no-repeat;
+    display: table-cell;
+    height: 360px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 480px;
+	background-position: 50% center;
+	opacity: 0.7;
+}
+
+/** Videodetailsseite **/
+
+.video_link_artikel.links {
+	float: left;
+	padding-right: 5px;
+}
+
+/** Fragebox **/
+
+.node-pressemitteilung .node-pressesprecher, .node-pressemitteilung  .node-pressestelle, .node-artikel .node-pressesprecher, .node-artikel  .node-pressestelle {
+    padding: 0 !important;
+}
+
+.node-pressemitteilung .node-pressesprecher .node-links, .node-artikel .node-pressesprecher .node-links {
+	display: none;
+}
+
+/** Tabellen **/
+
+.node-type-artikel table, .node-type-pressemitteilung table {
+	width: 100%;
+}
+
+.node-type-artikel td, th, .node-type-pressemitteilung td, th {
+    padding: 4px 8px;
+    vertical-align: top;
+    max-width: 222px;
+	border: 1px solid;
+	word-wrap: break-word;
+}
+
+
+
+/***** MARCUS MORBA ****/
+
+/** last edit marcus morba 2013-02-25 @ 13:01 **/
+
+
+/** frontend css **/
+.fragenblock {
+	background: #CEDDE8;
+	padding: 15px;
+	color: #303030;
+	margin-bottom: 40px;
+	}
+	
+.fragenblock .content, .fragenblock article  { /* overwrite for css of Markus Zerres */
+    background: #CEDDE8!important;
+}
+.fragenblock label { padding-right: 5px; display: inline-block; }
+
+/* blocks marginalspalte */
+.region-sidebar-second h2.block-title,
+.region-sidebar-second .tsrBlockKarriereportal h2.block-title,
+.region-sidebar-second .tsrBlockVideo h2.block-title,
+.region-sidebar-second .tsrBlockRSS h2.block-title,
+.region-sidebar-second .tsrBlockKontakt h2.block-title,
+.region-sidebar-second .tsrBlockSocialMedia h2.block-title,
+.region-sidebar-second .tsrBlockMeistgelesen h2.block-title,
+.region-sidebar-second .tsrBlockUniversal h2.block-title {
+	 color: #303030;
+   font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
+   font-size: 12px;
+   font-weight: normal;
+   /* min-height: 28px; */
+   letter-spacing: 0.025em;
+   margin: 0 0 3px 0;
+   padding: 5px 0 0 33px;
+   text-transform: uppercase;
+	 overflow: visible;
+	}
+
+.region-sidebar-second .tsrBlockKarriereportal h2.block-title {
+  background: url("images/icon_karriere.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+	}
+.region-sidebar-second .tsrBlockVideo h2.block-title {
+  background: url("images/icon_video.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+	}
+.region-sidebar-second .tsrBlockRSS h2.block-title {
+  background: url("images/icon_rss.png") no-repeat scroll 0 0 transparent;
+	min-height: 28px;
+	}
+.region-sidebar-second .tsrBlockKontakt h2.block-title {
+  background: url("images/icon_zitat.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+	}
+.region-sidebar-second .tsrBlockSocialMedia h2.block-title {
+	background: url("images/icon_social.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+}
+.region-sidebar-second .tsrBlockMeistgelesen h2.block-title {
+	background: url("images/icon_meist_gelesen.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+}
+.region-sidebar-second .tsrBlockZitatDesTages h2.block-title {
+	background: url("images/icon_zitat.png") no-repeat scroll 0 3px transparent;
+	min-height: 28px;
+}
+.region-sidebar-second .tsrBlockPressearchiv h2.block-title, .region-sidebar-second .tsrBlockDatenschutz h2.block-title {
+	background: url("images/icon_info.png") no-repeat scroll 0 -4px transparent;
+	min-height: 28px;
+}
+
+#xxx h2.block-title {
+	background: transparent url(images/icon_foto.png) no-repeat;
+	min-height: 28px;
+}
+#xxx h2.block-title {
+	background: transparent url(images/icon_video.png) no-repeat;
+	min-height: 28px;
+}
+#xxx h2.block-title {
+	background: transparent url(images/icon_veranstaltung.png) no-repeat;
+	min-height: 28px;
+}
+
+
+#region-sidebar-second .tsrBlockUniversal .tsrImageWrapper {
+    clear: both;
+    padding: 8px 10px 5px 0;
+}
+
+#region-sidebar-second .tsrBlockUniversal h3.tsrUeberschrift {
+    margin: 15px 0 0;
+}
+
+#region-sidebar-second .tsrBlockUniversal .block-inner {
+    padding-bottom: 5px;
+}
+
+#region-sidebar-second .tsrBlockUniversal .blockContent { 
+	padding: 0; 
+}
+
+
+
+/* Browserzoom-Block */ 
+.blockBrowserzoom {
+	float: right!important;
+	margin-left: 15px!important;
+	margin-top: 3px;
+	}
+.blockBrowserzoom span {
+	display: inline-block;
+	background: #fff;
+	color: #303030;
+	width: 18px;
+	height: 15px;
+	line-height: 10px;
+	padding: 3px 0 0 0;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+	}
+.blockBrowserzoom span:hover {
+	display: inline-block;
+	background: #303030;
+	color: #fff;
+	}
+
+.blockBrowserzoom #minusBtn { font-size: 10px; }
+.blockBrowserzoom #resetBtn { font-size: 13px; }
+.blockBrowserzoom #plusBtn { font-size: 15px; }
+
+
+/* Breadcrumb */
+#block-blockify-blockify-breadcrumb {
+	font-size: 11px;
+	}
+#block-blockify-blockify-breadcrumb a {
+	font-size: 11px;
+	color: #777;
+	font-weight: normal;
+	padding: 15px 0 12px 0;
+	display: inline-block;
+	}
+#block-blockify-blockify-breadcrumb span.active {
+	color: #196693;
+	font-weight: bold;
+	}
+
+#block-blockify-blockify-breadcrumb h2.element-invisible {
+	display: inline!important;
+	clip: rect(1px, 1px, 1px, 1px);
+  height: auto!important;
+  position: relative!important;
+	font-weight: bold;
+	float: left;
+	top: 2px;
+	margin-right: 5px;
+	}
+
+
+
+a.lnkStyleDefault {
+  background: url("images/bullet_red.png") no-repeat scroll 2px center transparent;
+  padding-left: 12px;
+	display: block;
+	clear: both;
+	}
+
+
+/* Artikel Downloads bzw. Datei- / File-Attachments */
+ul.download-file {
+	margin: 0;
+	padding-bottom: 15px;
+	list-style: none;
+}
+
+ul.download-file li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-image: none;
+}
+	
+	
+
+
+/* Contenttype Formular (webform) */
+body.node-type-webform #messages, body.node-type-newsletter-anmeldung #messages { display: none; }
+body.admin-menu #messages { display: block; }
+
+.webform-client-form label, .webform-client-form .webform-component-checkboxes, #webform-component-datenschutzbestimmungen, .webform-client-form .form-actions { 
+	display: block;
+	margin: 30px 0 0 0;
+	}
+.webform-client-form .form-checkboxes label { 
+	margin: 0px 0 0 20px;
+	}
+.webform-client-form .error, .webform-client-form .messages-inline {
+	background: none;
+	border: none;
+	color: #D61F28;
+	margin: 0;
+	padding: 0;
+	}
+.webform-client-form .form-type-textfield input, .webform-client-form .webform-component-email input, .webform-client-form .webform-component-textfield input, .webform-client-form select, .webform-client-form textarea {
+	background:	#CECECE;
+	background-color:	#CECECE;
+	border: 1px solid #CECECE!important;
+	color: #333333;
+	}
+
+
+.webform-client-form input.error, .webform-client-form select.error, .webform-client-form textarea.error {
+	background:	#F7F7F7;
+	background-color:	#F7F7F7;
+	color: #333!important;
+	border: 1px solid #D61F28!important;
+	}
+
+.webform-client-form .form-item { margin: 0;}
+.webform-client-form textarea { padding 5px; }
+.webform-client-form input.form-checkbox { float: left; margin-top: 2px; }
+
+.webform-client-form select { padding:1px!important; min-height: 23px; } /* make it work again, cause markus css line 775 makes crap */
+
+/* Form Button Formulare Standard */
+.webform-client-form input.form-submit,
+#region-content #edit-cancel,
+#region-content input.form-submit,
+.filterPressemitteilungen input.form-submit {
+	float: right;
+	color: #fff!important;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 7px 10px 5px 10px;
+	min-width: 150px;
+	text-align: center;
+	text-shadow: none;
+	text-transform: uppercase;
+	display: block;
+	margin: auto;
+	
+	/* Firefox v3.6+ */
+	background-image:-moz-linear-gradient(51% -53% -82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%); 
+	/* safari v4.0+ and by Chrome v3.0+ */
+	background-image:-webkit-gradient(linear,51% -53%,55% 143%,color-stop(0.01, rgb(164,66,72)),color-stop(0.99, rgb(105,7,12)));
+	/* Chrome v10.0+ and by safari nightly build*/
+	background-image:-webkit-linear-gradient(-82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%);
+	/* Opera v11.10+ */
+	background-image:-o-linear-gradient(-82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%);
+	/* IE v10+ */
+	background-image:-ms-linear-gradient(-82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%);
+	background-image:linear-gradient(-82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%);
+	border: 2px solid #fff;
+	border-radius: 0;
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa44248,endColorstr=#ff69070c,GradientType=1)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa44248,endColorstr=#ff69070c,GradientType=1);
+	}
+	
+.filterPressemitteilungen input.form-submit {
+	float: left;
+	border: none;
+	width:: auto;
+	}
+
+#region-content a#edit-cancel {
+	float: left;
+	}
+	
+#region-content a#edit-cancel:hover {
+	text-decoration: none;
+	}
+
+
+/* Newsletteranmeldung Formular */
+
+#webform-component-themennewsletter, #webform-component-email-abmeldung { margin-top: 30px; }
+
+
+/* Teaserlisten & Listenseite(n) */
+ul.tsrListe, ul.listenelementeListenseite {
+	margin: 0;
+	padding: 0;
+	}
+ul.socialMediaUebersicht { padding: 0 15px 15px 15px; }
+
+ul.tsrListe, ul.tsrListe li,
+ul.listenelementeListenseite, ul.listenelementeListenseite li {
+	list-style: none;
+	list-style-image:none;
+	}
+
+.view-pressemitteilung .wrapperItem, ul.tsrListe div.wrapperItem { width: 100%; position: relative; }
+.field-name-field-fc-listeninhalte-pt .wrapperImage, ul.tsrListe div.wrapperImage { float: left; width: auto; margin: 3px 10px 10px 0;  }
+.field-name-field-fc-listeninhalte-pt .wrapperCopy, ul.tsrListe div.wrapperCopy, ul.tsrListe div.wrapperCopy  { overflow: hidden; }
+
+ul.tsrListe div.wrapperCopy .spitzmarke { margin-bottom: 4px; }
+ul.tsrListe div.wrapperCopy h2 { font-size: 20px; line-height: 120%; margin-bottom: 10px; }
+ul.tsrListe div.wrapperCopy p.tsrText { font-size: 13px; line-height: 138%; margin: 0 0 5px 1px; }
+ul.tsrListe div.wrapperCopy a.more_link { margin-left: 0px; }
+
+
+/* Pressemitteilungen */
+.view-pressemitteilung .wrapperItem { width: 100%; }
+.view-pressemitteilung .tsrImage { float: left; width: auto; margin: 3px 10px 10px 0;  }
+.view-pressemitteilung .wrapperCopy { overflow: hidden; }
+.view-pressemitteilung .wrapperCopy p { }
+.view-pressemitteilung .tsrText .more_link { display: block; }
+
+.artikeluebersicht { margin-bottom: 30px; margin-top: 0px; }
+.artikeluebersicht .view-header { }
+
+
+/* Social Media Übersicht */
+ul.socialMediaUebersicht li img.networkIcon { 
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+
+
+/* Listenseite */
+.field-collection-view {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+ul.listenelementeListenseite { margin-bottom: 30px; clear: both; overflow: hidden; }
+ul.listenelementeListenseite li { padding-bottom: 20px; border-bottom: 1px solid #ccc; margin-bottom: 25px; clear: both; overflow: hidden; }
+ul.listenelementeListenseite li.last { padding-bottom: 0; border-bottom: none; margin-bottom: 0; clear: both; overflow: hidden; }
+ul.listenelementeListenseite li .tsrImage { max-width: 130px; float: left; margin-right: 15px; }
+
+ul.listenelementeListenseite li .wrapperCopy .spitzmarke { margin-bottom: 3px; }
+ul.listenelementeListenseite li .wrapperCopy .zusammenfassung { margin-bottom: 10px; }
+ul.listenelementeListenseite li .wrapperCopy p { padding: 0; margin: 0 0 5px 0; }
+ul.listenelementeListenseite li .wrapperCopy a { 
+	display: inline-block;
+	background: url("images/bullet_red.png") no-repeat scroll 0 6px transparent;
+	margin-left: 2px;
+	padding-left: 8px;
+	}
+ul.listenelementeListenseite li .wrapperCopy a.mailto {	background: none; padding: 0; margin: 0; }
+
+.node-type-listenseite .download-file .ext {
+    background: none repeat scroll 0 0 transparent;
+    margin-left: 0;
+    padding-left: 0;
+} 
+
+.node-type-listenseite .download-file li {
+    border-bottom: medium none;
+	padding: 8px 0 0 0;
+	margin-bottom: 0;
+} 
+
+.node-type-listenseite ul.download-file, ul.listLinks, ul.listDownloads {
+    margin-bottom: 0;
+}
+
+
+.node-type-listenseite .field.field-name-field-inhalt.field-type-text-long.field-label-hidden {
+    padding-bottom: 30px;
+}
+
+.node-type-listenseite ul.download-file {
+	margin: 0;
+	padding-bottom: 0px;
+	list-style: none;
+}
+
+
+.node-type-listenseite .field-name-field-file-attachments .contextual-links-trigger {
+    background: none repeat scroll 0 0 transparent;
+}
+
+
+	
+
+/* Menu Position fix to disable aktive content */
+
+.navBlockSpecial div.menu-level-2 #main-menu ul#main-menu { display: none; }
+
+/** admin backend css **/
+/** logged in **/
+
+body.admin-menu #region-content div.tabs {
+	position: absolute;
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	/* min-width: 200px; */
+	background-color: #CCC;
+	padding: 15px;
+	}
+body.admin-menu #region-content div.tabs ul.primary  {
+	margin: 0;
+	padding: 0;
+	border: none;
+	}
+body.admin-menu #region-content div.tabs ul.primary li { 
+	font-size: 13px;
+	margin: 0 0 10px 0;
+	display: block;
+	float: none!important;
+	border: 1px solid #666;
+	background-color: #efefef;
+	
+	}
+body.admin-menu #region-content div.tabs ul.primary li a {
+	padding: 0.25em;
+	font-size: 1.1em;
+	min-width: 35%;
+	display: inline-block;
+	background-color: inherit;
+	border: none;
+	}
+
+body.admin-menu #region-content ul.action-links { 
+	display: block; 
+	position: absolute;
+	position: fixed;
+	top: 350px;
+	right: 20px;
+	max-width: 80px;
+	background-color: #CCC;
+	padding: 15px;
+	}
+	
+body.admin-menu #region-content ul.action-links li {
+	font-size: 10px;
+	margin: 0 0 10px 0;
+	display: block;
+	float: none!important;
+	border: 1px solid #666;
+	background-color: #efefef;
+	padding: 0.25em;
+	}
+
+.field-collection-container { margin: 20px 0 30px 0; border: none; }
+#region-content ul.action-links.action-links-field-collection-add { top: 45px!important; }
+
+.content .field-collection-container {
+	min-height: 20px;
+	background: #fff;
+	}
+	
+.field-collection-container .minigalerie {
+	min-height: 20px;
+	background: #fff;
+	}
+	
+
+
+/* Pressemitteilung bzw. Pressemeldung */
+.infoblock { font-weight: bold;  margin-bottom: 10px; }
+.infoblock .date-display-single { display: inline-block; margin-right: 10px; }
+
+/* Filter Presse */
+
+.filterPressemitteilungen {
+	
+	}
+
+.filterPressemitteilungen .views-exposed-form .views-exposed-widget {
+  float: none;
+  padding: 0;
+	}
+	
+.filterPressemitteilungen h2.block-title {
+	
+	}
+.filterPressemitteilungen .content {
+	background:url(images/bg_white_50.png);
+	padding: 15px;
+	}
+.filterPressemitteilungen .content .views-exposed-form h3.filtername, .filterPressemitteilungen .views-exposed-widgets label {
+	font-size: 19px;
+	margin-bottom: 5px;
+	}
+.filterPressemitteilungen .views-exposed-widgets .container-inline-date label {
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0;
+	}
+	
+
+#region-sidebar-second .filterPressemitteilungen { margin-top: 20px; padding-top: 0; }
+#region-sidebar-second .filterPressemitteilungen h2.block-title {
+  left: -14px;
+  /* padding: 0 0 0 8px; */
+  position: relative;
+  top: -26px;
+  background: url("images/bg_sectionHeadlineRed.png") no-repeat scroll 0 8px transparent;
+	overflow: visible;
+	margin-bottom: 0;
+	}
+
+	
+.filterPressemitteilungen #edit-field-datum-default-value-wrapper {
+	float: none;
+	display: block;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid #CCC;
+	margin: 0 0 15px 0;
+	}
+.node-type-page .filterPressemitteilungen #edit-field-datum-default-value-wrapper { /* Filter für Ressortseiten */
+	padding: 0;
+	border-bottom: none;
+	margin: 0;
+	}
+	
+.filterPressemitteilungen .content .views-exposed-form #edit-field-herausgeber-tid-wrapper .bef-checkboxes label {
+	font-size: 13px;
+	color: #D61F28;
+	}
+.filterPressemitteilungen .content .views-exposed-form #edit-field-herausgeber-tid-wrapper .bef-checkboxes .form-item  {
+	margin-bottom: 3px;	
+	}
+.filterPressemitteilungen .content .form-checkboxes input[type="checkbox"] {
+	/** -webkit-appearance: none;
+	-webkit-border-radius: 0; **/
+	border-radius: 0;
+	margin: 0 3px 0 0;
+	padding: 0;
+	border: 1px solid #CCC;
+	background: #fff;
+	}
+.filterPressemitteilungen .content .form-checkboxes input[type="checkbox"]:hover {
+	border: 1px solid #f00;
+	}
+.filterPressemitteilungen .content .form-checkboxes input[type="checkbox"]:checked {
+	border: 1px solid #f00;
+	}
+	
+	
+	
+/***** MARKUS ZERRES *****/
+
+/** last edit marcus morba 2013-02-25 @ 13:01 **/
+
+/* Diverses */
+
+#block-system-main .content {
+	padding: 0px;
+}
+
+/* Main content area middle */
+body.node-type-page #region-content, body.node-type-artikel #region-content, 
+body.node-type-pressemitteilung #region-content, body.node-type-webform #region-content,
+body.node-type-listenseite #region-content {
+	/* background: #fff; */
+	margin-bottom: 30px;
+}
+body.node-type-page #region-content .region-content-inner, body.node-type-artikel #region-content .region-content-inner,
+body.node-type-pressemitteilung #region-content .region-content-inner, body.node-type-webform #region-content .region-content-inner,
+body.node-type-listenseite #region-content .region-content-inner {
+ /* padding: 20px 15px 35px 15px; */
+}
+body.front #region-content { padding: 0; background: none; }
+body.front #region-content .region-content-inner { padding: 0; }
+
+body.node-type-centerpage #region-content .block-views .block-inner {
+	background: none;
+	padding: 0px;
+	}
+body.node-type-centerpage #region-content .block-views .block-inner .view-id-centerpage_top_thema .view-content{
+	background: #fff;
+	padding: 15px;
+	}
+body.node-type-centerpage #region-content .block-views .block-inner .view-id-centerpage_top_thema .view-header{
+	padding-left: 15px;
+	}
+body.node-type-centerpage #region-content .block-views .block-inner {
+	background: none;
+	padding: 0px;
+	}
+
+.block.themenslider { margin-bottom: 30px; }
+.block.themendossier { margin-bottom: 30px; }
+.block.empfehlungCarousel { margin-bottom: 30px; }
+.block.blockHeader { margin-bottom: 60px; }
+#block-views-centerpage-top-thema-block-4.block.blockHeader { margin-bottom: 15px; }
+
+.block.topThema { margin-bottom: 15px; }
+.block.unterthemenCenterpage { margin-top: 0px; margin-bottom: 30px; }
+#block-views-centerpage-top-thema-block-3{margin-bottom: 15px;}
+#region-content article { padding: 20px 15px 10px 15px; background: #fff; }
+
+.view-pressemitteilung { padding: 0 15px 10px 15px; background: #fff; }
+.domain-hessen .view-pressemitteilung { padding: 20px 15px 10px 15px; background: #fff; }
+.domain-hessen #region-content .view-pressemitteilung .view-header .content { margin-bottom: 15px; }
+
+#region-content .node-video article { padding: 0; }
+
+/* Verwandte Inhalte */
+#region-content section.verwandteInhalte { margin-top: 30px; }
+#region-content section.verwandteInhalte .content { padding: 15px; background: #fff; }
+#region-content section.verwandteInhalte ul { margin: 0; }
+#region-content section.verwandteInhalte ul li { padding: 0 0 15px 0; border-bottom: 1px solid #ccc; margin: 0 0 15px 0; }
+#region-content section.verwandteInhalte ul li.last { padding: 0; border-bottom: none; margin: 0; }
+#region-content section.verwandteInhalte span.spitzmarke, #region-content section.verwandteInhalte h3.tsrUeberschrift { margin: 0; }
+
+
+/* Styles Teasers */
+.read_more {
+	padding-left: 0px;
+	background: url(images/bullet_red.png) no-repeat 10px;
+	padding-left: 20px;
+}
+
+
+/* Styles Content & Articles */
+article .content {
+	padding: 0;
+	color: #777;
+}
+
+span.spitzmarke, div.spitzmarke { 
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #303030;
+	font-weight: normal;
+	display: block;
+	margin-bottom: 5px;
+	}
+
+#region-content article h1, #region-content article h2, #region-content article h3, #region-content article h4, #region-content article h5, #region-content article h6 {
+	font-family: 'DroidSansRegular', sans-serif;
+	line-height: 125%;
+	margin: 0 0 5px 0; /* visible should be 15px */
+}
+#region-content article h1, #region-content .view h1 {
+	font-size: 32px;
+	line-height: 105%;
+	margin-bottom: 15px; /* visible should be 20px */
+	}
+#region-content article h2 {
+	font-size: 26px;
+	}
+#region-content article h2.zusammenfassung {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 155%;
+	color: #777;
+	margin-bottom: 15px; /* visible should be 20px */
+	}
+#region-content article h3 {
+	font-size: 19px;
+	}
+#region-content article h4 {
+	font-size: 16px;
+	}
+#region-content article h5 {
+	font-size: 13px;
+	font-weight: bold;
+	}
+#region-content article h6 {
+	font-size: 11px;
+	font-weight: bold;
+	}
+	
+
+	
+	
+/* Bilder, Bildbeschriftung, Bilduntertitel & Medien */
+#region-content .field-name-field-hauptbild .file-image, 
+#region-content .field-name-field-hauptvideo .file-video,
+#region-content .field-name-field-teaser-bild .file-image { margin: auto; display: block; margin-bottom: 15px; } /* was 25px -> too much for teaserimages e.g. Listenseiten */
+
+#region-content .field-name-field-hauptbild .file-image .content,
+#region-content .field-name-field-hauptvideo .file-video .content,
+#region-content .field-name-field-teaser-bild .file-image .content { overflow: hidden; background-color: #f8f8f8; box-shadow: 0 0 1px; }
+
+#region-content  div.caption,
+#region-content .field-name-field-hauptbild .file-image div.caption,
+#region-content .field-name-field-hauptvideo .file-video div.caption,
+#region-content .field-name-field-teaser-bild .file-image div.caption {
+	/* display: inline-block; */ /* -> flexible width with inline-block but buggy on biografie !!! */
+	width: auto;
+	background-color: #f2f2f2;
+	color: #5A5A5A;
+	font-size: 11px;
+	line-height: 145%;
+	padding: 10px;
+	text-align: left;
+	}
+	
+#region-content  .blockVideodatenschutz.caption {
+	background-color: #CEDDE8;
+}
+
+
+
+#region-content .field-name-field-hauptbild .file-image .content,
+#region-content .field-name-field-hauptvideo .file-video .content,
+#region-content .field-name-field-teaser-bild .file-image .content {
+	/* background: #f2f2f2; */
+	padding: 0;
+	margin: 0;
+}
+#region-content .field-name-field-hauptbild img {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin: auto;
+}
+
+#region-content .field-name-field-hauptvideo .media-youtube-video { margin: 0; padding: 0; margin-bottom: -4px; }
+.node-type-video #region-content div.caption { margin-top: -4px; margin-bottom: 15px; }
+.node-type-video #region-content .nav { margin-top: 15px; }
+
+.node-type-biografie div.caption { display: block!important; }
+
+.wrapperImageDetail { vertical-align: middle; text-align: center; }
+.wrapperImageDetail .file-image {  }
+
+#block-views-videouebersicht-block-4 .caption { margin-bottom: 15px; margin-top: -4px; }
+
+
+
+
+
+/*
+h1.ueberschrift { font-size: 1.8em; }
+h2.zusammenfassung { font-size: 1.2em; font-weight: bold; }
+*/
+
+/* styles from markus off -> em
+h2.tsrUeberschrift { font-size: 1.2em; font-weight: normal; }
+h3.tsrUeberschrift { font-size: 1.2em; font-weight: normal; }
+*/
+	
+/* old styles markus zerres below */	
+
+.region-content h2.block-title, 
+.region-postscript-first h2.block-title,
+.filterPressemitteilungen h2.block-title,
+.centerpage_unterthemen_header h2.block-title
+.verwandteInhalte h2.block-title,
+.service-string {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 12px;
+	letter-spacing: .0025em;
+	color: #777;
+	/* 	
+	line-height: 9px;
+	border-left: 76px solid #d62029; -> BAD IDEA !!! 
+	*/
+	background: url(images/bg_sectionHeadlineRed.png) no-repeat 0 2px; /* cleaner & crossbrowser friendly */
+	padding-left: 83px;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+	
+#block-views-frontpage-themendossier-block-1 h2.block-title,
+#block-views-frontpage-themendossier-block-2 h2.block-title,
+#block-views-frontpage-empfehlung-block h2.block-title { 
+	display: block;
+	margin: 1px 0 10px 0;
+}
+
+.topthema_teaser { 
+	/* margin-bottom: 30px; */
+}
+/*
+.topthema_teaser .spitzmarke {
+	font-weight: bold;
+	 margin-bottom: 0; 
+}
+INFP-631 */
+.topthema_teaser h2 {
+	font-size: 25px; 
+	margin-bottom: 5px;
+}
+.view-display-id-block_1 .topthema_teaser p {
+	margin-bottom: 5px;
+	padding-left: 235px;
+}
+
+.unterthema_teaser { 
+	margin-bottom: 15px; 
+}
+
+.topthema_teaser, 
+.topthema_infos, 
+.unterthema_teaser { 
+	clear: both; 
+	overflow: hidden; 
+}
+
+.topthema_teaser img { 
+	float: left; 
+	margin: 0 15px 0 0; 
+}
+
+.unterthema_teaser img { 
+	float: left; 
+	margin: 0 10px 0 0; 
+}
+
+.topthema_infos_links,
+.topthema_infos_mitte {
+    float: left;
+    width: 33.3%;
+    border-right: 1px solid #d6d7d7;
+}
+
+.topthema_infos_rechts {
+    float: left;
+    width: 32.3%;
+    /* border-right: 1px solid #d6d7d7; */
+}
+.topthema_infos_links, .topthema_infos_mitte, .topthema_infos_rechts { min-height: 66px; }
+
+.topthema_infos_links .inner {
+    padding: 0 10px 5px 0;
+}
+
+.topthema_infos_mitte .inner {
+    padding: 0 10px 5px 10px;
+}
+
+.topthema_infos_rechts .inner {
+	border-right: none;
+	padding: 5px 10px 5px 5px;
+	margin-left: 10px;
+	background: #e6e6e6 
+}
+
+.topthema_infos_rechts .inner a {
+	padding-left: 10px;
+	background: url(images/bullet_red.png) 2px no-repeat;
+}
+
+.centerpage_unterthemen_header {
+    bottom: 0px;
+    left: -15px;
+    position: relative;
+}
+
+
+#block-views-centerpage-top-thema-block-2 .odd, 
+#block-views-centerpage-top-thema-block-2 .even, 
+#block-views-centerpage-top-thema-block-5 .odd, 
+#block-views-centerpage-top-thema-block-5 .even {
+	border-bottom: 1px solid #d9dada;
+	margin-bottom: 15px;
+}
+
+#block-views-centerpage-top-thema-block-2 .last, 
+#block-views-centerpage-top-thema-block-5 .last {
+	border-bottom: medium none;
+	margin-bottom: 0;
+}
+
+#block-views-centerpage-top-thema-block-2 .last .unterthema_teaser {
+	border-bottom: none;
+	margin-bottom: 0px;
+}
+
+.topthema_teaser img {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb {
+	font-size: .85em;
+	margin: 0 0 .5em 0
+}
+.breadcrumb a {
+	color: #303030
+}
+.breadcrumb .active {
+	color: #777777 !important;
+}
+
+
+/* Presse Übersicht */
+
+.view-pressemitteilung .social_media_uebersicht { width: 100%; overflow: hidden; /* to get the correct height */  }
+
+.domain-hessen .view-pressemitteilung .views-row.views-row-first {
+	padding-top: 10px;
+}
+
+.view-pressemitteilung .social_media_bild {
+	display: inline-block;
+	float: left;
+	padding: 0 15px 0 0;
+	width: auto;
+}
+
+.social-media-row,
+.view-pressemitteilung .views-row {
+    border-bottom: 1px solid #d9dada;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.social-media-row {
+    margin-top: 0;
+    padding-top: 1.3em;
+}
+
+.view-pressemitteilung .social_media_infos {
+    float: left;
+    /* width: 335px; */
+}
+.view-pressemitteilung .tsrText span.more_link {
+	background: url("images/bullet_red.png") no-repeat scroll 0 9px;
+	margin-left: 0;
+	}
+
+.social_media_kopf {
+    text-transform: uppercase;
+	position: relative;
+}
+
+h2.socialmedia_titel, h2.view_titel {
+  text-transform: none;
+	margin: 5px 0 5px 0;
+}
+
+h2.socialmedia_titel a {
+	color: #313131;
+}
+h2.socialmedia_titel a:hover {
+	color: #D62029;
+}
+.social_media_favicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pressemitteilung-titel {
+	font-family: 'DroidSansRegular', sans-serif;
+	font-size: 1.6em;
+	font-weight: normal!important;
+	line-height: 130%!important;
+	margin: .5em 0 5px 0;
+	line-height: 130%;
+}
+
+.pressemitteilung-titel a {
+	color: #313131;
+}
+
+.social_media_text {
+	color: #777;
+}
+
+.socialmedia_titel, .view_titel {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+
+/* Bildergalerie */
+
+.bildergalerien_info {
+	padding-left: 140px;
+}
+
+.field-slideshow-controls {
+	margin-bottom: 30px;
+	padding-top: 15px;
+}
+
+.node-bildergalerie .item-list ul li {
+	margin: 0 0 15px 13px;
+	padding: 0;
+}
+
+.node-bildergalerie .item-list {
+	margin: -14px;
+}
+
+.bildergalerien_teaser_bild {
+	float: left;
+}
+
+.bildergalerien_teaser {
+	padding: 15px 0 15px 0;
+	/* height: 110px; */
+	width: 100%;
+}
+
+.first .bildergalerien_teaser {
+	padding-top: 0;
+}
+
+/* Neues CSS Marcus -> NOT FINAL !!!! HTML Struktur sollte noch andere Listen -> tsrListe angepasst werden auch die VIDEOÜBERSICHT !!!! */
+.blockVideouebersichtKlein { padding: 15px; background-color: #fff; }
+.tsrBlockBildergalerien, .blockVideouebersicht { padding: 0 15px 15px 15px; background-color: #fff; }
+.blockGebaerdensprachvideos { padding: 15px; background-color: #fff; }
+.tsrBlockBildergalerien h6, .blockVideouebersicht h6, .blockVideouebersichtKlein h6 { margin-bottom: 0; }
+.tsrBlockBildergalerien .view-content .field-content, .blockVideouebersichtKlein .view-content .field-content {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d9dada;
+	margin-bottom: 5px;
+	overflow: hidden; 
+	clear: both; }
+
+/* Video Übersicht */
+#video_overlay { position: absolute; }
+/* .videouebersicht_gross { padding: 15px 0; margin-left: 15px; } */
+.videouebersicht_gross h4 { margin-bottom: 12px; }
+
+.blockVideouebersicht .views-field { margin-bottom: 40px; }
+.blockVideouebersicht .first .views-field { padding-bottom: 25px; border-bottom: 1px solid #d9dada; margin-bottom: 15px; }
+.blockVideouebersicht .last .views-field { padding-bottom: 25px; border-bottom: 1px solid #d9dada; margin-bottom: -5px; }
+.view-videouebersicht.videogross  .last .views-field  { padding-bottom: 15px; border-bottom: 1px solid #d9dada; margin-bottom: -5px; }
+.videouebersicht_gross_bild_overlay { margin-top: 20px; padding: 0; }
+
+.videouebersicht_gross_bild_overlay_background {
+    background-image: url("images/buttons/video_overlay.png");
+    height: 270px;
+    width: 480px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    -moz-opacity: .7;
+    opacity: .7;
+}
+.videouebersicht_gross_bild_overlay_background:hover, .videouebersicht_klein_bild_overlay_background:hover { -moz-opacity: 1; opacity: 1; }	
+	
+.videouebersicht_klein_bild_overlay_background {
+    background-image: url("images/buttons/video_overlay_klein.png");
+    height: 130px;
+    width: 130px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    -moz-opacity: .7;
+    opacity: .7;
+}
+
+.view-marginal-bloecke .videouebersicht_klein_bild_overlay_background {
+    height: 120px;
+    width: 225px;
+}
+
+.videouebersicht_klein_bild_overlay { float: left; }
+
+.blockVideouebersichtKlein .views-field { margin-top: 20px; }
+.blockVideouebersichtKlein .first .views-field { margin-top: 0px; }
+
+.videouebersicht_klein {
+	/*
+	padding-top: 10px;
+  border-bottom: 1px solid #d9dada;
+ padding: 15px 0 15px 0;
+	height: 110px;
+	margin-left:15px;
+	width: 480px;
+	*/
+}
+
+.videouebersicht_teaser {
+    padding-left: 140px;
+}
+
+
+
+/*Zones */
+
+#zone-header {
+	/* padding-bottom: 15px !important; */
+}
+
+body.front #zone-header {
+	padding-bottom: 35px !important;
+}
+
+#zone-menu {
+	padding-bottom: 30px !important;
+}
+
+
+/* Region Header First */
+
+#block-block-1 input {
+	margin-left: 5px;
+}
+
+.region-header-first .block {
+	float: left;
+	margin-left: 15px;
+}
+
+.region-header-first .block-block-1 {
+	
+}
+
+.region-header-first .block-pagestyle,
+.region-header-first .block-textsize  {
+	float: right;
+	margin-top: 3px;
+}
+
+.region-header-first .region-inner {
+	float: right;
+}
+
+.region-header-first .block-textsize ul, 
+.region-header-first .block-pagestyle ul {
+	margin: 0;
+	padding: 0;
+}
+
+.region-header-first ul.textsize_list li, 
+.region-header-first ul.pagestyle_list li { 
+	float: left;
+}
+
+.region-header-first .block-menu-top-menu, .region-header-first .navMeta {
+	margin-top: 3px;
+}
+
+.region-header-first .block-menu-top-menu ul, .region-header-first .navMeta ul {
+	margin: 0;
+	padding: 0;
+}
+
+.region-header-first .block-menu-top-menu ul li, .region-header-first .navMeta ul li {
+	list-style: none;
+	float: left;
+	font-size: .8em;
+}
+
+.region-header-first .block-menu-top-menu ul li a, .region-header-first .navMeta ul li a { 
+	color: #777; 
+}
+
+
+
+/* Fields */
+
+#block-views-teaser-startseite-block .views-field-title a {
+	color: #fff;
+}
+
+#block-views-teaser-startseite-block .views-field-field-bild {
+	float: left;
+	margin-right: 0
+}
+
+#block-views-teaser-startseite-block .views-field-body {
+	color: #fff;
+	float: left;
+	width: 146px;
+}
+
+#block-views-teaser-startseite-block .views-field-view-node {
+	clear: both;
+	color: #fff;
+	margin: 0 0 13px 121px;
+}
+
+#block-views-teaser-startseite-block .views-field-view-node a { 
+	color: #fff; 
+}
+
+
+/* Empfehlung der Redaktion */
+.view-frontpage-empfehlung .ic_container {
+    height: 130px;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.view-frontpage-empfehlung .overlay {
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+.view-frontpage-empfehlung .ic_caption {
+  
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    margin: 0;
+    opacity: 0.9;
+    overflow: hidden;
+    padding: 70% 0 0 0;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+}
+.view-frontpage-empfehlung .ic_category {
+    padding: 7px 7px 0 7px;
+    margin: 0;
+    text-align: left;
+	  background-color: #3E7AA6;
+		min-height: 23px;
+}
+
+.view-frontpage-empfehlung .ic_category .spitzmarke {
+    color: #fff;
+}
+
+.view-frontpage-empfehlung .ic_text h3 {
+
+	color: #fff;
+    padding: 0 7px 0 7px;
+    margin: 0 !important;
+    text-align: left;
+    font-size: 1.6em !important;
+}
+
+.view-frontpage-empfehlung .ic_text  {
+      background-color: #3E7AA6;
+    display: none;
+    padding: 0 7px 1px 0;
+    text-align: left;
+}
+
+.view-frontpage-empfehlung .ic_text a {
+    padding: 1px 0 0 9px;
+    color: #fff !important;
+}
+
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-clip-horizontal {
+	padding: 15px 0 15px 0;
+}
+
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-container-horizontal {
+	height: auto;
+}
+
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev {
+	top: 65px;
+	left: 10px;
+}
+
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next-horizontal {
+	right: 10px;
+	top: 65px;
+}
+
+
+
+/* Article */
+
+
+/*
+#region-content li.field-item {
+	list-style: none;
+	padding-left: 12px;
+	background: url(images/bullet_red.png) 2px no-repeat;
+}
+*/
+
+
+/**	Sidebar second global 
+ **	Attention: sections can be blocks and views !!!
+**/
+
+#region-sidebar-second section {
+	color: #5b5b5b;
+	background: url(images/bg_strukture_gray.jpg);
+	padding: 15px 15px 0px 15px;
+}
+
+#region-sidebar-second .tsrBlockUniversal  {
+	color: #5b5b5b;
+	background: url(images/bg_strukture_gray.jpg);
+}
+ 
+#region-sidebar-second section .spitzmarke { margin-bottom: 0; }
+#region-sidebar-second section h3.tsrUeberschrift { margin-bottom: 5px; font-size: 20px; line-height: 125%; }
+
+#region-sidebar-second section p {
+	margin-bottom: 10px;
+}
+
+/*#region-sidebar-second section.block-views .block-inner {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px; 
+}*/
+
+#region-sidebar-second section .block-inner {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 15px;
+}
+
+/* Block */
+
+.region-sidebar-second h2.block-title {
+	/* this kills to much other styles Mr. Zerres -> to global and too much definitions !!!
+	font-family: 'DroidSansRegular', sans-serif;
+	color: #303030;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1em;
+	letter-spacing: .05em;
+	padding: 4px 0 0 33px;
+	height: 28px;
+	margin-bottom: 3px;
+	*/
+}
+
+
+.arrow_call_out {
+	background: transparent url(images/arrow_white_50.png) no-repeat 26px;
+	height: 9px;
+	width: 100%;
+}
+
+/* Block verwandte Inhalte */
+
+#block-views-verwandte-inhalte-block .block-title {
+	margin-bottom: 10px;
+}
+
+#block-views-verwandte-inhalte-block .field-collection-view {
+	padding: .5em 0 .5em 0;
+	margin: 0;
+	border-bottom: 1px solid #d9dada;
+}
+
+#block-views-verwandte-inhalte-block .views-row {
+	border-bottom: none !important;
+	margin-bottom: 0;
+}
+
+#block-views-verwandte-inhalte-block .field-name-field-vi-spitzmarke {
+	font-size: .9em;
+	text-transform: uppercase;
+}
+
+
+
+/***** Blöcke Marginalspalte ****/
+
+/* Universal Teaser Block */
+.tsrBlockUniversal span.blockIcon {
+	display: inline-block;
+	float: left;
+}
+.tsrBlockUniversal .tsrImageWrapper { display: inline-block; float: left; margin: 0 5px 5px 0; }
+.tsrBlockUniversal .blockContent { padding: 0 0 5px 0; clear: both; }
+.tsrBlockUniversal .relatedLinksWrapper ul li { margin: 0; }
+.tsrBlockUniversal .relatedLinksWrapper ul li a { 
+	background: url("images/bullet_red.png") no-repeat scroll 0 5px transparent;
+  margin: 0;
+  padding: 0 0 0 10px !important;
+	}
+
+.tsrBlockUniversal section .content {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCCCCC;
+  /* margin-bottom: 15px; */
+	}
+
+
+/* Social, Zitat, Meist gelesen media block */
+.tsrBlockSocialMedia .wrapperCnt { display: inline-block; }
+.tsrBlockSocialMedia .wrapperSprecher img {
+  float: left;
+	padding: 4px 7px 0 0;
+}
+.tsrBlockSocialMedia .wrapperSprecher img.networkIcon {
+    position: absolute;
+    right: 10px;
+}
+
+.tsrBlockSocialMedia .wrapperSprecher,
+.zitat_block_sprecher {
+    margin: 4px 0 0 0;
+}
+.tsrBlockSocialMedia .wrapperSprecher .wrapperCnt { width: 155px;}
+
+.tsrBlockSocialMedia .cntHighlight,
+.zitat_block_text {
+    background: transparent url(images/bg_white_50.png) repeat;
+    margin: 0;
+    padding: 15px 10px 10px 15px;
+		font-family: 'DroidSansRegular', sans-serif;
+		font-size: 18px;
+}
+.zitat_block_text .more_link a { 
+	font-size: 13px!important; 
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif; 
+	margin-left: 0!important;
+	}
+
+/* Block Video */
+.wrapper-video-box .video-box-image { margin-bottom: 10px; }
+
+
+/* Block Kontakt */
+
+.block-views-marginal-bloecke-block-2 .kontakttext,
+.block-views-marginal-bloecke-block-2 .kontaktzeiten,
+.block-views-marginal-bloecke-block-2 .kontaktfax {
+	margin-bottom: 1em;
+}
+
+.block-views-marginal-bloecke-block-2 .kontaktinfo {
+	font-size: .85em;
+	margin-bottom: 1em;
+}
+
+
+.block-views-marginal-bloecke-block-2 textarea, select 
+/*input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="email"], 
+input[type="month"], 
+input[type="number"], 
+input[type="password"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="text"], 
+input[type="time"], 
+input[type="url"], 
+input[type="week"]*/ {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans Regular', Verdana, sans-serif;
+	color: #5b5b5b;
+	padding: 10px 10px;
+	font-size: normal;
+	border-bottom: 1em
+}
+
+.block-views-marginal-bloecke-block-2 button, 
+.block-views-marginal-bloecke-block-2 input[type="reset"], 
+.block-views-marginal-bloecke-block-2 input[type="submit"], 
+.block-views-marginal-bloecke-block-2 input[type="button"] {
+	-webkit-appearance: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background: -moz-linear-gradient(none);
+	border-radius: 0;
+	background:none;
+	background: -webkit-gradient(none);
+	background: -moz-linear-gradient(none);
+	border: none;
+	border-color: none;
+	background: url("images/bullet_red.png") no-repeat scroll 0 8px transparent;
+    padding: 3px 0 0 12px;
+    margin-top: 1em;
+	color: #D62029;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans Regular', Verdana, sans-serif;
+	font-size: normal;
+	font-weight: normal;
+	text-shadow: none;
+	float: right;
+}
+
+
+/* Frontpage */
+
+#block-views-frontpage-themendossier-block-1 h2.block-title,
+#block-views-frontpage-themendossier-block-2 h2.block-title 
+#block-views-frontpage-empfehlung-block h2.block-title { 
+	display: block;
+	margin: 1px 0 10px 0;
+}
+
+#block-views-frontpage-themendossier-block-1 .content,
+#block-views-frontpage-themendossier-block-2 .content {
+	background: #fff url(images/bg_quicktabs-navigation.png) repeat-y 159px; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffffff 0, #ffffff 144px, #ebebeb 159px); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(144px,#ffffff), color-stop(159px,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ffffff 0,#ffffff 144px,#ebebeb 159px); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ffffff 0,#ffffff 144px,#ebebeb 159px); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ffffff 0,#ffffff 144px,#ebebeb 159px); /* IE10+ */
+	background: linear-gradient(to right,  #ffffff 0,#ffffff 144px,#ebebeb 159px); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+#quicktabs-container-view__frontpage_themendossier__block_1
+#quicktabs-container-view__frontpage_themendossier__block_2 {
+    height: 328px;
+}
+
+
+
+/* Quicktabs */
+
+.view-frontpage-themendossier ul.quicktabs-style-navlist, 
+.view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist {
+	margin: 0;
+	padding: 0;
+	width: inherit;
+}
+
+.view-frontpage-themendossier .quicktabs_main.quicktabs-style-navlist { 
+	width: 508px; 
+	border: none;
+	background: #fff !important;
+}
+
+.view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li {
+	margin: 0;
+	padding: 15px 15px 15px 15px;
+	width: 129px;
+	text-transform: uppercase;
+    border: none;
+	border-bottom: 1px solid #d6d7d7;
+}
+
+.view-frontpage-themendossier ul.quicktabs-tabs li {
+	word-wrap: break-word!important;
+	white-space: inherit!important;
+	min-height: 25px;
+	height: auto;
+}
+	
+.view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li a { 
+	min-height: 23px; 
+	height: inherit!important;
+	background: url(images/bullet_arrow_gray.png) no-repeat 0 5px;
+	padding: 0 0 0 10px;
+	text-align: left;
+}
+
+.view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li.active {
+ 	background: #fff;
+}
+ 
+.view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li.active a {
+ 	background: none;
+    color: #231f20;
+    padding: 0;
+ }
+ 
+ .view-frontpage-themendossier .quicktabs-tabpage {
+ 	padding: 5px;
+ }
+
+ 
+/* Themendossier Teaser */
+/* Topthema Teaser */
+ 
+.themendossier_teaser {
+	height: 230px;
+	margin-bottom: 20px; 
+}
+
+.themendossier_teaser, 
+.themendossier_infos { 
+	clear: both; 
+	overflow: hidden; 
+	background: none;
+}
+
+.themendossier_teaser h2 {
+	color: #313131;
+	font-family: DroidSansRegular, Arial, Tahoma, Geneva, sans-serif;
+	font-size: 1.3em !important;
+	font-weight: normal;
+	line-height: 130%;
+	margin: .5em 0 5px 0 !important;
+}
+
+.themendossier_teaser img { 
+	float: right; 
+	margin: 0 0 10px 10px; 
+}
+
+ /* Themendossier Infos */
+
+.themendossier_infos_links .inner {
+    border-right: 1px solid #D6D7D7;
+    padding: 0 10px 5px 0;
+    width: 95%;
+	word-wrap: break-word;
+	min-height: 61px;
+}
+
+.themendossier_infos_mitte .inner {
+  padding: 0 10px 5px 10px;
+	border-right: 1px solid #d6d7d7;
+	width: 90%;
+	word-wrap: break-word;
+	min-height: 61px;
+}
+
+.themendossier_infos_rechts .inner {
+    padding: 0 0 5px 10px;
+    float: right;
+}
+
+.themendossier_infos_links .inner div.more_link, .themendossier_infos_mitte .inner div.more_link {
+	margin-top: -3px;
+	}
+
+.themendossier_infos div { 
+	float: left!important; 
+}
+
+.themendossier_infos_links,
+.themendossier_infos_mitte { 
+	width: 33.3%;
+}
+
+.themendossier_infos_rechts { 
+	width: 33.3%;
+}
+
+
+.spitzmarke_unten {
+	text-transform: uppercase;
+	font-size: .9em;
+	color: #303030;
+}
+
+.themendossier_infos_rechts div.link_themenseite {
+	display: block;
+	padding: 3px 0 0 12px;
+}
+
+.themendossier_infos_rechts div.link_themenseite {
+	background: #eeeced;
+	font-size: 1.1em;
+	padding: .5em 10px .5em 10px !important;
+	width: 100%;
+}
+
+.themendossier_infos a { 
+	margin: 0; 
+	line-height: 105%;
+}
+
+.themendossier_infos_rechts { 
+	float: right; 
+}
+
+.themendossier_infos_rechts div.link_themenseite span.ext { 
+	display: none; 
+}
+
+
+
+
+	
+/* Footer Menü */
+#zone-footer .grid-12 { 
+	background: #444 url(images/footer_bg.jpg) no-repeat top right !important; 
+}
+#zone-footer .menu-block-1 .menu, 
+.menu-block-1 .menu * {
+	margin: 0;
+	padding: 0;
+}
+#zone-footer .menu-block-wrapper {
+	min-height: 200px;
+	padding: 20px 10px 20px 10px;
+}
+#zone-footer .menu-block-1 ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+#zone-footer .menu-block-1 li.menu-depth-1.gesammt-5  {
+	float: left;
+	width: 20%;
+	padding: .3em 0 1.3em 0;
+	margin: 0;
+	display: block;
+	list-style: none;
+}
+#zone-footer .menu-block-1 li.menu-depth-1.gesammt-6  {
+	float: left;
+	width: 16.6%;
+	padding: .3em 0 1.3em 0;
+	margin: 0;
+	display: block;
+	list-style: none;
+}
+#zone-footer li.menu-depth-1 {
+	font-family: 'DroidSansRegular', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-size: 1.1em;
+	font-weight: normal;
+	display: block;
+}
+#zone-footer .menu-block-1 li ul li {
+	width: auto;
+}
+#zone-footer .menu-block-1 li .last { 
+	margin-right: 0; 
+}
+#zone-footer .menu-block-1 li a {
+	color: #fff;
+	margin-right: 15px;
+}
+#zone-footer .menu-block-1 li ul li a { 
+	line-height: normal;
+}
+#zone-footer .menu-block-1 li ul li {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
+	text-transform: none;
+	letter-spacing: 0;
+	font-size: 80% !important;
+	float: none;
+	padding: .3em 0 .3em 0;
+	margin: 0;
+	display: block;
+}
+
+#zone-footer .menu-block-1 ul li ul {
+	margin-top: 1em;
+}
+
+/* Footer Menü */
+
+#zone-footer .block-menu-footer-menu {
+    background: url("images/footer_bg.png") repeat scroll 0 0 transparent;
+    margin: 0 -15px;
+    padding: 1em 45px;
+}
+
+#zone-footer .block-menu-footer-menu .menu, .block-menu-footer-menu .menu * {
+	list-style: none;
+	margin: 0;
+	padding: 0 10px;
+	float: right;
+}
+
+/* #zone-footer .block-menu-footer-menu li { float: left; } -> kills IE7 */
+#zone-footer .block-menu-footer-menu li a { color: #fff; }	

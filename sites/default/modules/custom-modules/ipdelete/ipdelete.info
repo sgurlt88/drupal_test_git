@@ -1,0 +1,6 @@
+name = IP Delete
+description = L&ouml;scht bei Seitenaufruf und bei Submit die IPs aus Watchdop und Webforms
+core = 7.x
+package = custom
+version = 7.x-1.0
+

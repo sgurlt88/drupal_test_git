@@ -1,0 +1,5 @@
+name = E-mail Sender Override
+description = Overrides the 'Sender' of an e-mail message with the 'From' address.
+core = 7.x
+version = 7.x-1.x-dev
+package = Custom Modules

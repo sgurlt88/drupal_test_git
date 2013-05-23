@@ -1,0 +1,15 @@
+; $Id: statistics_granularity.info,v 1.1.2.1.4.1 2010/05/25 00:49:14 bassistjimmyjam Exp $
+name = Statistics Granularity
+description = Adds more granularity to the statistics module
+package = Statistics
+core = 7.x
+files[] = statistics_granularity.module
+files[] = statistics_granularity.install
+files[] = statistics_granularity.views.inc
+dependencies[] = statistics
+; Information added by drupal.org packaging script on 2010-05-25
+version = "7.x-1.0-beta1"
+core = "7.x"
+project = "statistics_granularity"
+datestamp = "1274749211"
+

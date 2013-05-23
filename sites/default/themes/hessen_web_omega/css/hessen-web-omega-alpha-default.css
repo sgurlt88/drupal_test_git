@@ -1,0 +1,567 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/** last edit marcus 2013-02-06 @ 10:42 **/
+
+/**** Header ****/
+#zone-content {
+	border-left: 15px solid #efefef;
+	border-right: 15px solid #efefef;
+	background-color: #EFEFEF;
+}
+#zone-header { 
+	background-color: #efefef;
+	position: relative;
+	border-left: 15px solid #efefef;
+	border-right: 15px solid #efefef;
+	/* padding-bottom: 30px; */
+}
+#zone-menu { 
+	background-color: #efefef;
+	border-left: 15px solid #efefef;
+	border-right: 15px solid #efefef;
+	padding-bottom: 35px;
+}
+
+#zone-footer {
+	border-left: 15px solid #444444;
+	border-right: 15px solid #444444;
+/** 	padding: 1em 30px; **/
+}
+
+.region-header-first { margin: .8em 0 .5em 0; }
+.logo-img {
+	position: absolute;
+	left: 15px;
+	top: 0px;
+	z-index: 200;
+}
+
+
+/** Banner Subsites **/
+.front #region-header-second  {
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.front.domain-hessen #region-header-second {
+    height: 352px;
+    overflow: hidden;
+    position: relative;
+}
+
+.site-name-slogan {
+	height: 0;
+    left: 134px;
+    position: relative;
+    bottom: -78px;
+    z-index: 1;
+	opacity: 0.95;
+}
+
+.not-front .site-name-slogan {
+    bottom: -92px;
+}
+
+
+.front.domain-hessen .site-name-slogan, .not-front.domain-hessen .site-name-slogan {
+	display: none;
+}
+
+.site-name-slogan h6 { /* 2 lines slogans */
+	background-attachment: scroll;
+  background-clip: border-box;
+  background-image: url("images/bg_Navigation-Gradient_big.png");
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: normal;
+	letter-spacing: 0em;
+	line-height: 110%;
+	height: 41px;
+  padding: 12px 12px 3px 12px;
+	margin: 0!important;
+}
+
+.domain-stk-hessen .site-name-slogan h6, .domain-hmdis-hessen .site-name-slogan h6, .domain-hmdf-hessen .site-name-slogan h6, .domain-hkm-hessen .site-name-slogan h6, .domain-hsm-hessen .site-name-slogan h6 { /* 1 line slogans */
+	height: 37px;
+	padding: 18px 12px 0;
+	white-space: nowrap;
+}
+
+.not-front.domain-stk-hessen .site-name-slogan h6, .not-front.domain-hmdis-hessen .site-name-slogan h6, .not-front.domain-hmdf-hessen .site-name-slogan h6, .not-front.domain-hkm-hessen .site-name-slogan h6, .not-front.domain-hsm-hessen .site-name-slogan h6 { /* 1 line slogans */
+	height: 26px;
+	padding: 15px 12px 0;
+    font-size: 14px;
+}
+
+.site-name-slogan h6 {
+}
+
+/** HSTK **/
+.domain-stk-hessen .site-name-slogan h6 { background-color: #D23C00; }
+
+.not-front #region-header-second {
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+}
+
+/** HMDIS **/
+.domain-hmdis-hessen .site-name-slogan h6 {
+    background-color: #182E88;
+}
+
+/** HMDJ **/
+
+.domain-hmdj-hessen .site-name-slogan h6 {
+	background-color: #081F3F;
+    height: 45px;
+    padding: 10px 12px 0;
+    width: 275px;
+}
+
+.not-front.domain-hmdj-hessen .site-name-slogan h6 {
+    height: 35px;
+    padding: 6px 12px 0;
+    width: 215px;
+	font-size: 14px;
+}
+
+/** HMDF **/
+
+
+.domain-hmdf-hessen .site-name-slogan h6 {
+	background-color: #124F4A;
+}
+
+/** HKM **/
+
+
+
+.domain-hkm-hessen .site-name-slogan h6 {
+	background-color: #A43CB2;
+}
+
+/** HMWK **/
+
+.domain-hmwk-hessen .site-name-slogan h6 {
+	background-color: #FF7900;
+	height: 45px;
+    padding: 10px 12px 0;
+    width: 223px;
+}
+
+.not-front.domain-hmwk-hessen .site-name-slogan h6 {
+	height: 35px;
+    padding: 6px 12px 0;
+    width: 172px;
+	font-size: 14px;
+}
+
+/** HMWVL **/
+
+.domain-hmwvl-hessen .site-name-slogan h6 {
+	background-color: #ECAA18;
+	height: 45px;
+    padding: 10px 12px 0;
+    width: 315px;
+}
+
+.not-front.domain-hmwvl-hessen .site-name-slogan h6 {
+	height: 35px;
+    padding: 6px 12px 0;
+    width: 245px;
+	font-size: 14px;
+}
+
+/** HMUELV **/
+
+.domain-hmuelv-hessen .site-name-slogan h6 {
+	background-color: #164C0C;
+	height: 45px;
+    padding: 10px 12px 0;
+    width: 365px;
+}
+
+.not-front.domain-hmuelv-hessen .site-name-slogan h6 {
+	height: 35px;
+    padding: 6px 12px 0;
+    width: 286px;
+	font-size: 14px;
+}
+
+/** HSM **/
+
+.domain-hsm-hessen .site-name-slogan h6 {
+	background-color: #05A210;
+}
+
+/** Banner und Farben Ende **/
+/** Banner Subsites **/
+
+/**** Teaser Slideshow ****/
+#views_slideshow_cycle_teaser_section_teaser_startseite-block {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 47px;
+	top: 0;
+	z-index: 50;
+}
+
+/* Slide out menu */
+/** .views-slideshow-cycle-main-frame-row-item {
+	background: url(images/teaser_bg.png);
+	float: left;
+	width: 280px;
+	min-height: 54px;
+	margin: 0 1px 0 1px;
+	color: #fff;
+	padding: 20px 0 11px 0;
+	position: relative;
+	left: 0px;
+	top: 0px;
+} **/
+
+.dropdown_teaser {
+	/*display: none;*/
+	padding: 0;
+	margin: 0;
+}
+
+/* next previous button */
+#views_slideshow_controls_text_next_teaser_startseite-block, #views_slideshow_controls_text_previous_teaser_startseite-block {
+	cursor: pointer;
+	padding: 0;
+	position: absolute;
+	width: 40px;
+	height: 55px;
+	top: 250px;
+	z-index: 100;
+	text-indent: -10000px
+}
+#views_slideshow_controls_text_next_teaser_startseite-block {
+	right: 6px;
+	background: #2f2f2f url("images/bt-teaser_spread.png") no-repeat 0 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=95);
+	opacity: .95;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+#views_slideshow_controls_text_previous_teaser_startseite-block {
+	background: #2f2f2f url("images/bt-teaser_spread.png") no-repeat 0px -53px;
+	left: 6px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=95);
+	opacity: .95;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+#views_slideshow_controls_text_next_teaser_startseite-block:hover, #views_slideshow_controls_text_previous_teaser_startseite-block:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+#views_slideshow_controls_text_pause_teaser_startseite-block { display: none; }
+
+
+/* Fields */
+.views-slideshow-cycle-main-frame-row-item .views-field {
+	color: #fff;
+	/** margin: 13px 13px 0 13px; **/
+}
+#block-views-teaser-startseite-block .views-field-title {
+	font-family: 'DroidSansRegular', sans-serif;
+	font-size: 1.3em;
+	line-height: 110%;
+	color: #fff;
+	margin-bottom: .1em;
+}
+
+/*.views-field-field-bild,
+.views-field-body,
+.views-field-view-node {
+	display: none;
+}
+.views-field-title {
+	height: 155px;
+}*/
+
+#block-views-teaser-startseite-block .views-field-title a { color: #fff; }
+#block-views-teaser-startseite-block .views-field-field-bild {
+	float: left;
+	margin-right: 0
+}
+#block-views-teaser-startseite-block .views-field-body {
+	color: #fff;
+	float: left;
+	width: 146px;
+}
+#block-views-teaser-startseite-block .views-field-view-node {
+	clear: both;
+	color: #fff;
+	margin: 0 0 13px 121px;
+}
+#block-views-teaser-startseite-block .views-field-view-node a { color: #fff; }
+
+
+/* Header Sliderbühne */
+#block-views-9faae23119f7272e0feedf238d082a27 {
+    
+    bottom: 15px;
+    height: 55px;
+    position: absolute;
+}
+#block-views-9faae23119f7272e0feedf238d082a27 .block-inner {
+    bottom: 212px;
+    position: relative;
+}
+
+div.headerSlider .views-row-0 {
+	margin-left: 56px;
+}
+
+#views_slideshow_controls_text_next_frontpage_sliderbuehne_und_header-viewsblock_headerslider {
+    left: 906px;
+    position: relative;
+    top: -55px;
+}
+
+#views_slideshow_controls_text_previous_frontpage_sliderbuehne_und_header-viewsblock_headerslider {
+    left: 15px;
+    position: relative;
+    top: 0;
+}
+
+.views-slideshow-controls-top {
+	position: absolute;
+	width: 39px;
+	height: 55px;
+	z-index: 100;
+}
+
+div.headerSlider .views_slideshow_slide {
+	position: relative;
+	bottom: 0;
+	height: 55px;
+	width: 960px;
+}
+
+div.headerSlider .views_slideshow_slide .views-row {
+	width: 280px;
+	height: 55px;
+	display: inline-block;
+	bottom: 0;
+}
+
+div.headerSlider .animatebox {
+	background: url(/sites/default/themes/hessen_web_omega/css/images/teaser_bg.png);
+  width: 260px;
+  color: #fff;
+  min-height: 35px;
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	cursor: pointer;
+}
+
+div.headerSlider .animatebox p {
+	margin: 0;
+	overflow: hidden;
+}
+
+
+.jcarousel-skin-default .hiddenstuff {
+ }
+div.headerSlider .animatebox .hiddenstuff {
+	display: none;
+	font-size: 12px; /* mzerres .9em */
+ 	text-align: left;
+	padding-top: 10px;
+	width: 260px;
+	overflow: hidden;
+	}
+div.headerSlider .animatebox .hiddenstuff img {
+	float: left;
+	padding-right: 10px;
+	margin-top: 5px;
+	}
+div.headerSlider .animatebox .hiddenstuff p .more_link_white {
+	margin-left: 0;
+	}
+
+div.headerSlider .closeanimate .boxtitle {
+	font-family: 'DroidSansRegular', sans-serif;
+	font-size: 16px; /* mzerres 1.3em */ 
+	line-height: 110%;
+	text-align: left;
+	color: #fff; /* color inactive #ccc */
+}
+
+div.headerSlider .openanimate .boxtitle { /* for phase 2 !!! */
+	color: #fff; /* color active */
+	}
+
+div.headerSlider .arrow_up { 
+	margin: 3px 0 0 0;
+	float: right;
+	width: 24px;
+	height: 24px;
+}
+
+div.headerSlider .arrow_down { 
+	display: none;
+}
+
+div.headerSlider .arrow_up {
+	background-image: url('/sites/default/themes/hessen_web_omega/css/images/buttons/arrow_up.png');
+	background-size: 24px;
+}
+
+div.headerSlider .arrow_up.active {
+	background-image: url('/sites/default/themes/hessen_web_omega/css/images/close_down.png');
+	background-size: 24px;
+}
+
+/*.views-slideshow-cycle-main-frame-row-item .animatebox {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+    color: #fff;
+}
+
+div.headerSlider h2.tsrHeadline { 
+	font-size: 16px; 
+	line-height: 120%;
+}*/
+
+/* Blocks */
+
+.region-header-second .block p {
+	margin: 0;
+	overflow: hidden;
+/* 	padding: 10px; */
+}
+
+.region-sidebar-second h2.pane-title {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: .9em;
+	letter-spacing: .05em;
+	color: #303030;
+}
+
+.region-sidebar-second .panel-flexible {
+	background: url(images/bg_strukture_gray.jpg);
+	margin: 15px 0 20px 0;
+	padding: 15px;
+}
+.region-sidebar-second .panel-flexible .pane-block { border-bottom: 1px solid #b3b3b3; }
+
+
+/* HOMEPAGE & STARTSEITE */
+/* Frontpage Empfehlungen */
+.view-frontpage-empfehlung, #views_slideshow_cycle_teaser_section_frontpage_empfehlung-block { position: relative; z-index: 10; }
+#views_slideshow_cycle_main_frontpage_empfehlung-block {
+	padding: 20px 55px 15px 55px;
+	}
+#views_slideshow_cycle_main_frontpage_empfehlung-block .views-row,
+#views_slideshow_cycle_main_frontpage_empfehlung-block .views-field {
+	margin: 0;
+	padding: 0;
+	}
+#views_slideshow_cycle_main_frontpage_empfehlung-block .ic_container {
+	margin: 0;
+	padding: 0;
+	}
+#views_slideshow_cycle_main_frontpage_empfehlung-block .views-row-even {
+	margin: 0 10px 0 10px;
+	}
+	
+span#views_slideshow_controls_text_previous_frontpage_empfehlung-block { 
+	position: absolute;
+	z-index: 20;
+	left: 10px;
+	top: 50%;
+	margin-top: -15px;
+	}
+span#views_slideshow_controls_text_next_frontpage_empfehlung-block { 
+	position: absolute;
+	z-index: 20;
+	right: 10px;
+	top: 50%;
+	margin-top: -15px;
+	}
+
+/* Temporär */
+body.page-node-2 h1.title { display: none; }
+.field-name-field-inhalt .prtlBody .contentnavbox, .fiveboxes, .field-name-field-inhalt .prtlBody .contentnavbox { }
+
+body.front h1#page-title, body.front #block-system-main, body.not-front.node-type-centerpage #block-system-main { 
+	display: none; 
+}
+
+
+
+.hessennavigator {
+	background-color: #F00;
+	color: #fff;
+	height: 135px;
+	margin-bottom: 30px;
+	}
+	
+#block-views-frontpage-zitat-des-tages-block {}
+
+/* Template Listenseite Personen & Themen */
+
+.floatLeft { float: left; }
+.floatRight { float: right; }
+
+.inline { display: inline; }
+
+
+
+p.tsrUnterueberschrift { font-weight: bold; }
+p.tsrTextInline { display: inline-block; }
+
+a.tsrLinkInline { display: inline-block; }
+
+blockquote { color: #999; }
+
+ul.listKeywords { margin: 2px 0 10px 0; padding: 0; display: inline-block; float: left; }
+ul.listKeywords li { float: left; background-color: #999999; color: #fff; padding: 2px 8px 2px 8px; border-radius: 3px; margin-right: 5px; list-style: none; list-style-image: none; }
+ul.listKeywords li:hover { background-color: #C00; }
+ul.listKeywords li a, ul.listKeywords li a:hover { color: #fff; text-decoration: none; }
+
+.field-type-field-collection { margin-bottom: 20px; }
+
+.field-name-field-fc-listeninhalte-pt {}
+.view-list-fieldcollection-multivalues { border-top: 2px solid #F00; }
+.field-name-field-fc-listeninhalte-pt .view-content div { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #999; background-color: #CCC; }
+
+hr, h1, h2, h3, h4, h5, h6  { /* Marcus: removed "p, dl, ol, ul, pre, table, address, fieldset" cause this margin is too much as default !!! */ 
+    margin-bottom: 30px;
+}
+p { margin-bottom: 10px; }
+article p { margin-bottom: 30px; }
+
+/* logged in */
+.region-inner .tabs ul.tabs li { font-size: 11px; margin: 0; }
+
+ul.action-links { display: inline-block; }
+ul.action-links li { font-size: 11px; }

@@ -1,0 +1,15 @@
+name = Text Size
+description = Display a adjustable text size changer or a zoom function on the page for a better web accessibility.
+package = User interface
+core = 7.x
+files[] = textsize.module
+files[] = includes/textsize.admin.inc
+files[] = includes/textsize.block.inc
+configure = admin/config/user-interface/textsize
+
+; Information added by drupal.org packaging script on 2012-09-08
+version = "7.x-1.0+15-dev"
+core = "7.x"
+project = "textsize"
+datestamp = "1347067017"
+

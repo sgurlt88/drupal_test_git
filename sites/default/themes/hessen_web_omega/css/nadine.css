@@ -1,0 +1,220 @@
+/** last edit marcus morba 2013-02-12 @ 10:28 **/
+
+/* BIOGRAFIE INHALTSSEITE */
+
+.biografie_portraitbild {
+    float: left;
+    padding: 0 20px 0 0;
+}
+
+.float_left {
+    float: left;
+    margin-right: 5px;
+}
+
+
+.biografie_head {
+	/* height: 200px; -> must be variable */
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 30px;
+}
+.biografie_head .biografie_daten {
+	bottom: 0;
+  left: 240px;
+  margin-bottom: 13px;
+  position: absolute;
+  width: 240px;
+}
+
+.biografie_lebenslauf {
+  clear: both;
+	padding: 0;
+}
+#region-content article .biografie_lebenslauf h5 { 
+	font-size: 18px; 
+	font-weight: normal;
+	margin-bottom: 10px;
+	}
+
+table.cntTable { border: none; background: none; margin-bottom: 30px; }
+table.field-name-field-lebenslauf {}
+table.field-name-field-lebenslauf tr.odd, table.field-name-field-lebenslauf tr.even {
+	background: none;
+	vertical-align: top;
+	text-align: left;
+	border-top: 1px dotted #D3D7D9;
+	border-bottom: none;
+	}
+table.field-name-field-lebenslauf tr td {
+	background: none;
+	vertical-align: top;
+	text-align: left;
+	padding: 0;
+	padding: 10px 0 5px 0;
+	}
+table.field-name-field-lebenslauf tr.first { border-top: none; }
+table.field-name-field-lebenslauf tr td.first { width: 150px; }
+
+.biografie_anhang {
+	margin: 0 0 10px 0;
+	border-top: 1px dotted #D3D7D9;
+	padding-top: 10px;
+}
+.biografie_anhang ul { margin-bottom: 0; }
+
+.biografie_link {
+    float: left;
+		min-width: 40%;
+}
+.biografie_downloads {
+	float: left;
+	max-width: 60%;
+}
+
+/* VIEW VIDEOÜBERSICHT */
+
+
+/*#video_overlay {
+    position: absolute;
+} 
+
+
+.videouebersicht_gross_bild_overlay {
+    padding: 15px 0 0;
+}
+
+.videouebersicht_gross_bild_overlay_background {
+    background-image: url("/sites/default/files/buttons/video_overlay.png");
+    height: 270px;
+    position: absolute;
+    width: 480px;
+}
+
+.videouebersicht_gross_bild_overlay_background:hover {
+    background-image: url("/sites/default/files/buttons/video_overlay_hover.png");
+    height: 270px;
+    position: absolute;
+    width: 480px;
+}	
+	
+.videouebersicht_gross {
+    padding: 15px 0;
+	margin-left: 15px;
+}*/
+
+/*
+#block-views-videouebersicht-block .last {
+	border-bottom: 1px solid #000000;
+	width: 480px;
+}
+*/
+
+/*.videouebersicht_klein_bild_overlay_background {
+    background-image: url("/sites/default/files/buttons/video_overlay_klein.png");
+    height: 110px;
+    position: absolute;
+    width: 130px;
+}
+.view-marginal-bloecke .videouebersicht_klein_bild_overlay_background {
+    background-image: url("/sites/default/files/buttons/video_overlay_klein.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 120px;
+    position: absolute;
+    width: 225px;
+}
+.videouebersicht_klein_bild_overlay_background:hover {
+    background-image: url("/sites/default/files/buttons/video_overlay_hover_klein.png");
+}
+
+
+
+.videouebersicht_klein_bild_overlay_background:hover {
+    background-image: url("/sites/default/files/buttons/video_overlay_hover_klein.png");
+
+}
+
+.videouebersicht_klein_bild_overlay {
+    float: left;
+}
+
+.videouebersicht_klein {
+    border-bottom: 1px solid #000000;
+    padding: 15px 0 15px 0;
+	height: 110px;
+	margin-left:15px;
+	width: 480px;
+}
+
+.videouebersicht_teaser {
+    padding-left: 140px;
+}
+*/
+
+.videouebersicht {
+    background-color: #FFFFFF;
+}
+
+
+/* Meistgelesen */
+.tsrBlockMeistgelesen p { margin: 0; }
+.meistgelesen-item { margin-top: 15px; }
+.meistgelesen-item a { margin-left: 0; }
+
+
+/* VIEW BILDERGALERIEN */
+
+
+/*.bildergalerien_teaser_bild {
+	float: left;
+    padding: 0 15px 0 0;
+}
+
+.bildergalerien_teaser{
+	padding: 15px 0 0 0;
+	clear: both;
+}*/
+
+/*
+body {
+background-color: #15645F !important;
+}
+*/
+
+.field-name-field-nref-video .node-title {
+ display:none;
+}
+
+.field-name-field-nref-video .node-links {
+ display:none;
+}
+
+.site-map-box-menu .title {
+display:none;
+}
+
+.site-map-box-front .title {
+display:none;
+}
+
+
+/* BILDERGALERIE-DETAILANSICHT */
+
+.node-bildergalerie .field-name-field-link-zum-artikel, .node-video .field-name-field-link-zum-artikel {
+float:right;
+}
+
+.node-bildergalerie .field-name-field-link-zum-artikel a, .node-video .field-name-field-link-zum-artikel a {
+    background: url("images/bullet_red.png") no-repeat scroll 0 8px transparent;
+    margin-left: 5px;
+    padding: 3px 0 0 12px;
+}
+
+
+/* SOCIAL MEDIA ÜBERSICHT */
+
+
+.socialMediaUebersicht .ext {
+    text-transform: uppercase;
+}

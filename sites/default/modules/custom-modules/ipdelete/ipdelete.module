@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ * Code for the IP Delete.
+ */
+
+function ipdelete_form_alter(&$form, &$form_state, $form_id) {
+if($form_id == 'print_mail_form' ){
+$form['#validate'][] = 'ipdelete_print_mail_form_validate';
+}
+/**
+* array_push($form['#submit'], 'ipdelete_submit');
+Quickfix DB Lastproblem 01.03.13
+**/
+}
+function ipdelete_print_mail_form_validate(&$form, &$form_state) {
+if(preg_match('/[<>;%\*\{}\[\]~#\\$]+/', $form_state['values']['fld_subject'])){
+ form_set_error('fld_subject',t('Die Nachricht enth&auml;lt nicht erlaubte Zeichen.'));
+
+}
+if(preg_match('/[<>;%\*\{}\[\]~#\\$]+/', $form_state['values']['fld_from_name'])){
+ form_set_error('fld_from_name',t('Ihr Name enth&auml;lt nicht erlaubte Zeichen.'));
+
+}
+if(preg_match('/[<>;%\*\{}\[\]~#\\$]+/', $form_state['values']['txt_message'])){
+ form_set_error('txt_message',t('Die Nachricht enth&auml;lt nicht erlaubte Zeichen.'));
+
+}
+}
+/**
+*function ipdelete_submit(&$form, &$form_state){
+*db_query("UPDATE watchdog SET hostname = '-'");
+*db_query("UPDATE sessions SET hostname = '-'");
+*db_query("UPDATE webform_submissions SET remote_addr = '-'");
+*}
+*
+*function ipdelete_node_view_alter(&$build) {
+*db_query("UPDATE sessions SET hostname = '-'");
+*db_query("UPDATE webform_submissions SET remote_addr = '-'");
+*db_query("UPDATE webform_submissions SET remote_addr = '-'");
+*}
+Quickfix DB Lastproblem 01.03.13*/
+

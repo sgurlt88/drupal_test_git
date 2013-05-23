@@ -1,0 +1,125 @@
+/* Slidorion Stylesheet */
+#slidorion {
+    background: none repeat scroll 0 0 #CBCBCB;
+    border: none;
+    /* box-shadow: 0 0 34px #BBBBBB; */
+    height: 345px;;
+    /* left: 50%; */
+    /* margin-left: -360px; */
+    position: relative;
+    width: 690px;
+}
+
+
+#slider {
+    float: left;
+    height: 345px;
+    overflow: hidden;
+    position: relative;
+    width: 345px;
+}
+
+#slider > div {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+#accordion {
+    background: none repeat scroll 0 0 #FFFFFF;
+    /* box-shadow: -3px 0 3px -1px rgba(51, 51, 51, 0.3); */
+    float: left;
+    overflow: hidden;
+    position: relative;
+  /*  right: -420px; 
+    top: -400px; */
+    width: 345px;
+	height: 345px;
+    z-index: 2;
+}
+
+#accordion > .link-header {
+	padding: 15px 14px 3px 14px;
+	color: #333;
+	background: #fff url("images/bg_slidorion_gradient.png") no-repeat scroll 0 0; /* Bürger */
+	background-size: cover;
+	/* background: -moz-linear-gradient(top, #ededed 59%, #dcdcdc 100%);
+	background: -webkit-linear-gradient(top, #ededed 59%,#dcdcdc 100%);
+	background: -o-linear-gradient(top, #ededed 59%,#dcdcdc 100%);
+	background: -ms-linear-gradient(top, #ededed 59%,#dcdcdc 100%);
+	background: linear-gradient(top, #ededed 59%,#dcdcdc 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#dcdcdc',GradientType=0 );*/
+	border-top: 1px solid #ccc;
+	min-height: 48px;
+}
+
+#accordion > .link-header.active {
+	padding: 5px 14px 3px 14px;
+	color: #333;
+	background: #fff url("images/bg_slidorion_gradient.png") no-repeat scroll 0 0; /* Bürger */
+	background-size: cover;
+	/* background: -moz-linear-gradient(top, #ededed 59%, #dcdcdc 100%);
+	background: -webkit-linear-gradient(top, #ededed 59%,#dcdcdc 100%);
+	background: -o-linear-gradient(top, #ededed 59%,#dcdcdc 100%);
+	background: -ms-linear-gradient(top, #ededed 59%,#dcdcdc 100%);
+	background: linear-gradient(top, #ededed 59%,#dcdcdc 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#dcdcdc',GradientType=0 );*/
+	border-top: 1px solid #ccc;
+	min-height: 73px;
+}
+
+#accordion > .link-header:first-child {
+	border-top:none;
+}
+
+#accordion > .link-header:hover {
+	background: #ffffff;
+	cursor: pointer;
+}
+
+#accordion > .link-header.active:hover {
+	background: #ffffff;
+	cursor: auto;
+}
+
+#accordion > .link-header.active {
+  background: none repeat scroll 0 0 #FFFFFF !important;
+  border-bottom: medium none;
+  color: #000000;
+	height: 90px;
+}
+
+#accordion > .link-content {
+	height: 103px;			/* This height needs to be changed as it depends on the accordion height and number of tabs */
+	line-height:20px;
+	margin: 0;
+	padding: 0 16px 10px 16px;
+	border: none;
+	background: #ffffff;
+	/* background: -moz-linear-gradient(top, #d6d6d6 0%, #ffffff 10%);
+	background: -webkit-linear-gradient(top, #d6d6d6 0%,#ffffff 10%);
+	background: -o-linear-gradient(top, #d6d6d6 0%,#ffffff 10%);
+	background: -ms-linear-gradient(top, #d6d6d6 0%,#ffffff 10%);
+	background: linear-gradient(top, #d6d6d6 0%,#ffffff 10%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#ffffff',GradientType=0 );*/
+	/*overflow:auto;*/
+	overflow:hidden;
+}
+
+/* ads by mori for the Themenslider */
+div.themenslider .spitzmarke {
+	margin-bottom: 6px; /* 10px optical */
+	}
+	
+div.themenslider .themenslider_titel {
+	font-family: DroidSansRegular, DroidSansRegular, sans-serif;
+  font-weight: normal;
+	font-size: 16px;
+	line-height: 103%;
+	}
+#accordion > .link-header.active .themenslider_titel {
+	font-family: DroidSansRegular, DroidSansRegular, sans-serif;
+  font-weight: normal;
+	font-size: 32px;
+	line-height: 103%;
+	}

@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_menu_position_rule_plugins().
+ */
+function menu_position_domain_menu_position_rule_plugins() {
+  return array(
+  // Register the "menu_position_domain" plugin.
+    'domain' => array(
+      'form_callback' => 'menu_position_domain_menu_position_rule_domain_form',
+      'condition_callback' => 'menu_position_domain_menu_position_condition_domain',
+      'file' => 'menu_position_domain.inc',
+  ));
+}

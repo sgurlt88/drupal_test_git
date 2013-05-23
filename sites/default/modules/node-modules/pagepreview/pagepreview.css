@@ -1,0 +1,8 @@
+iframe.pagepreview-preview {
+  border: 1px solid #aaa;
+  width: 100%;
+  height: 480px;
+	padding-bottom: 15px;
+}
+
+iframe.pagepreview-preview div#fancy_login_login_box { display: none!important; }

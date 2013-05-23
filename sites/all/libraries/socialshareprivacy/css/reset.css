@@ -1,0 +1,20 @@
+ul.social_share_privacy_area{
+    list-style-image: none;
+}
+
+.social_share_privacy_area li.settings_info .settings_info_menu form fieldset{
+    top: 0;
+    display: block;
+    background: none;
+}
+
+.social_share_privacy_area li.settings_info .settings_info_menu form fieldset legend {
+    position: relative;
+    height: 100%;
+    left: 0;
+    text-indent: 0;
+    top: 0;
+    display: block;
+    background: none;
+    border: none;
+}

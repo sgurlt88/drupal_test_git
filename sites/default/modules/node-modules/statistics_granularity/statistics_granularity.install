@@ -1,0 +1,85 @@
+<?php
+// $Id: statistics_granularity.install,v 1.1.2.2.4.1 2010/05/25 00:49:14 bassistjimmyjam Exp $
+
+/**
+ * @file
+ * Installs the necessary fields for the statistics granularity module.
+ */
+
+/**
+ * Implementation of hook_scema_alter().
+ */
+function statistics_granularity_schema_alter(&$schema) {
+  $schema['node_counter']['fields']['weekcount'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current week'),
+  );
+  $schema['node_counter']['fields']['monthcount'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current month'),
+  );
+  $schema['node_counter']['fields']['yearcount'] = array(
+    'type' => 'int',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'medium',
+    'description' => t('Views for the current year'),
+  );
+} // end function statistics_granualrity_schema_alter()
+
+/**
+ * Implementation of hook_install().
+ */
+function statistics_granularity_install() {
+  // setup new fields to be created
+  $fields = array(
+    'weekcount' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current week'),
+    ),
+    'monthcount' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current month'),
+    ),
+    'yearcount' => array(
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+      'size' => 'medium',
+      'description' => t('Views for the current year'),
+    ),
+  ); // end $fields
+  
+  // iterate over these fields and add them to the {node_counter} table
+  foreach ($fields as $name => $specs) {
+    db_add_field('node_counter', $name, $specs);
+  } // end for each field
+} // end function statistics_granualrity_install()
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function statistics_granularity_uninstall() {
+  // remove fields from the {node_counter} table
+  db_drop_field('node_counter', 'weekcount');
+  db_drop_field('node_counter', 'monthcount');
+  db_drop_field('node_counter', 'yearcount');
+} // end function statistics_granualrity_uninstall()

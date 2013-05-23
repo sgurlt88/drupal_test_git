@@ -1,0 +1,28 @@
+
+/**
+ * Custom CSS fixes and add-ons for the HZD Redaktions-Backend with the SEVEN drupal theme.
+ */
+
+.page-admin div#page {
+	border-top: 5px solid #ff0000!important;
+	}
+
+.views-field-contextual-links {
+	position: relative!important;
+	}
+
+.contextual-links-wrapper,
+.views-field-contextual-links div.contextual-links-wrapper {
+	position: relative!important;
+	display: inline-block;
+	}
+
+div.contextual-links-wrapper {
+	position: relative!important;
+	}
+
+/* Backend Mediabrowser Upload */
+.page-file-edit #media-browser-page-wrapper .field-group-tabs-wrapper {
+	float: right;
+	width: 80%;
+	}

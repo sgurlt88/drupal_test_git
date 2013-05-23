@@ -1,0 +1,1081 @@
+/** Main Menu CSS **/			
+/** last edit marcus morba 2013-02-12 @ 10:28 **/
+
+ul.main-menu {
+
+}
+
+#block-menu-block-3 ul.main-menu a.menu-depth-1 {
+	text-transform: uppercase;
+}
+
+#block-menu-block-3 {
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: 20;
+}
+#zone-menu .menu-block-wrapper ul {
+	position: relative;
+	display: block;
+	margin-bottom: 2px;
+}
+
+#zone-menu .menu-block-wrapper li.menu-depth-1 ul.main-menu {
+	display: none;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 918px;
+	z-index: 30;
+	/* height: 290px; */
+	min-height: 140px;
+	padding: 10px 10px;
+	overflow: hidden;
+	top: 70px;
+}
+.spalte-1, .spalte-2, .spalte-3 {
+    float: left;
+    margin-right: 10px;
+    width: 32%;
+}
+
+
+.dropdown-background {
+	background-color: #fff;
+	/* border: 1px solid #C9CACA; */
+	border-top: none;
+	display: none;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 958px;
+	z-index: 20;
+	/* height: 310px; */
+	height: 170px;
+	margin-top: 10px;
+	box-shadow: 1px 1px 5px 4px #C9CACA;
+}
+#zone-menu .menu-block-wrapper li.menu-depth-1.entered ul { display: block; }
+
+#zone-menu .menu-block-wrapper li {
+	float: left;
+	/* position: static; */
+	z-index: 498;
+	margin: 0;
+	padding: 0;
+}
+#zone-menu .menu-block-wrapper li.menu-depth-1 {
+	border-right: 1px solid #D7D7D7;
+	}
+#zone-menu .menu-block-wrapper li.menu-depth-1.last {
+	border-right: none;
+	}
+#zone-menu .menu-block-wrapper li.menu-depth-1.active-trail {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-top: -4px;
+	margin-bottom: -4px; 
+	}
+
+#zone-menu .menu-block-wrapper li.menu-depth-1 ul li {
+	float: left;
+	clear: both;
+	background: none repeat scroll 0 0 transparent;	
+}
+#zone-menu .menu-block-wrapper li.menu-depth-1 ul li a {
+	color: #777;
+	display: block;
+	line-height: 135%;
+	margin: 0;
+	padding: 8px 0;
+}
+.discription-a-deth-1 {
+	font-size: 12px; /* was 0.95em; */
+	line-height: 137%;
+	padding: 0 10px;
+	background: none repeat scroll 0 0 #fff;
+	/* border-left: 1px solid #ccc; */
+	/* margin-right: 1px; */
+	height: 38px;
+	/* width: 100%; */
+	padding: 9px 3px 5px 6px;
+	color: #777;
+}
+.first .discription-a-deth-1 { border-left: none; }
+.discription-a-deth-1.hoverThis {
+	color: #fff;
+	background: none;
+}
+
+/*#superfish-1 .menuparent ul li a:hover, #superfish-1 a:hover { background: none repeat scroll 0 0 transparent; }
+#superfish-1 li.menu-depth-1 { margin: 0; }*/
+
+#zone-menu a.menu-depth-1 {
+	color: #FFFFFF;
+	display: block;
+}
+
+#zone-menu a.menu-depth-1:hover{
+	text-decoration: none;
+}
+
+
+/*#zone-menu li.menu-depth-1.menu-link-2 a h2,
+#zone-menu li.menu-depth-1.menu-link-3 a h2,
+#zone-menu li.menu-depth-1.menu-link-4 a h2,
+#zone-menu li.menu-depth-1.menu-link-5 a h2,
+#zone-menu li.menu-depth-1.menu-link-6 a h2 { 
+	border-left: 1px solid #ccc; 
+}*/
+
+
+/* Colors Main Navigation -> FINAL !!!!!! */
+
+/* Colors Hessen.de */
+/* #D51F28  #88060D  #5A040C  #086CA2  #0E5E88 */
+
+/* 5 total */
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #d62029 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Bürger */
+	background-size: cover;
+	width: 210px;
+	height: 70px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #89070e url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Besucher */
+	background-size: cover;
+	width: 210px;
+	height: 70px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #5b050d url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Wirtschaft */
+	background-size: cover;
+	width: 210px;
+	height: 70px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Regierung */
+	background-size: cover;
+	width: 162px;
+	height: 70px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0E5E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Presse */
+	background-size: cover;
+	width: 162px;
+	height: 70px;
+}
+
+/* 6 total */
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #d62029 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Bürger */
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #89070e url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Besucher */
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #5b050d url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Wirtschaft */
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #086ca3 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Regierung */
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* ??? */
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 { /* Presse */
+	background: #0D5E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+
+/* Colors stk.Hessen.de */
+/* #D23C00  #D23C00  #D23C00  #086CA2  #0E5E88 */
+
+/* 5 total */
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #D23C00 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 210px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #D23C00 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #D23C00 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #D23C00 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #D23C00 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #D23C00 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #D23C00 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-stk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+/* Colors hmdis.Hessen.de */
+/* #182E88 #086CA2 #0D5D88  */
+
+/* 5 total */
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #182E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 210px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #182E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #182E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #182E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #182E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #182E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #182E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hmdis-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+
+/* Colors hmdf.Hessen.de */
+/* #124F4A */
+
+/* 5 total */
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #124F4A url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 210px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #124F4A url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #124F4A url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #124F4A url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #124F4A url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #124F4A url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #124F4A url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hmdf-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+/* Colors hmdj.Hessen.de */
+/* #081F3F */
+
+/* 5 total */
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #081F3F url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 210px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #081F3F url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #081F3F url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #081F3F url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #081F3F url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #081F3F url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #081F3F url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hmdj-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+/* Colors hkm.Hessen.de */
+/* #A43CB2 */
+
+/* 5 total */
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #A43CB2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 210px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #A43CB2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #A43CB2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #A43CB2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #A43CB2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #A43CB2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #A43CB2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hkm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+/* Colors hmwk.Hessen.de */
+/* #FF7900 */
+
+/* 5 total */
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #FF7900 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #FF7900 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #FF7900 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #FF7900 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #FF7900 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #FF7900 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #FF7900 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hmwk-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+/* Colors hmwvl.Hessen.de */
+/* #ECAA18 */
+
+/* 5 total */
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #ECAA18 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 210px;
+}
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #ECAA18 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #ECAA18 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #ECAA18 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 166px;
+}
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #ECAA18 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 166px;
+}
+
+
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #ECAA18 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 206px;
+}
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #ECAA18 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 166px;
+}
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hmwvl-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+/* Colors hmuelv.Hessen.de */
+/* #164C0C */
+
+/* 5 total */
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #164C0C url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 210px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #164C0C url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #164C0C url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #164C0C url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #164C0C url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #164C0C url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #164C0C url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hmuelv-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+/* Colors hsm.Hessen.de */
+/* #05A210 */
+
+/* 5 total */
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #05A210 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 210px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #05A210 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #05A210 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 211px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 162px;
+}
+
+/* 6 total */
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #05A210 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #05A210 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #05A210 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #05A210 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 176px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086CA2 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+body.domain-hsm-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 {
+	background: #0D5D88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+
+/* Colors testing.Hessen.de - for Developers only! */
+
+/* 5 total */
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-1 {
+	background: #d62029 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Bürger */
+	background-size: cover;
+	width: 210px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-2 {
+	background: #89070e url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Besucher */
+	background-size: cover;
+	width: 211px;
+	margin-left: 1px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-3 {
+	background: #5b050d url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Wirtschaft */
+	background-size: cover;
+	width: 211px;
+	margin-left: 1px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-4 {
+	background: #086ca3 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Regierung */
+	background-size: cover;
+	width: 162px;
+	margin-left: 1px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-5.menu-link-5 {
+	background: #0D5E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Presse */
+	background-size: cover;
+	width: 162px;
+	margin-left: 1px;
+}
+
+/* 6 total */
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-1 {
+	background: #d62029 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Bürger */
+	background-size: cover;
+	width: 176px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-2 {
+	background: #89070e url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Besucher */
+	background-size: cover;
+	width: 176px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-3 {
+	background: #5b050d url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Wirtschaft */
+	background-size: cover;
+	width: 176px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-4 {
+	background: #086ca3 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* Regierung */
+	background-size: cover;
+	width: 176px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-5 {
+	background: #086ca3 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0; /* ??? */
+	background-size: cover;
+	width: 125px;
+}
+body.domain-testing-hessen #zone-menu li.menu-depth-1.gesammt-6.menu-link-6 { /* Presse */
+	background: #0D5E88 url("images/bg_Navigation-Gradient.png") no-repeat scroll 0 0;
+	background-size: cover;
+	width: 125px;
+}
+
+
+
+/* Navigation Global Styles */
+
+#primary_nav_container ul.mainmenu { /*display: table;
+	table-layout: fixed;
+	height: 36px;*/
+	width: 960px; 
+	}
+#primary_nav_container ul.mainmenu li.heading-container {
+	float: left;
+	list-style: none;
+	overflow: hidden;
+}
+
+#zone-menu a.menu-depth-1 {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("images/bt_arrow_right.png");
+    background-origin: padding-box;
+    background-position: 12px 13px;
+    background-repeat: no-repeat;
+    background-size: 17px auto;
+    color: #fff;
+    display: block;
+    font-size: 15px; /* was 1.2em; */
+		line-height: 117%;
+    font-weight: normal;
+    padding: 12px 0 0 32px;
+}
+
+#zone-menu a.active-trail.menu-depth-1 {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("images/bt_arrow_down.png");
+    background-origin: padding-box;
+    background-position: 12px 13px;
+    background-repeat: no-repeat;
+    background-size: 17px auto;
+    color: #fff;
+    display: block;
+    font-size: 15px; /* was 1.2em; */
+		line-height: 117%;
+    font-weight: normal;
+    padding: 12px 0 0 32px;
+}
+
+/*#zone-menu li.active a { min-height: 50px; }*/
+
+#zone-menu li.menu-depth-1 a h2 { color: #fff; }
+#zone-menu li.menu-depth-1 a.active h2 { font-size: 15px; font-weight: bold; line-height: 127%; }
+
+#primary_nav_container h3 {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif
+	font-size: .9em;
+	padding: 0px 10px 0 10px;
+	font-weight: normal;
+	color: #fff;
+}
+.first_list {
+	display: inline;
+	width: 960px;
+	/*height: 250px;*/
+	margin: 0;
+	padding: 0;
+}
+.first_list li {
+	display: inline;
+	float: left;
+	width: 25%;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+.first_list li h3 {
+	font-size: 130%;
+	text-align: left;
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+ul.dropdown_list li { width: 240px; }
+.first_list li ul {
+	margin: 0;
+	padding: 10px;
+	z-index: inherit;
+}
+.first_list li ul li {
+	margin: 0;
+	padding: 3px 0 0 12px;
+	z-index: inherit;
+	height: 25px;
+	line-height: 25px;
+	list-style: none;
+	background: url('images/bullet_standard.png') no-repeat 0 17px;
+	text-align: left;
+}
+.first_list li ul li a {
+	display: block;
+	line-height: 135%;
+	color: #777;
+	padding: 8px 0 8px 0;
+	margin: 0;
+}
+.first_list .dd_morelink {
+	background: #eeeced;
+	padding: .7em 10px .7em 10px;
+}
+.first_list .dd_morelink div {
+	padding: 0;
+	margin: 0;
+}
+.first_list .dd_morelink a {
+	color: #5b5b5b;
+	background: url(images/bullet_standard.png) no-repeat 0 7px;
+	display: block;
+	padding: 3px 0 0 12px;
+	margin: 0;
+}
+
+/** Menu Sidebar first = Second Level Subnavigation **/
+
+/* Global */
+.menuMainSecondlevel { background-color: #fff; }
+.menuMainSecondlevel #main-menu {
+	display: block;
+	margin-bottom: 0;
+	background-color: transparent;
+	}
+.menuMainSecondlevel #main-menu li { display: block; }
+.menuMainSecondlevel #main-menu li.menu-depth-2 {
+	display: block;
+	margin: 0;
+	padding: 8px 2px 7px 10px;
+	border-top: 1px solid #DFDFDF;
+	}
+.menuMainSecondlevel #main-menu li.menu-depth-2.active-trail {
+	padding: 0;
+	}
+.menuMainSecondlevel #main-menu ul.main-menu {
+	margin: 0;
+	padding: 0;
+	}
+.menuMainSecondlevel ul.main-menu li a { /* 2nd level navigation word wrap for long titles -> http://www.w3schools.com/cssref/css3_pr_word-break.asp */
+	-ms-word-break: break-all;
+  word-break: normal;
+	word-break: break-word; /* Non standard for webkit */
+	-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+	}
+
+/* Colors 2nd Level active Menu */
+.menuMainSecondlevel #main-menu li.expanded { background-color: #D8E4ED; }
+
+/* .menuMainSecondlevel #main-menu ul.main-menu { padding-bottom: 8px; } */
+
+.menuMainSecondlevel #main-menu ul.main-menu li {
+	display: block;
+	font-size: 13px;
+	line-height: normal;
+	margin: 0;
+	/* border-bottom: 1px solid #dfdfdf; */
+	}
+.menuMainSecondlevel li.menu-depth-2 { padding: 8px 5px 7px 19px; }
+.menuMainSecondlevel li.menu-depth-3 { padding: 8px 5px 7px 19px; }
+.menuMainSecondlevel li.menu-depth-4 { padding: 5px 5px 4px 15px; }
+
+/* only for active trail 
+.menuMainSecondlevel #main-menu ul.main-menu li.first { margin-top: 8px; }
+.menuMainSecondlevel #main-menu ul.main-menu li.last { padding-bottom: 15px; }
+*/
+
+.menuMainSecondlevel #main-menu li.expanded > li {
+	font-size: 12px;
+	padding: 8px 15px 7px 15px;
+	padding: 8px 2px 7px 10px;
+	}
+.menuMainSecondlevel #main-menu a.active,
+.menuMainSecondlevel #main-menu a.active-trail {
+	font-weight: bold;
+	}
+.menuMainSecondlevel #main-menu li.last { 
+	border-bottom: none; 
+}
+.menuMainSecondlevel #main-menu li > a:hover { 
+	text-decoration: none;
+	}
+	
+	
+/* Level 2 Default */
+.menuMainSecondlevel #main-menu li a { 
+	color: #5b5b5b;
+}
+.menuMainSecondlevel #main-menu li.expanded,
+.menuMainSecondlevel #main-menu li.active-trail, .menuMainSecondlevel #main-menu li.active {
+	/* padding: 0; */
+	border-bottom: none;
+}
+.menuMainSecondlevel #main-menu li.menu-depth-2 a.active-trail {
+	/* padding: 8px 15px 7px 15px; */
+	padding: 8px 2px 7px 10px; /* ->  padding left & right minimized cause of word-wrap-problems -> UGLY */
+	background-color: #8AAFC9;
+	color: #fff;
+	display: block;
+}
+.menuMainSecondlevel #main-menu li.menu-depth-3 a.active-trail {
+	padding: 0;
+	background: none;
+	color: #3D79A5;
+	display: block;
+}
+
+/* Level 3 & 4 */
+.menuMainSecondlevel li.menu-depth-3, .menuMainSecondlevel li.menu-depth-4 {
+	background: url('images/bullet_standard_menu.png') no-repeat 7px 13px;
+	border-bottom: none;
+}
+.menuMainSecondlevel li.menu-depth-4 {
+	background-position: 5px 10px;
+}
+
+.menuMainSecondlevel li.menu-depth-2 li.active-trail, .menuMainSecondlevel li.menu-depth-3 li.active-trail {
+	background: url('images/bullet_standard_menu_blue.png') no-repeat 7px 13px;
+}
+
+
+.menuMainSecondlevel li.menu-depth-3 li.active {
+	background: #3d7aa6 url('images/bullet_standard_menu_white.png') no-repeat 5px 10px!important;
+	padding-left: 14px;
+}
+.menuMainSecondlevel li.menu-depth-3 a {
+	background: none;
+	padding: 0;
+	color: #303030;	
+}
+
+
+.menuMainSecondlevel li.menu-depth-3 ul#main-menu  {
+	position: relative;
+	left:-10px;
+}
+.menuMainSecondlevel li.menu-depth-4 a.active {
+	color: #fff!important;
+}
+
+          

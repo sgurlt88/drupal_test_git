@@ -1,0 +1,37 @@
+<?php
+
+function pmautofill_basti_install() {
+	drupal_install_schema('pmautofill_basti');
+}
+
+function pmautofill_basti_uninstall() {
+	drupal_uninstall_schema('pmautofill_basti');
+}
+
+function pmautofill_basti_schema() {
+	$schema['pmautofill_basti'] = array(
+		'fields' => array(
+			'nachricht_id' => array(
+				'type' => 'int',
+				'unsigned' => TRUE,
+				'auto_increment' => TRUE,
+				'not null' => TRUE,
+			),
+			'der_text' => array(
+				'type' => 'text',
+				'not null' => TRUE,
+				'size' => 'big'
+			),
+			'aktualisiert' => array(
+			  'mysql_type' => 'DATETIME',
+			  'not null' => TRUE,
+			),
+		),
+		'primary key' => array(
+			'nachricht_id'
+		),
+	);
+	
+	return $schema;
+}
+

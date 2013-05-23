@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_hzd_events feature.
+ */
+
+include_once 'feature_hzd_events.features.inc';

@@ -1,0 +1,152 @@
+/* $Id: style_white_black.css,v 1.2 2009/11/17 23:17:36 christianzwahlen Exp $ */
+
+<!--
+/* <![CDATA[ */
+
+/* body for old browser (IE 4) */
+body,
+* {
+  color: #fff !important;
+  background-color: #000 !important;
+  background-image: none !important;
+}
+/* ]]>*/
+
+
+-->
+
+/* LINKS */
+
+.more_link {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 8px transparent !important;
+}
+
+.more_link_white {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 10px transparent !important;
+}
+
+.tsrBlockUniversal .relatedLinksWrapper ul li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 5px transparent !important;
+}
+
+.more_link ul.listLinks li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 8px transparent !important;
+}
+
+ul.listenelementeListenseite li .wrapperCopy a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 6px transparent !important;
+}
+
+
+.trigger p {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 2px 7px transparent !important;
+}
+
+
+.view-pressemitteilung .tsrText span.more_link {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 9px transparent !important;
+}
+
+
+.tsrBlockKarriereportal a.ext, .tsrBlockRSS p a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 5px transparent !important;
+}
+
+
+.block-views-marginal-bloecke-block-2 button, .block-views-marginal-bloecke-block-2 input[type="reset"], .block-views-marginal-bloecke-block-2 input[type="submit"], .block-views-marginal-bloecke-block-2 input[type="button"] {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 8px transparent !important;
+}
+
+
+.topthema_infos_rechts .inner a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 2px center transparent !important;
+}
+
+
+nav.node-links .links li {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 2px 5px transparent !important;
+    list-style: none outside none;
+    padding-left: 12px;
+}
+
+.themendossier_infos .more_link, ul.listLinks li a, .topthema_infos_links .more_link, ul.listLinks li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_white.png") no-repeat scroll 0 8px transparent !important;
+}
+
+
+
+/* ICONS*/
+
+.region-sidebar-second .tsrBlockSocialMedia h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_social_white.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.region-sidebar-second .tsrBlockZitatDesTages h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_zitat_white.png") no-repeat scroll 0 3px transparent !important;
+}
+
+
+.region-sidebar-second .tsrBlockVideo h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_video_white.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.region-sidebar-second .tsrBlockKontakt h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_zitat_white.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+.region-sidebar-second .tsrBlockKarriereportal h2.block-title {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/icon_karriere_white.png") no-repeat scroll 0 2px transparent !important;
+}
+
+
+/* MENU */
+#zone-menu a.menu-depth-1 {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt_arrow_right.png") no-repeat scroll 12px 13px / 17px auto transparent !important;
+}
+
+/* SONSTIGE PFEILE */
+
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-prev {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow_white.png") !important;
+}
+
+.view-frontpage-empfehlung .jcarousel-skin-default .jcarousel-next {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow_white.png") !important;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow_redmiddle_white.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow_redmiddle_white.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-prev {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt-teaser_spread_white.png") no-repeat scroll 0 -53px #2F2F2F !important;
+}
+
+
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-next {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bt-teaser_spread_white.png") no-repeat scroll 0 0 #2F2F2F !important;
+}
+
+div.headerSlider .arrow_up {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/buttons/arrow_up.png") !important;
+}
+
+div.headerSlider .arrow_up.active {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/close_down.png") !important;
+}
+
+.view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li a {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/bullet_arrow_white.png") no-repeat scroll 0 5px transparent !important;
+
+}
+
+.view-frontpage-themendossier ul.quicktabs-tabs.quicktabs-style-navlist li.active a {
+    background: none repeat scroll 0 0 transparent !important;
+}

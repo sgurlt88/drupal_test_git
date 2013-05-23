@@ -1,0 +1,144 @@
+/** last edit marcus 2013-02-14 @ 00:42 **/
+
+/* ZONE SECTIONS */
+#section-header {
+	position: relative;
+	z-index: 20;
+	}
+#section-content {
+	position: relative;
+	z-index: 10;
+	}
+
+/* HEADER */
+
+.region-header-first .region-inner {
+	width: 650px;
+	/* background-color: #CCC; */
+	}
+#section-header .menu-block-wrapper { 
+	position: relative;
+	z-index: 30;
+	}
+#section-header .dropdown-background {
+	position: absolute;
+	left: 0;
+	top: 60px;
+	z-index: 31;
+	overflow: hidden;
+	display: none;
+	border: 1px solid #CECECE;
+	}
+body.domain-hessen.front #section-header .dropdown-background {
+	top: 90px;
+	}
+#section-header .menu-block-wrapper #main-menu {
+	z-index: 999;
+	color: #F00;
+	}
+#section-header .menu-block-wrapper .menu-depth-1 ul {
+	position: static;
+	left: 0;
+	top: 40px;
+	color: #F00;
+	z-index: 999;
+	width: 960px;
+	/* background-color: #FFFF99; */
+	}
+body.domain-hessen.front #section-header .menu-block-wrapper .menu-depth-1 ul {
+	top: 46px;
+	}
+body.domain-hessen.front #section-header .menu-block-wrapper .menu-depth-1 ul li { overflow: visible; }
+	
+#section-header .menu-block-wrapper .menu-depth-1 ul.spalte-1,
+#section-header .menu-block-wrapper .menu-depth-1 ul.spalte-2,
+#section-header .menu-block-wrapper .menu-depth-1 ul.spalte-3 {
+	position: relative;
+	float: left;
+	/* background-color: #FFFF99; */
+	display: block;
+	width: 32%;
+	height: 160px;
+	}
+#section-header .menu-block-wrapper a.menu-depth-2 { display: inline; }
+
+/* Header Sliderbühne */
+#region-header-second ul.jcarousel li.jcarousel-item { position: inherit; display: inline-block; margin-left: -280px; } /* fix from http://www.highresolution.info/webdesign/ie7_testcase/ */
+#region-header-second ul.jcarousel .animatebox {  position: absolute; display: block; }
+
+.view-frontpage-sliderbuehne-und-header .jcarousel-skin-default .jcarousel-next { right: 16px; }
+
+/* Breadcrumb fixes */
+#block-blockify-blockify-breadcrumb .content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+#block-blockify-blockify-breadcrumb a {
+	padding: 0;
+	display: inline;
+	}
+	
+/* themendossier */
+#block-views-frontpage-themendossier-block-1 .content { z-index: 10; }
+.themendossier ul.quicktabs-style-navlist li a { white-space: normal; }
+
+.themendossier h2.block-title { line-height: 10px; padding-top: 1px; }
+
+.themendossier .quicktabs-wrapper {
+	position: static;
+	z-index: 150;
+	background-color: #f00;
+	}
+.themendossier .quicktabs_main { z-index: 200!important; }
+.themendossier .quicktabs-tabpage { z-index: 200!important; }
+.themendossier .quicktabs-tabpage a, .themendossier .quicktabs-tabpage .spitzmarke_unten {
+	display: inline-block;
+	float: none!important;
+	}
+	
+/* empfehlungCarousel  */
+.empfehlungCarousel h2.block-title { line-height: 10px; padding-top: 1px; }
+
+.empfehlungCarousel .ic_container { z-index: 10!important; }
+.empfehlungCarousel .ic_caption { z-index: 15!important; position: static; }
+.empfehlungCarousel .ic_category { z-index: 25!important; position: static; }
+	
+/* Second Level Navigation */
+
+ul#main-menu, ul#main-menu li {
+	list-style-type: none;
+	list-style: none;
+	list-style-image: none;
+	}
+	
+/* Biographie */
+.biografie_portraitbild {
+	width: 225px;
+	}
+	
+/* Footer Menu */
+#zone-footer .block-menu-footer-menu .menu, .block-menu-footer-menu .menu {
+   width: 100%;
+	 overflow: hidden;
+	 /* background-color: #666; */
+}
+#zone-footer .block-menu-footer-menu .menu, .block-menu-footer-menu .menu li {
+	float: right;
+	}
+#zone-footer .block-menu-footer-menu .menu, .block-menu-footer-menu .menu li {}
+#zone-footer .block-menu-footer-menu .menu, .block-menu-footer-menu .menu li a { display: inline-block; float: none; }
+
+/* GLOBAL */
+
+textarea { width: 90%; }
+
+/* Empfehlung der Redaktion */
+
+.empfehlungCarousel {
+	display: none;
+}
+
+
+.gebaerdensprache-2click-detail {
+	left: -50;
+}

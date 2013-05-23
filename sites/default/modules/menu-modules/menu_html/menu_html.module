@@ -1,0 +1,35 @@
+<?php
+/**
+ * hook_form_alter
+ */
+function menu_html_form_alter(&$form, $form_state, $form_id) {
+    if ($form_id == 'menu_edit_item' || strpos($form_id, '_node_form') > 0 && isset($form['menu'])) {
+      if ($form_id == 'menu_edit_item') {
+        $currently_checked = isset($form['options']['#value']['html']) ? $form['options']['#value']['html'] : 0;
+      }
+      else {
+        $currently_checked = isset($form['menu']['link']['options']['#value']['html']) ? $form['menu']['link']['options']['#value']['html'] : 0;
+      }
+      $form['menu']['html'] = array(
+        '#type' => 'checkbox',
+        '#title' => t('Allow html'),
+        '#default_value' => $currently_checked,
+        '#description' => t('If you want to add html tags to the title of a menu, enable this. This should only be accessible to trusted users.'),
+        );
+    }
+}
+
+
+/**
+ * hook_menu_link_alter
+ *
+ */
+function menu_html_menu_link_alter(&$item) {
+  if (isset($item['html']) && $item['html']) {
+    $item['options']['html'] = $item['html'];
+  } else {
+    if(isset($item['options']['html'])) {
+        unset($item['options']['html']);
+    }
+  }
+}

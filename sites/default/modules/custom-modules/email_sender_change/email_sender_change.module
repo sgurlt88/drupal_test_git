@@ -1,0 +1,5 @@
+<?php
+
+function email_sender_change_mail_alter(&$message) {
+$message['headers']['Sender'] = $message['headers']['From'];
+}

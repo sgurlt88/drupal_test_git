@@ -1,0 +1,13 @@
+Video Tutorial Grundlagen Modul Programmierung
+http://www.lausch-online.de/content/drupal-ein-modul-programmieren
+
+Datenbank Query
+http://api.drupal.org/comment/13489#comment-13489
+
+FORM API
+http://api.drupal.org/api/drupal/developer!topics!forms_api_reference.html/7
+http://api.drupal.org/api/drupal/developer!topics!forms_api_reference.html/7#select
+
+Variablen Speichern und Auslesen
+http://api.drupal.org/api/drupal/includes!bootstrap.inc/function/variable_set/7
+http://api.drupal.org/api/drupal/includes!bootstrap.inc/function/variable_get/7

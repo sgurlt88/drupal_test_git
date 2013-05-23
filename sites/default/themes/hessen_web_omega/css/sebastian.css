@@ -1,0 +1,789 @@
+/** last edit marcus 2013-02-06 @ 17:42 **/
+	
+/* Centerpage */
+#block-views-centerpage-top-thema-block-3 .content, #block-views-centerpage-top-thema-block-6 .content {
+    padding: 0 !important;
+}
+
+
+#block-views-centerpage-top-thema-block-3 .topthema_teaser, #block-views-centerpage-top-thema-block-6 .topthema_teaser {
+    margin-bottom: 0;
+}
+
+#block-views-centerpage-top-thema-block-3 .topthema_teaser img, #block-views-centerpage-top-thema-block-6 .topthema_teaser img {
+    margin-right: 15px;
+}
+
+#block-views-centerpage-top-thema-block-3 .topthema_text ,#block-views-centerpage-top-thema-block-6 .topthema_text {
+	margin: 15px 10px 15px 0;
+}
+
+#block-views-centerpage-top-thema-block-5 .view-content {
+	/* margin-top: -5px; */
+}
+
+#block-views-centerpage-top-thema-block-5 .view-content .last .unterthema_teaser {
+	margin-bottom: 0;
+}
+
+#block-views-centerpage-top-thema-block-1 .topthema_infos {
+    padding-top: 10px;
+}
+
+/* Empfehlung der Redaktion - Social Media*/
+
+#views_slideshow_cycle_main_frontpage_empfehlung-block_1 {
+	background: none repeat scroll 0 0 #FFFFFF;
+	padding: 20px 106px 15px;
+}
+
+#views_slideshow_controls_text_frontpage_empfehlung-block1 {
+	height: 0px;
+}
+
+
+#views_slideshow_controls_text_previous_frontpage_empfehlung-block_1 {
+    left: 10px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+}
+	
+#views_slideshow_controls_text_next_frontpage_empfehlung-block_1 {
+    margin-top: -15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    z-index: 20;
+} *
+
+/* Centerpage Empfehlung der Redaktion - Centerpage */
+
+#views_slideshow_cycle_teaser_section_frontpage_empfehlung-block_2 {
+    width: 573px !important;
+}
+
+#views_slideshow_cycle_main_frontpage_empfehlung-block_2 {
+	background: none repeat scroll 0 0 #FFFFFF;
+	padding: 20px 106px 15px;
+}
+
+#views_slideshow_controls_text_frontpage_empfehlung-block2 {
+	height: 0px;
+}
+
+
+#views_slideshow_controls_text_previous_frontpage_empfehlung-block_2 {
+    left: 10px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+}
+	
+#views_slideshow_controls_text_next_frontpage_empfehlung-block_2 {
+    margin-top: -15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    z-index: 20;
+}
+
+.ic_category span.spitzmarke {
+	margin-bottom: 0;
+	padding-bottom: 8px;
+}
+
+/* Frontpage Themendossier */
+
+
+/* Frontpage Themendossier Ende */
+
+
+/* Social Media Übersicht und Block Startseite*/
+.blockSocialMediaUebersicht {
+	background-color: #FFF;
+	/* padding: 15px; */
+	}
+.blockSocialMediaUebersicht ul.tsrListe li {	
+	padding-bottom: 12px;
+	border-bottom: 1px solid #D9DADA;
+  margin-bottom: 15px;
+}
+.blockSocialMediaUebersicht ul.tsrListe li h2.socialmedia_titel { margin-bottom: -3px; }
+.blockSocialMediaUebersicht ul.tsrListe li .tsrText { margin: 5px 0 0 0; }
+.blockSocialMediaUebersicht ul.tsrListe li .tsrText p { margin-bottom: 10px; }
+
+.social_media_favicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.social_media_favicon_block {
+    position: absolute;
+    right: 10px;
+}
+/* Social Media Übersicht Ende*/
+
+/* Frontpage */
+
+.front .content {
+	padding: 0px !important;
+}
+
+/* Frontpage */
+
+
+/* Pager */
+.view-pressemitteilung .item-list {
+	display: block;
+	overflow: hidden;
+	}
+
+.item-list ul.pager {
+  border: none;
+	right: 0;
+  font-size: 10px;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-align: left;
+	display: inline-block;
+	float: right;
+	background: none;
+}
+.pager li {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif !important;
+	font-weight: bold;
+  font: bold 12px/1.2 Arial,sans-serif;
+  outline: 0 none;
+  margin: 0 5px 0 5px!important;
+	border-radius: 0!important;
+	background: #EDECEC!important;
+	border: 1px solid  #EDECEC!important;
+	color: #303030;
+	padding: 4px 8px !important;
+}
+.pager li.pager-first { margin-left: 0!important; }
+.pager li.pager-last { margin-right: 0!important; }
+
+.pager li:hover { background: #efefef; border: 1px solid #D62029!important; }
+.pager li a {
+	background: none!important;
+	padding: 0!important;
+  cursor: pointer;
+	border-radius: 0;
+	width: inherit!important;
+}
+.pager li.pager-current {
+    background: #D62029!important;
+		border: 1px solid #D62029!important;
+    color: #FFFFFF;
+	}
+.pager li.pager-next, .pager li.pager-last {
+	position: relative!important;
+	right: inherit;
+	top: inherit;
+	}
+
+/* Pager Ende */
+
+/* Pressesetelle */
+/*
+.node-pressestelle h2.node-title, .node-pressestelle .statistics_counter {
+	display: none;
+}
+
+
+
+/* Newsletter */
+#webform-component-e-mail-themennewsletter .form-item-submitted-e-mail-themennewsletter-newsletter-email-address {
+	display: none; 
+}
+
+#edit-submitted-e-mail-newsletter-selection .form-item.form-type-checkbox {
+	padding-bottom: 5px;
+}
+
+#webform-component-e-mail .form-item-submitted-e-mail-newsletter-email-address {
+	padding-bottom: 15px;
+}
+
+.submit-inaktiv {
+	float: right;
+}
+
+
+.webform-client-form input.form-submit-disabled {
+    background-image: linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -o-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -moz-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -webkit-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+	background-image: -ms-linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    min-width: 150px;
+    padding: 7px 10px 5px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.node-newsletter-anmeldung .clearfix {
+	padding-top: 15px;
+}
+
+#simplenews-confirm-add-form a#edit-cancel {
+    padding: 5px 0;
+}
+/* Newsletter Ende */
+
+
+/** Social Share - Weiterempfehlen **/
+nav.node-links {
+	position: relative;
+	padding-top: 10px;
+	border-top: 1px solid #C7C8C8;
+	color: #5A5A5A;
+	}
+nav.node-links .links a { color: #5A5A5A; }
+nav.node-links .links a:hover { color: #D62029 !important; }
+nav.node-links .links li {
+	background: url("images/bullet_standard.png") no-repeat scroll 2px 5px transparent;
+  list-style: none outside none;
+  padding-left: 12px;
+	}
+
+nav.node-links .links li:hover {
+	background: url("images/bullet_red.png") no-repeat scroll 2px 5px transparent;
+	}
+	
+.trigger { float: left; margin-right: 8px; }
+.trigger p {
+	background: url("images/bullet_standard.png") no-repeat scroll 2px 7px transparent;
+  list-style: none outside none;
+  padding-left: 12px;
+	}
+
+.trigger p:hover {
+	background: url("images/bullet_red.png") no-repeat scroll 2px 7px transparent;
+	}
+.trigger p:hover {
+	color: #D62029 !important;
+	}
+
+#secureshare {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C2C2C2;
+    box-shadow: 0 0 1px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+#secureshare:after {
+    border-bottom: 6px solid #FFFFFF;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 24px;
+    position: absolute;
+    top: -6px;
+}
+
+.settings_info span.ext {
+	display: none;
+}
+
+.social_share_privacy_area {
+	width: 530px;
+}
+
+/** Social Share - Weiterempfehlen Ende  **/
+
+/** Weiterempfehlen per Mail **/
+
+#edit-txt-to-addrs {
+	width: 464px;
+}
+
+#print-mail-form .form-type-textarea .description {
+    left: 175px;
+    padding-top: 5px;
+    position: relative;
+    width: 465px;
+}
+
+#print-mail-form #edit-btn-submit {
+	float: right;
+	background-image: linear-gradient(-82deg, #A44248 1%, #69070C 99%);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+    min-width: 150px;
+    padding: 7px 10px 5px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+
+#print-mail-form #edit-btn-clear {
+	float:right;
+	background-image: linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+    min-width: 150px;
+    padding: 7px 10px 5px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+#print-mail-form #edit-btn-cancel {
+	background-image: linear-gradient(-82deg, #CECECE -80%, #444444 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+    min-width: 150px;
+    padding: 7px 10px 5px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+	float: left;
+}
+
+
+/** Weiterempfehlen per Mail Ende **/
+
+/** Scroll Top - Menü **/
+
+#block-menu-menu-footer-menu ul.menu li.first {
+    left: 0;
+    position: absolute;
+}
+
+/** Scroll Top - Menü Ende **/
+
+/** Suche **/
+
+#suchfeld {
+	background-image: url(images/search_zoom.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	padding-right: 20px;
+	box-shadow: 0 0 1px #777777 inset;
+}
+
+#suchfeld_submit {
+	display: none;
+}
+
+#block-block-1 input[type="submit"] {
+	display: none;
+}
+
+
+
+/** Suche Ende **/
+
+/** ZoooooooooooooooooM Funktion **/
+
+#wrapper {
+            background-position: 50% 0px;
+            margin: 0px auto 0 auto;
+}
+
+body {
+	transform-origin: center top 0;
+}
+
+/** ZoooooooooooooooooM Funktion Ende **/
+
+
+/** Layout **/
+
+#colorbox h2.node-title, #colorbox .zusammenfassung{
+	display: none;
+}
+
+.zone-postscript {
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+	background-color: #EFEFEF !important;
+}
+
+.logo-img #logo {
+	box-shadow: 5px 5px 5px -4px #C9CACA;
+}
+
+/** Banner Subsites -> Jetzt in hessen-web-omega-alpha-default **/
+/** Banner und Farben  **/
+/** Banner Subsites Ende **/
+
+
+/** Layout Ende **/
+
+/** Gebärdensprachvideos **/
+
+.page-node-1484 #region-content article {
+	padding: 20px 15px 0 15px;
+}
+
+.page-node-1484 #section-content #block-system-main .links {
+	padding: 15px 15px 0 15px;
+}
+
+/** Gebärdensprachvideos Ende **/
+
+/** Pressemitteilungsfilter **/
+
+#views-exposed-form-pressemitteilung-presseressortspage #edit-field-datum-default-value-min-wrapper label, #views-exposed-form-pressemitteilung-page #edit-field-datum-default-value-min-wrapper label {
+	padding-bottom: 5px
+}
+
+#views-exposed-form-pressemitteilung-presseressortspage #edit-field-datum-default-value-max-wrapper label, #views-exposed-form-pressemitteilung-page #edit-field-datum-default-value-max-wrapper label {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#edit-field-datum-default-value-min-date, #edit-field-datum-default-value-max-date {
+	width: 150px;
+}
+
+.filterPressemitteilungen .description {
+	display: none;
+}
+
+/** Pressemitteilungsfilter Ende **/
+
+/** Webform Validation **/
+
+
+#webform-component-pooh-baers-speisekammer {
+    display: none;
+}
+
+/** Webform Validation Ende **/
+
+/**  Bildergalerie Teaser **/
+
+.view-bildergalerie-teaser .views-field-field-titel {
+	display: none;
+} 
+
+/**  Bildergalerie Teaser Ende **/
+
+/** Bildergalerie Detailansicht **/
+
+/** Bildergalerie Detailansicht Thumbnail Pager **/
+
+
+ul.jcarousel-list .activeSlide img {
+	border-bottom: 2px solid #D62029;
+	opacity: 1;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	width: 400px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 400px;
+	height: 87px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+	height: 87px;
+}
+
+.jcarousel-clip.jcarousel-clip-horizontal {
+    padding-left: 5px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-container {
+    background: #EFEFEF;
+    border: none;
+    border-radius: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/leftarrow_redmiddle.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 25px;
+    left: 5px;
+    position: absolute;
+    top: 50px;
+    width: 25px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    background: url("/sites/default/themes/hessen_web_omega/css/images/rightarrow_redmiddle.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    width: 25px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-horizontal:focus {
+    background-position: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
+    background-position: 0;
+}
+
+
+/** Bildergalerie Detailansicht Thumbnail Pager Ende **/
+
+.view-bildergalerie {
+    position: relative;
+}
+.bildergalerie_container {
+	background-color: #EFEFEF;
+	/*
+	padding-top: 15px; 
+	min-height: 490px;
+	*/
+	}
+
+.node-type-bildergalerie #region-content article { padding-bottom: 10px; }
+
+.bildergalerieDetail { /* -> wrapper for the whole Block */
+	background: none repeat scroll 0 0 #FFFFFF;
+	padding: 0 0 35px 15px;
+	}
+.bildergalerieDetail .views_slideshow_cycle_main { margin-right: 10px; }
+
+.views-slideshow-pager-field-item {
+    float: left;
+    height: 89px;
+    padding: 0 10px 10px 0;
+    width: 88px;
+}
+.views-slideshow-pager-field-item  img { border: 1px solid #CCCCCC; }
+.views-slideshow-pager-field-item .active img { opacity: 1.0!important; border: 1px solid #666; box-shadow: 1px 1px #999; }
+
+.node-type-bildergalerie article nav.node-links {
+	border: none;
+    padding-top: none;
+}
+
+.node-type-bildergalerie .views-slideshow-cycle-main-frame .bildergalerie_bild {
+	text-align: center;
+	vertical-align: middle;
+	}
+	
+.node-type-bildergalerie .views_slideshow_slide { margin: auto; }
+
+.node-type-bildergalerie .views-slideshow-cycle-main-frame-row-item .views-field {
+	color: #777777;
+}
+
+#widget_pager_bottom_bildergalerie-block  img {
+    opacity: 0.7;
+}
+
+.view-bildergalerie .views-slideshow-controls-top {
+	position: relative;
+	height: auto;
+	width: auto;
+	padding-bottom: 15px;
+}
+
+.view-bildergalerie #views_slideshow_controls_text_next_bildergalerie-block > font {
+    float: right;
+    margin-left: -12px;
+    margin-right: 15px;
+}
+
+.view-bildergalerie #views_slideshow_controls_text_next_bildergalerie-block > a {
+    float: right;
+    padding-right: 15px;
+}
+
+.bildergalerie_container .bildergalerie_bild {
+	height: 360px;
+	width: 480px;
+	background: #EFEFEF;
+	position: relative;
+}
+
+.bildergalerie_container .bildergalerie_text {
+	height: auto;
+  padding: 5px 10px 5px 10px;
+  width: 450px;
+	background: #EFEFEF;
+	position: relative;
+}
+
+.view-bildergalerie .bildergalerie_bild a {
+    display: table-cell;
+    height: 360px;
+    text-align: center;
+    vertical-align: middle;
+    width: 480px;
+}
+
+.view-bildergalerie #views_slideshow_slide_counter_bildergalerie-block {
+	font-weight: bold;
+    left: 197px;
+    position: absolute;
+    top: 0;
+}
+
+.view-bildergalerie #views_slideshow_slide_counter_bildergalerie-block:before {
+	content: "Bild";
+}
+
+.view-bildergalerie .views-slideshow-controls-bottom #views_slideshow_controls_text_previous_bildergalerie-block {
+    position: absolute;
+    top: 205px;
+    z-index: 50;
+    left: 10px;
+	opacity: 0.5;
+}
+
+.view-bildergalerie .views-slideshow-controls-bottom #views_slideshow_controls_text_next_bildergalerie-block {
+    position: absolute;
+    top: 205px;
+    z-index: 50;
+	opacity: 0.5;
+	right: 25px;
+}
+
+.view-bildergalerie #widget_pager_bottom_bildergalerie-block .active .views-field-field-images{
+	border-bottom: 2px solid #D62029;
+}
+
+.view-bildergalerie .views-slideshow-controls-bottom {
+	padding-top: 15px;
+}
+
+.view-bildergalerie .view-footer {
+    width: 480px;
+}
+
+.view-bildergalerie .bildergalerie_download {
+	float: left;
+}
+
+/* von marcus.css */
+/* Views Teaser Bildergalerien */
+.view-bildergalerie-teaser {
+	margin-bottom: 30px;
+}
+.view-bildergalerie-teaser .field-slideshow-wrapper {
+	/*
+	background-color: #F2F2F2;
+	box-shadow: #666 0 2px 3px;
+	padding: 5px;
+	margin-bottom: 8px;
+	*/
+	display: inline-block;
+	}
+	
+.view-bildergalerie-teaser .field-slideshow-slide {}
+
+.view-bildergalerie-teaser ul.field-slideshow-pager { margin: 10px 0 0 -1px; padding: 0; }
+
+.view-bildergalerie-teaser ul.field-slideshow-pager li { margin: 0 18px 5px 0; padding: 0; }
+.view-bildergalerie-teaser ul.field-slideshow-pager li.last { margin-right: 0; }
+
+.view-bildergalerie-teaser ul.field-slideshow-pager img { border: 1px solid #fff; }
+
+body.node-type-bildergalerie .field-slideshow {
+	background-color: #F2F2F2;
+	margin: auto;
+	margin-bottom: 8px;
+	padding: 5px;
+	display: inline-block;
+	box-shadow: #666 0 2px 3px;
+	overflow: visible;
+	}
+body.node-type-bildergalerie .field-slideshow-slide {
+	border: 2px solid #fff;
+	}
+body.node-type-bildergalerie ul.field-slideshow-pager img { border: 1px solid #ccc; }
+
+/** Bildergalerie Detailansicht Ende **/
+
+/** Video im Artikel / Pressemitteilung **/
+
+.node-video.node-teaser {
+	padding: 0 0 15px 0 !important;
+}
+
+.video_preview_overlay {
+    background-image: url("/sites/default/themes/hessen_web_omega/css/images/buttons/video_overlay.png");
+    background-repeat: no-repeat;
+    display: table-cell;
+    height: 360px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 480px;
+	background-position: 50% center;
+	opacity: 0.7;
+}
+
+/** Videodetailsseite **/
+
+.video_link_artikel.links {
+	float: left;
+	padding-right: 5px;
+}
+
+/** Fragebox **/
+
+.node-pressemitteilung .node-pressesprecher, .node-pressemitteilung  .node-pressestelle, .node-artikel .node-pressesprecher, .node-artikel  .node-pressestelle {
+    padding: 0 !important;
+}
+
+.node-pressemitteilung .node-pressesprecher .node-links, .node-artikel .node-pressesprecher .node-links {
+	display: none;
+}
+
+/** Tabellen **/
+
+.node-type-artikel table, .node-type-pressemitteilung table {
+	width: 100%;
+}
+
+.node-type-artikel td, th, .node-type-pressemitteilung td, th {
+    padding: 4px 8px;
+    vertical-align: top;
+    max-width: 222px;
+	border: 1px solid;
+	word-wrap: break-word;
+}
+

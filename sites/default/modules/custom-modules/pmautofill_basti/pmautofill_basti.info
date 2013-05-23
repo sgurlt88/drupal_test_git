@@ -1,0 +1,4 @@
+name = PM Autofill Basti
+description = PM Autofilltest von Basti
+core = 7.x
+package = custom modules

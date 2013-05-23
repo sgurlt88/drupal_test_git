@@ -1,0 +1,98 @@
+
+body {
+  margin: 1em;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+th {
+  text-align: left; /* LTR */
+  color: #006;
+  border-bottom: 1px solid #ccc;
+}
+tr.odd {
+  background-color: #ddd;
+}
+tr.even {
+  background-color: #fff;
+}
+td {
+  padding: 5px;
+}
+#menu {
+  visibility: hidden;
+}
+#main {
+  margin: 1em;
+}
+a:link {color: #000;}
+a:visited {color: #000;}
+a:hover {color: #00f;}
+a:link img, a:visited img {border: 0;}
+.print-footnote {font-size: xx-small;}
+img.print-logo {border: 0;}
+.print-site_name {}
+.print-breadcrumb {font-size: x-small;}
+.print-title {}
+.print-submitted {font-size: small;}
+.print-created {font-size: small;}
+.print-taxonomy {
+  text-align: right;
+}
+.print-taxonomy li {display: inline;}
+.print-content {}
+.print-hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  color: #9E9E9E;
+  background-color: #9E9E9E;
+}
+.print-message {
+  border: medium dotted blue;
+  padding: 1em;
+}
+.print-source_url {font-size: small;}
+.print-links {font-size: small;}
+.print-footer {text-align: center;}
+
+/* added css for hessen.de */
+
+.print-content header { display: none; }
+.print-content nav.node-links { display: none; }
+
+/* .print-content .field-label-inline { display: inline-block!important; margin-left: 1em; } */
+
+.print-content .infoblock .clearfix:after { display: inherit!important; }
+
+.print-content h1 { font-size: 1.5em; color: #054295; }
+.print-content h2 { font-size: 1.2em; }
+.print-content h3 { font-size: 1.0em; }
+.print-content h4 { font-size: 0.8em; }
+.print-content h5 { font-size: 0.7em; }
+.print-content h6 { font-size: 0.6em; }
+
+.fragenblock {
+	background: #efefef!important;
+	padding: 15px;
+	color: #303030;
+	}
+	
+.fragenblock .content { /* overwrite for css of Markus Zerres */
+  background: #efefef!important;
+}
+.fragenblock label { padding-right: 5px; display: inline-block; }
+
+/* Print optimierung Biografie */
+
+.print-content .biografie_head .biografie_portraitbild {
+    float: left;
+    padding-right: 15px;
+}
+
+.print-content .biografie_beschreibung {
+    clear: both;
+}
+
+#biografie_table h5 {
+    font-size: 1.5em;
+}

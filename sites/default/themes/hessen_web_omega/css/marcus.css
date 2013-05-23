@@ -1,0 +1,479 @@
+/** last edit marcus morba 2013-02-25 @ 13:01 **/
+
+
+/** frontend css **/
+.fragenblock {
+	background: #CEDDE8;
+	padding: 15px;
+	color: #303030;
+	margin-bottom: 40px;
+	}
+	
+.fragenblock .content, .fragenblock article  { /* overwrite for css of Markus Zerres */
+    background: #CEDDE8!important;
+}
+.fragenblock label { padding-right: 5px; display: inline-block; }
+
+/* blocks marginalspalte */
+.region-sidebar-second h2.block-title,
+.region-sidebar-second .tsrBlockKarriereportal h2.block-title,
+.region-sidebar-second .tsrBlockVideo h2.block-title,
+.region-sidebar-second .tsrBlockRSS h2.block-title,
+.region-sidebar-second .tsrBlockKontakt h2.block-title,
+.region-sidebar-second .tsrBlockSocialMedia h2.block-title,
+.region-sidebar-second .tsrBlockMeistgelesen h2.block-title,
+.region-sidebar-second .tsrBlockUniversal h2.block-title {
+	 color: #303030;
+   font-family: 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
+   font-size: 12px;
+   font-weight: normal;
+   /* min-height: 28px; */
+   letter-spacing: 0.025em;
+   margin: 0 0 3px 0;
+   padding: 5px 0 0 33px;
+   text-transform: uppercase;
+	 overflow: visible;
+	}
+
+.region-sidebar-second .tsrBlockKarriereportal h2.block-title {
+  background: url("images/icon_karriere.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+	}
+.region-sidebar-second .tsrBlockVideo h2.block-title {
+  background: url("images/icon_video.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+	}
+.region-sidebar-second .tsrBlockRSS h2.block-title {
+  background: url("images/icon_rss.png") no-repeat scroll 0 0 transparent;
+	min-height: 28px;
+	}
+.region-sidebar-second .tsrBlockKontakt h2.block-title {
+  background: url("images/icon_zitat.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+	}
+.region-sidebar-second .tsrBlockSocialMedia h2.block-title {
+	background: url("images/icon_social.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+}
+.region-sidebar-second .tsrBlockMeistgelesen h2.block-title {
+	background: url("images/icon_meist_gelesen.png") no-repeat scroll 0 2px transparent;
+	min-height: 28px;
+}
+.region-sidebar-second .tsrBlockZitatDesTages h2.block-title {
+	background: url("images/icon_zitat.png") no-repeat scroll 0 3px transparent;
+	min-height: 28px;
+}
+.region-sidebar-second .tsrBlockPressearchiv h2.block-title, .region-sidebar-second .tsrBlockDatenschutz h2.block-title {
+	background: url("images/icon_info.png") no-repeat scroll 0 -4px transparent;
+	min-height: 28px;
+}
+
+#xxx h2.block-title {
+	background: transparent url(images/icon_foto.png) no-repeat;
+	min-height: 28px;
+}
+#xxx h2.block-title {
+	background: transparent url(images/icon_video.png) no-repeat;
+	min-height: 28px;
+}
+#xxx h2.block-title {
+	background: transparent url(images/icon_veranstaltung.png) no-repeat;
+	min-height: 28px;
+}
+
+
+
+/* Browserzoom-Block */ 
+.blockBrowserzoom {
+	float: right!important;
+	margin-left: 15px!important;
+	margin-top: 3px;
+	}
+.blockBrowserzoom span {
+	display: inline-block;
+	background: #fff;
+	color: #303030;
+	width: 18px;
+	height: 15px;
+	line-height: 10px;
+	padding: 3px 0 0 0;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+	}
+.blockBrowserzoom span:hover {
+	display: inline-block;
+	background: #303030;
+	color: #fff;
+	}
+
+.blockBrowserzoom #minusBtn { font-size: 10px; }
+.blockBrowserzoom #resetBtn { font-size: 13px; }
+.blockBrowserzoom #plusBtn { font-size: 15px; }
+
+
+/* Breadcrumb */
+#block-blockify-blockify-breadcrumb {
+	font-size: 11px;
+	}
+#block-blockify-blockify-breadcrumb a {
+	font-size: 11px;
+	color: #777;
+	font-weight: normal;
+	padding: 15px 0 12px 0;
+	display: inline-block;
+	}
+#block-blockify-blockify-breadcrumb span.active {
+	color: #196693;
+	font-weight: bold;
+	}
+
+#block-blockify-blockify-breadcrumb h2.element-invisible {
+	display: inline!important;
+	clip: rect(1px, 1px, 1px, 1px);
+  height: auto!important;
+  position: relative!important;
+	font-weight: bold;
+	float: left;
+	top: 2px;
+	margin-right: 5px;
+	}
+
+
+
+a.lnkStyleDefault {
+  background: url("images/bullet_red.png") no-repeat scroll 2px center transparent;
+  padding-left: 12px;
+	display: block;
+	clear: both;
+	}
+
+
+/* Artikel Downloads bzw. Datei- / File-Attachments */
+ul.download-file {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+ul.download-file li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-image: none;
+	}
+
+
+/* Contenttype Formular (webform) */
+body.node-type-webform #messages, body.node-type-newsletter-anmeldung #messages { display: none; }
+body.admin-menu #messages { display: block; }
+
+.webform-client-form label, .webform-client-form .webform-component-checkboxes, #webform-component-datenschutzbestimmungen, .webform-client-form .form-actions { 
+	display: block;
+	margin: 30px 0 0 0;
+	}
+.webform-client-form .form-checkboxes label { 
+	margin: 0px 0 0 20px;
+	}
+.webform-client-form .error, .webform-client-form .messages-inline {
+	background: none;
+	border: none;
+	color: #D61F28;
+	margin: 0;
+	padding: 0;
+	}
+.webform-client-form .form-type-textfield input, .webform-client-form .webform-component-email input, .webform-client-form .webform-component-textfield input, .webform-client-form select, .webform-client-form textarea {
+	background:	#CECECE;
+	background-color:	#CECECE;
+	border: 1px solid #CECECE!important;
+	color: #333333;
+	}
+
+
+.webform-client-form input.error, .webform-client-form select.error, .webform-client-form textarea.error {
+	background:	#F7F7F7;
+	background-color:	#F7F7F7;
+	color: #333!important;
+	border: 1px solid #D61F28!important;
+	}
+
+.webform-client-form .form-item { margin: 0;}
+.webform-client-form textarea { padding 5px; }
+.webform-client-form input.form-checkbox { float: left; margin-top: 2px; }
+
+.webform-client-form select { padding:1px!important; min-height: 23px; } /* make it work again, cause markus css line 775 makes crap */
+
+/* Form Button Formulare Standard */
+.webform-client-form input.form-submit,
+#region-content #edit-cancel,
+#region-content input.form-submit,
+.filterPressemitteilungen input.form-submit {
+	float: right;
+	color: #fff!important;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 7px 10px 5px 10px;
+	min-width: 150px;
+	text-align: center;
+	text-shadow: none;
+	text-transform: uppercase;
+	display: block;
+	margin: auto;
+	
+	/* Firefox v3.6+ */
+	background-image:-moz-linear-gradient(51% -53% -82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%); 
+	/* safari v4.0+ and by Chrome v3.0+ */
+	background-image:-webkit-gradient(linear,51% -53%,55% 143%,color-stop(0.01, rgb(164,66,72)),color-stop(0.99, rgb(105,7,12)));
+	/* Chrome v10.0+ and by safari nightly build*/
+	background-image:-webkit-linear-gradient(-82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%);
+	/* Opera v11.10+ */
+	background-image:-o-linear-gradient(-82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%);
+	/* IE v10+ */
+	background-image:-ms-linear-gradient(-82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%);
+	background-image:linear-gradient(-82deg,rgb(164,66,72) 1%,rgb(105,7,12) 99%);
+	border: 2px solid #fff;
+	border-radius: 0;
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa44248,endColorstr=#ff69070c,GradientType=1)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa44248,endColorstr=#ff69070c,GradientType=1);
+	}
+	
+.filterPressemitteilungen input.form-submit {
+	float: left;
+	border: none;
+	width:: auto;
+	}
+
+#region-content a#edit-cancel {
+	float: left;
+	}
+	
+#region-content a#edit-cancel:hover {
+	text-decoration: none;
+	}
+
+
+/* Newsletteranmeldung Formular */
+
+#webform-component-themennewsletter, #webform-component-email-abmeldung { margin-top: 30px; }
+
+
+/* Teaserlisten & Listenseite(n) */
+ul.tsrListe, ul.listenelementeListenseite {
+	margin: 0;
+	padding: 0;
+	}
+ul.socialMediaUebersicht { padding: 0 15px 15px 15px; }
+
+ul.tsrListe, ul.tsrListe li,
+ul.listenelementeListenseite, ul.listenelementeListenseite li {
+	list-style: none;
+	list-style-image:none;
+	}
+
+.view-pressemitteilung .wrapperItem, ul.tsrListe div.wrapperItem { width: 100%; position: relative; }
+.field-name-field-fc-listeninhalte-pt .wrapperImage, ul.tsrListe div.wrapperImage { float: left; width: auto; margin: 3px 10px 10px 0;  }
+.field-name-field-fc-listeninhalte-pt .wrapperCopy, ul.tsrListe div.wrapperCopy, ul.tsrListe div.wrapperCopy  { overflow: hidden; }
+
+ul.tsrListe div.wrapperCopy .spitzmarke { margin-bottom: 4px; }
+ul.tsrListe div.wrapperCopy h2 { font-size: 20px; line-height: 120%; margin-bottom: 10px; }
+ul.tsrListe div.wrapperCopy p.tsrText { font-size: 13px; line-height: 138%; margin: 0 0 5px 1px; }
+ul.tsrListe div.wrapperCopy a.more_link { margin-left: 0px; }
+
+
+/* Pressemitteilungen */
+.view-pressemitteilung .wrapperItem { width: 100%; }
+.view-pressemitteilung .tsrImage { float: left; width: auto; margin: 3px 10px 10px 0;  }
+.view-pressemitteilung .wrapperCopy { overflow: hidden; }
+.view-pressemitteilung .wrapperCopy p { }
+.view-pressemitteilung .tsrText .more_link { display: block; }
+
+.artikeluebersicht { margin-bottom: 30px; margin-top: 0px; }
+.artikeluebersicht .view-header { }
+
+
+/* Social Media Übersicht */
+ul.socialMediaUebersicht li img.networkIcon { 
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+
+
+/* Listenseite */
+.field-collection-view {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+ul.listenelementeListenseite { margin-bottom: 30px; clear: both; overflow: hidden; }
+ul.listenelementeListenseite li { padding-bottom: 20px; border-bottom: 1px solid #ccc; margin-bottom: 25px; clear: both; overflow: hidden; }
+ul.listenelementeListenseite li.last { padding-bottom: 0; border-bottom: none; margin-bottom: 0; clear: both; overflow: hidden; }
+ul.listenelementeListenseite li .tsrImage { max-width: 130px; float: left; margin-right: 15px; }
+
+ul.listenelementeListenseite li .wrapperCopy .spitzmarke { margin-bottom: 3px; }
+ul.listenelementeListenseite li .wrapperCopy .zusammenfassung { margin-bottom: 10px; }
+ul.listenelementeListenseite li .wrapperCopy p { padding: 0; margin: 0 0 5px 0; }
+ul.listenelementeListenseite li .wrapperCopy a { 
+	display: inline-block;
+	background: url("images/bullet_red.png") no-repeat scroll 0 6px transparent;
+	margin-left: 2px;
+	padding-left: 8px;
+	}
+ul.listenelementeListenseite li .wrapperCopy a.mailto {	background: none; padding: 0; margin: 0; }
+	
+
+/* Menu Position fix to disable aktive content */
+
+.navBlockSpecial div.menu-level-2 #main-menu ul#main-menu { display: none; }
+
+/** admin backend css **/
+/** logged in **/
+
+body.admin-menu #region-content div.tabs {
+	position: absolute;
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	/* min-width: 200px; */
+	background-color: #CCC;
+	padding: 15px;
+	}
+body.admin-menu #region-content div.tabs ul.primary  {
+	margin: 0;
+	padding: 0;
+	border: none;
+	}
+body.admin-menu #region-content div.tabs ul.primary li { 
+	font-size: 13px;
+	margin: 0 0 10px 0;
+	display: block;
+	float: none!important;
+	border: 1px solid #666;
+	background-color: #efefef;
+	
+	}
+body.admin-menu #region-content div.tabs ul.primary li a {
+	padding: 0.25em;
+	font-size: 1.1em;
+	min-width: 35%;
+	display: inline-block;
+	background-color: inherit;
+	border: none;
+	}
+
+body.admin-menu #region-content ul.action-links { 
+	display: block; 
+	position: absolute;
+	position: fixed;
+	top: 350px;
+	right: 20px;
+	max-width: 80px;
+	background-color: #CCC;
+	padding: 15px;
+	}
+	
+body.admin-menu #region-content ul.action-links li {
+	font-size: 10px;
+	margin: 0 0 10px 0;
+	display: block;
+	float: none!important;
+	border: 1px solid #666;
+	background-color: #efefef;
+	padding: 0.25em;
+	}
+
+.field-collection-container { margin: 20px 0 30px 0; border: none; }
+#region-content ul.action-links.action-links-field-collection-add { top: 45px!important; }
+
+.content .field-collection-container {
+	min-height: 20px;
+	background: #fff;
+	}
+	
+.field-collection-container .minigalerie {
+	min-height: 20px;
+	background: #fff;
+	}
+	
+
+
+/* Pressemitteilung bzw. Pressemeldung */
+.infoblock { font-weight: bold;  margin-bottom: 10px; }
+.infoblock .date-display-single { display: inline-block; margin-right: 10px; }
+
+/* Filter Presse */
+
+.filterPressemitteilungen {
+	
+	}
+
+.filterPressemitteilungen .views-exposed-form .views-exposed-widget {
+  float: none;
+  padding: 0;
+	}
+	
+.filterPressemitteilungen h2.block-title {
+	
+	}
+.filterPressemitteilungen .content {
+	background:url(images/bg_white_50.png);
+	padding: 15px;
+	}
+.filterPressemitteilungen .content .views-exposed-form h3.filtername, .filterPressemitteilungen .views-exposed-widgets label {
+	font-size: 19px;
+	margin-bottom: 5px;
+	}
+.filterPressemitteilungen .views-exposed-widgets .container-inline-date label {
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0;
+	}
+	
+
+#region-sidebar-second .filterPressemitteilungen { margin-top: 20px; padding-top: 0; }
+#region-sidebar-second .filterPressemitteilungen h2.block-title {
+  left: -14px;
+  /* padding: 0 0 0 8px; */
+  position: relative;
+  top: -26px;
+  background: url("images/bg_sectionHeadlineRed.png") no-repeat scroll 0 8px transparent;
+	overflow: visible;
+	margin-bottom: 0;
+	}
+
+	
+.filterPressemitteilungen #edit-field-datum-default-value-wrapper {
+	float: none;
+	display: block;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid #CCC;
+	margin: 0 0 15px 0;
+	}
+.node-type-page .filterPressemitteilungen #edit-field-datum-default-value-wrapper { /* Filter für Ressortseiten */
+	padding: 0;
+	border-bottom: none;
+	margin: 0;
+	}
+	
+.filterPressemitteilungen .content .views-exposed-form #edit-field-herausgeber-tid-wrapper .bef-checkboxes label {
+	font-size: 13px;
+	color: #D61F28;
+	}
+.filterPressemitteilungen .content .views-exposed-form #edit-field-herausgeber-tid-wrapper .bef-checkboxes .form-item  {
+	margin-bottom: 3px;	
+	}
+.filterPressemitteilungen .content .form-checkboxes input[type="checkbox"] {
+	/** -webkit-appearance: none;
+	-webkit-border-radius: 0; **/
+	border-radius: 0;
+	margin: 0 3px 0 0;
+	padding: 0;
+	border: 1px solid #CCC;
+	background: #fff;
+	}
+.filterPressemitteilungen .content .form-checkboxes input[type="checkbox"]:hover {
+	border: 1px solid #f00;
+	}
+.filterPressemitteilungen .content .form-checkboxes input[type="checkbox"]:checked {
+	border: 1px solid #f00;
+	}

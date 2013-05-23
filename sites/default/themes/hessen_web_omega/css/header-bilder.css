@@ -1,0 +1,590 @@
+/*
+Allgemeines zu dieser Datei
+# Sie dient zum austausch von headerbildern auf unterseiten
+# geregelt wird dies über menu-id´s
+# Wird ein "Hauptmenüpunkt gelöscht, und dafür ein neuer angelegt, ändert sich die ID
+# Diese muss dann hier abgeändert werden
+
+# Im anschluss finden sich in dieser Reihenfolge per Kommentar beschrieben die Header pro Ressort.
+# Die Reihenfloge muss eingehalten werden da ansonnsten Überschreibungen vorkommen können.
+
+1. Allgemeine Seiten
+2. Frontpage Seiten
+3. Menübaum Seiten
+4. Spezifische Seiten
+
+# konvention für Allgemein header pro ressort (Alle seiten die ohne Menüstruktur sind und nicht "frontpage" sind oder in anderer Weise hier angesprochen werden.)
+.not-front.domain-ressort #region-header-second
+
+# konvention für Frontpage header pro ressort (Alle Frontpage seiten)
+front.domain-ressort #region-header-second
+
+# konvention für Menubaum header pro ressort (Alle Frontpage seiten)
+.menu-id.not-front.domain-ressort #region-header-second
+
+# konvention für Spezifische seiten header pro ressort (Newsletter, Kontakt ö.ä. )
+# WICHTIG!!! Wird eine seite gelöscht und neu angelegt, ändert sich die NodeID, diese muss dann hier angepasst werden
+.page-node-nodeID.domain-ressort #region-header-second
+*/
+
+
+/* ######### 1. Allgemeine Seiten ############ */
+
+	/* ------- hessen.de ------- */
+				
+		.not-front.domain-hessen #region-header-second{
+			background: url("images/headerbilder/global/infoportal-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- hstk.hessen.de ------- */
+				
+		.not-front.domain-stk-hessen #region-header-second {
+			background: url("images/headerbilder/global/stk-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- hmdis.hessen.de ------- */
+				
+		.not-front.domain-hmdis-hessen #region-header-second {
+			background: url("images/headerbilder/global/hmdis-global.jpg") no-repeat scroll 0 0 transparent;
+		}	
+
+	/* ------- hmdf.hessen.de ------- */
+		.not-front.domain-hmdf-hessen #region-header-second {
+			background: url("images/headerbilder/global/hmdf-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- hmdj.hessen.de ------- */
+				
+		.not-front.domain-hmdj-hessen #region-header-second {
+			background: url("images/headerbilder/global/hmdj-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+	/* ------- kultusministerium.hessen.de ------- */
+
+		.not-front.domain-hkm-hessen #region-header-second {
+			background: url("images/headerbilder/global/hkm-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+	/* ------- hmwk.hessen.de ------- */
+
+		.not-front.domain-hmwk-hessen #region-header-second {
+			background: url("images/headerbilder/global/hmwk-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+	/* ------- wirtschaft.hessen.de ------- */
+
+		.not-front.domain-hmwvl-hessen #region-header-second {
+			background: url("images/headerbilder/global/hmwvl-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+	/* ------- hmuelv.hessen.de ------- */
+
+		.not-front.domain-hmuelv-hessen #region-header-second {
+			background: url("images/headerbilder/global/hmuelv-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+	/* ------- hsm.hessen.de ------- */
+
+		.not-front.domain-hsm-hessen #region-header-second {
+			background: url("images/headerbilder/global/hsm-global.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+
+/* ######### 2. FRONT PAGES ############ */
+
+	/* ------- hessen.de ------- */
+				
+		.front.domain-hessen #region-header-second {
+			background: url("images/headerbilder/front/infoportal-front.jpg") no-repeat scroll 0 0 transparent;
+			}
+			
+	/* ------- hstk.hessen.de ------- */
+				
+		.front.domain-stk-hessen #region-header-second {
+			background: url("images/headerbilder/front/stk-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- hmdis.hessen.de ------- */
+
+		.front.domain-hmdis-hessen #region-header-second {
+			background: url("images/headerbilder/front/hmdis-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- hmdf.hessen.de ------- */
+				
+		.front.domain-hmdf-hessen #region-header-second {
+			background: url("images/headerbilder/front/hmdf-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- hmdj.hessen.de ------- */
+				
+		.front.domain-hmdj-hessen #region-header-second {
+			background: url("images/headerbilder/front/hmdj-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- kultusministerium.hessen.de ------- */
+
+		.front.domain-hkm-hessen #region-header-second {
+			background: url("images/headerbilder/front/hkm-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- hmwk.hessen.de ------- */
+				
+		.front.domain-hmwk-hessen #region-header-second {
+			background: url("images/headerbilder/front/hmwk-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- wirtschaft.hessen.de ------- */
+				
+		.front.domain-hmwvl-hessen #region-header-second {
+			background: url("images/headerbilder/front/hmwvl-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/* ------- hmuelv.hessen.de ------- */
+
+		.front.domain-hmuelv-hessen #region-header-second {
+			background: url("images/headerbilder/front/hmuelv-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+	/* ------- hsm.hessen.de ------- */
+		.front.domain-hsm-hessen #region-header-second {
+			background: url("images/headerbilder/front/hsm-front.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+
+
+/* ######### 3. Menübaum Seiten ############ */
+
+	/*
+	Headerbilder für Infoportal hessen.de
+
+	menu-4301 == Für Bürger
+	menu-4302 == Für die Wirtschaft
+	menu-6872 == Regierung
+	menu-4305 == Presse
+	menu-4306 == Für Besucher
+
+	*/
+		.menu-4301.not-front.domain-hessen #region-header-second{
+			background: url("images/headerbilder/menu/infoportal-fuer-buerger.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4302.not-front.domain-hessen #region-header-second{
+			background: url("images/headerbilder/menu/infoportal-fuer-die-wirtschaft.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-6872.not-front.domain-hessen #region-header-second{
+			background: url("images/headerbilder/menu/infoportal-regierung.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4305.not-front.domain-hessen #region-header-second{
+			background: url("images/headerbilder/menu/infoportal-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4306.not-front.domain-hessen #region-header-second{
+			background: url("images/headerbilder/menu/infoportal-fuer-besucher.jpg") no-repeat scroll 0 0 transparent;
+		}
+		
+	/*
+	Headerbilder für Staatskanzlei hstk.hessen.de
+
+	menu-5214 == MINISTERPRÄSIDENT
+	menu-4336 == INTIATIVEN
+	menu-4982 == HESSEN IN BERLIN
+	menu-4313 == ÜBER UNS
+	menu-4331 == PRESSE
+
+	*/
+		.menu-5214.not-front.domain-stk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/stk-ministerpraesident.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4336.not-front.domain-stk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/stk-initiative.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4982.not-front.domain-stk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/stk-hessen-in-berlin.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4313.not-front.domain-stk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/stk-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4331.not-front.domain-stk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/stk-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+		
+	/*
+	Headerbilder für Hessisches Ministerium des Innern und für Sport hmdis.hessen.de
+
+	menu-4610 == BÜRGER & STAAT
+	menu-4611 == Kommunales
+	menu-4600 == Sicherheit
+	menu-4601 == Sport
+	menu-4613 == ÜBER UNS
+	menu-4612 == PRESSE
+
+	*/
+		.menu-4610.not-front.domain-hmdis-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdis-buerger-und-staat.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4611.not-front.domain-hmdis-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdis-kommunales.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4600.not-front.domain-hmdis-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdis-sicherheit.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4601.not-front.domain-hmdis-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdis-sport.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4613.not-front.domain-hmdis-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdis-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4612.not-front.domain-hmdis-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdis-presse.jpg") no-repeat scroll 0 0 transparent;
+		}		
+	/*
+	Headerbilder für Hessisches Ministerium der Finanzen hmdf.hessen.de
+
+	menu-5006 == Steuern
+	menu-5008 == Finanzen
+	menu-5007 == Bau und Beteiligungen
+	menu-5132 == ÜBER UNS
+	menu-4776 == PRESSE
+
+	*/
+		.menu-5006.not-front.domain-hmdf-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdf-steuern.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-5008.not-front.domain-hmdf-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdf-finanzen.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-5007.not-front.domain-hmdf-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdf-bau-und-beteiligungen.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-5132.not-front.domain-hmdf-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdf-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4776.not-front.domain-hmdf-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdf-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+		
+
+	/*
+	Headerbilder für Hessisches Ministerium der Justiz, für Integration und Europa hmdj.hessen.de
+
+	menu-4626 == Justiz
+	menu-4625 == Integration
+	menu-4624 == Europa
+	menu-4627 == ÜBER UNS
+	menu-4628 == PRESSE
+
+	*/
+		.menu-4626.not-front.domain-hmdj-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdj-justiz.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4625.not-front.domain-hmdj-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdj-integration.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4624.not-front.domain-hmdj-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdj-europa.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4627.not-front.domain-hmdj-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdj-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4628.not-front.domain-hmdj-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmdj-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+	/*
+	Headerbilder für Hessisches Kultusministerium kultusministerium.hessen.de
+
+	menu-4754 == Schule
+	menu-4755 == Schüler
+	menu-4756 == Eltern
+	menu-4757 == Lehrer
+	menu-4758 == ÜBER UNS
+	menu-4759 == PRESSE
+
+	*/
+		.menu-4626.not-front.domain-hkm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hkm-schule.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4625.not-front.domain-hkm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hkm-schueler.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4624.not-front.domain-hkm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hkm-eltern.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4624.not-front.domain-hkm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hkm-lehrer.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4627.not-front.domain-hkm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hkm-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4628.not-front.domain-hkm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hkm-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+		
+	/*
+	Headerbilder für Hessisches Ministerium für Wissenschaft und Kunst hmwk.hessen.de
+
+	menu-4378 == Wissenschaft
+	menu-4380 == Studium
+	menu-4379 == Kultur
+	menu-4381 == Förderung
+	menu-4338 == ÜBER UNS
+	menu-4375 == PRESSE
+
+	*/
+		.menu-4378.not-front.domain-hmwk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwk-wissenschaft.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4380.not-front.domain-hmwk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwk-studium.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4379.not-front.domain-hmwk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwk-kultur.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4381.not-front.domain-hmwk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwk-foerderung.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4338.not-front.domain-hmwk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwk-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4375.not-front.domain-hmwk-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwk-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+		
+	/*
+	Headerbilder für Hessisches Ministerium für Wirtschaft, Verkehr und Landesentwicklung wirtschaft.hessen.de
+
+	menu-4782 == Wirtschaft
+	menu-4784 == Landesentwicklung
+	menu-4783 == Verkehr
+	menu-4785 == Technologie
+	menu-4786 == ÜBER UNS
+	menu-4775 == PRESSE
+
+	*/
+		.menu-4782.not-front.domain-hmwvl-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwvl-wirtschaft.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4784.not-front.domain-hmwvl-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwvl-landesentwicklung.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4783.not-front.domain-hmwvl-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwvl-verkehr.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4785.not-front.domain-hmwvl-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwvl-technologie.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4786.not-front.domain-hmwvl-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwvl-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4775.not-front.domain-hmwvl-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmwvl-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+		
+	/*
+	Headerbilder für Hessisches Ministerium für Umwelt, Energie, Landwirtschaft und Verbraucherschutz hmuelv.hessen.de
+
+	menu-4614 == Umwelt und Natur
+	menu-4605 == Energie und Klima
+	menu-4606 == Landwirtschaft
+	menu-4607 == Verbraucher
+	menu-4602 == ÜBER UNS
+	menu-4603 == PRESSE
+
+	*/
+		.menu-4614.not-front.domain-hmuelv-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmuelv-umwelt-natur.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4605.not-front.domain-hmuelv-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmuelv-energie-klima.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4606.not-front.domain-hmuelv-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmuelv-landwirtschaft.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4607.not-front.domain-hmuelv-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmuelv-verbraucher.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4602.not-front.domain-hmuelv-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmuelv-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4603.not-front.domain-hmuelv-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hmuelv-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+		
+	/*
+	Headerbilder für Hessisches Sozialministerium hsm.hessen.de
+
+	menu-4615 == Familie
+	menu-4616 == Arbeit
+	menu-4617 == Soziales
+	menu-4618 == Gesundheit
+	menu-4619 == ÜBER UNS
+	menu-4777 == PRESSE
+
+	*/
+		.menu-4615.not-front.domain-hsm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hsm-familie.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4616.not-front.domain-hsm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hsm-arbeit.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4617.not-front.domain-hsm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hsm-soziales.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4618.not-front.domain-hsm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hsm-gesundheit.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4619.not-front.domain-hsm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hsm-ueber-uns.jpg") no-repeat scroll 0 0 transparent;
+		}
+		.menu-4777.not-front.domain-hsm-hessen #region-header-second{
+			background: url("images/headerbilder/menu/hsm-presse.jpg") no-repeat scroll 0 0 transparent;
+		}
+
+
+
+
+/* ######### 4. Spezifische Seiten ############ */
+
+	/*  Gebärdensprache	
+	
+	page-node-1484 == Infoportal
+	page-node-1485 == stk
+	page-node-1486 == hmdis
+	page-node-1487 == hmdf
+	page-node-1488 == hmdj
+	page-node-1489 == hmuelv
+	page-node-1490 == hmwk
+	page-node-1493 == hsm
+	page-node-1494 == wirtschaft
+	page-node-1495 == kultusm.
+	
+	*/	
+
+		.page-node-1484.not-front #region-header-second,
+		.page-node-1485.not-front #region-header-second,
+		.page-node-1486.not-front #region-header-second,
+		.page-node-1487.not-front #region-header-second,
+		.page-node-1488.not-front #region-header-second,
+		.page-node-1489.not-front #region-header-second,
+		.page-node-1490.not-front #region-header-second,
+		.page-node-1493.not-front #region-header-second,
+		.page-node-1494.not-front #region-header-second,
+		.page-node-1495.not-front #region-header-second{
+			background: url("images/headerbilder/spezifisch/global-gebaerdensprache.jpg") no-repeat scroll 0 0 transparent !important;
+		}
+		
+	/*  Leichte Sprache	
+	
+	page-node-1675 == Infoportal
+	page-node-1679 == stk
+	page-node-1683 == hmdis
+	page-node-1697 == hmdf
+	page-node-1701 == hmdj
+	page-node-1693 == hmuelv
+	page-node-1711 == hmwk
+	page-node-1715 == hsm
+	page-node-1688 == wirtschaft
+	page-node-1705 == kultusm.
+	
+	*/	
+
+		.page-node-1675.not-front #region-header-second,
+		.page-node-1679.not-front #region-header-second,
+		.page-node-1683.not-front #region-header-second,
+		.page-node-1697.not-front #region-header-second,
+		.page-node-1701.not-front #region-header-second,
+		.page-node-1693.not-front #region-header-second,
+		.page-node-1711.not-front #region-header-second,
+		.page-node-1715.not-front #region-header-second,
+		.page-node-1688.not-front #region-header-second,
+		.page-node-1705.not-front #region-header-second{
+			background: url("images/headerbilder/spezifisch/global-leichte-sprache.jpg") no-repeat scroll 0 0 transparent !important; 
+		}
+			
+	/*  Kontakt	
+	
+	page-node-968 == Infoportal
+	page-node-1466 == stk
+	page-node-1442 == hmdis
+	page-node-1440 == hmdf
+	page-node-1455 == hmdj
+	page-node-1463 == hmuelv
+	page-node-1464 == hmwk
+	page-node-1465 == hsm
+	FEHLT ----  == wirtschaft
+	page-node-1467 == kultusm.
+	
+	*/	
+
+		.page-node-968.not-front #region-header-second,
+		.page-node-1466.not-front #region-header-second,
+		.page-node-1442.not-front #region-header-second,
+		.page-node-1440.not-front #region-header-second,
+		.page-node-1455.not-front #region-header-second,
+		.page-node-1463.not-front #region-header-second,
+		.page-node-1464.not-front #region-header-second,
+		.page-node-1465.not-front #region-header-second,
+		.page-node-1467.not-front #region-header-second{
+			background: url("images/headerbilder/spezifisch/global-kontakt.jpg") no-repeat scroll 0 0 transparent !important;
+		}
+				
+	/*  Hilfe	
+	
+	page-node-1674 == Infoportal
+	page-node-1678 == stk
+	page-node-1682 == hmdis
+	page-node-1696 == hmdf
+	page-node-1700 == hmdj
+	page-node-1692 == hmuelv
+	page-node-1710 == hmwk
+	page-node-1714 == hsm
+	page-node-1687 == wirtschaft
+	page-node-1704 == kultusm.
+	
+	*/	
+
+		.page-node-1674.not-front #region-header-second,
+		.page-node-1678.not-front #region-header-second,
+		.page-node-1682.not-front #region-header-second,
+		.page-node-1696.not-front #region-header-second,
+		.page-node-1700.not-front #region-header-second,
+		.page-node-1692.not-front #region-header-second,
+		.page-node-1710.not-front #region-header-second,
+		.page-node-1714.not-front #region-header-second,
+		.page-node-1687.not-front #region-header-second,
+		.page-node-1704.not-front #region-header-second{
+			background: url("images/headerbilder/spezifisch/global-hilfe.jpg") no-repeat scroll 0 0 transparent !important;
+		}
+		
+	/*  Newsletter	
+	
+	page-node-1233 == Infoportal
+	page-node-1234 == stk
+	page-node-1235 == hmdis
+	page-node-1236 == hmdf
+	page-node-1237 == hmdj
+	page-node-1239 == hmwk
+	page-node-1240 == hsm
+	page-node-1238 == kultusm.
+	page-node-1224 == Bestätigungsseite mit Hinweis auf Mail
+	page-node-554 == Bestätigungsseite "Vielen Danke Ihre Daten wurden übermittelt."
+	page-newsletter-confirm == Bestätigungsseiten nach Mail
+	
+	*/	
+
+		.page-node-1233.not-front #region-header-second,
+		.page-node-1234.not-front #region-header-second,
+		.page-node-1235.not-front #region-header-second,
+		.page-node-1236.not-front #region-header-second,
+		.page-node-1237.not-front #region-header-second,
+		.page-node-1239.not-front #region-header-second,
+		.page-node-1240.not-front #region-header-second,
+		.page-node-1238.not-front #region-header-second,
+		.page-node-1224.not-front #region-header-second,
+		.page-node-554.not-front #region-header-second,
+		.page-newsletter-confirm-add #region-header-second,
+		.page-newsletter-confirm-remove #region-header-second{
+			background: url("images/headerbilder/spezifisch/global-newsletter.jpg") no-repeat scroll 0 0 transparent !important;
+		}		
+	/*  Suchergebnis	
+	
+	page-node-398 == ALLE
+	*/	
+
+		.page-node-398.not-front #region-header-second{
+			background: url("images/headerbilder/spezifisch/global-suche.jpg") no-repeat scroll 0 0 transparent !important;
+		}

@@ -1,0 +1,32 @@
+last edit marcus 12:44
+
+/** frontend css **/
+
+
+
+
+/** admin backend css **/
+/** logged in **/
+.region-inner .tabs ul.tabs li { font-size: 11px; margin: 0; }
+
+ul.action-links { display: inline-block; position: absolute; right: 0; margin: -27px 0 0 0; }
+ul.action-links li { font-size: 11px; list-style: none; background: #efefef; padding: 2px; }
+
+.field-collection-container { margin-top: 20px; }
+ul.action-links.action-links-field-collection-add { /* display: inline-block; position: relative; right: 0; margin: -41px 0 0 0; */ }
+
+.content .field-collection-container {
+	min-height: 20px;
+	background: #fff;
+	}
+	
+.field-collection-container .minigalerie {
+	min-height: 20px;
+	background: #fff;
+	}
+
+#block-system-main .content, article .content { background: #fff; padding: 15px; }
+
+/* Pressemeldung */
+.infoblock { font-weight: bold;  margin-bottom: 10px; }
+.infoblock .date-display-single { display: inline-block; margin-right: 10px; }

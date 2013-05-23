@@ -1,0 +1,14 @@
+; $Id: day_counter.info,v 1.1.2.1.4.1 2013/03/05 00:49:14 Andi Schwarz $
+name = Day Counter
+description = Add on to Statistics Granularity Module. Saved Count on Day Mo to Su.
+package = Statistics
+core = 7.x
+files[] = day_counter.module
+files[] = day_counter.install
+dependencies[] = statistics
+dependencies[] = statistics_granularity
+
+version = "7.x-1.0-beta"
+core = "7.x"
+project = "day_counter"
+

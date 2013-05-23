@@ -1,0 +1,16 @@
+name = Simplenews Content Selection
+description = Select Drupal content to create a newsletter
+core = 7.x
+version = 7.x-1.x-dev
+package = Mail
+dependencies[] = simplenews
+files[] = scs.module
+files[] = scs.admin.inc
+files[] = scs.pages.inc
+files[] = scs.theme.inc
+; Information added by drupal.org packaging script on 2012-10-24
+version = "7.x-1.0-alpha1+4-dev"
+core = "7.x"
+project = "simplenews_content_selection"
+datestamp = "1351042252"
+

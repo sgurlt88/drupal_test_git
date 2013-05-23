@@ -1,0 +1,12 @@
+name = Menu Rules
+description = Provides Rules that are related to menu items
+package = Rules
+core = 7.x
+dependencies[] = rules
+
+; Information added by drupal.org packaging script on 2012-10-15
+version = "7.x-1.3"
+core = "7.x"
+project = "menu_rules"
+datestamp = "1350340617"
+

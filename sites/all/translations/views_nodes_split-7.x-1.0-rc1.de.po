@@ -1,0 +1,26 @@
+# German translation of Views nodes split (7.x-1.0-rc1)
+# Copyright (c) 2012 by the German translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Views nodes split (7.x-1.0-rc1)\n"
+"POT-Creation-Date: 2012-07-04 16:21+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Content"
+msgstr "Inhalt"
+msgid "Views"
+msgstr "Views"
+msgid "Display links"
+msgstr "Links anzeigen"
+msgid "View mode"
+msgstr "Ansichtsmodus"
+msgid "Content ID from URL"
+msgstr "Beitrags-ID aus der URL"
+msgid "Display comments"
+msgstr "Kommentare anzeigen"

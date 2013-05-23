@@ -1,0 +1,16 @@
+<?php
+function pmautofill_form_alter(&$form, &$form_state, $form_id) {
+ 
+if ($form_id == 'pressemitteilung_node_form') { 
+  
+global $base_url;
+$url = preg_replace('/www./', '', $base_url);
+switch($url){
+
+		case 'http://hessen.de':
+			$form['field_nref_pressestelle']['und']['#default_value'] = '1552';
+		break;
+		
+	}
+	}
+}

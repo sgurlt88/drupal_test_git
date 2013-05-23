@@ -1,0 +1,6 @@
+name = PM Autofill
+description = Automatisches vorbef&uuml;llen des Pressesprechers und der Pressestelle
+core = 7.x
+package = custom
+version = 7.x-1.0
+

@@ -1,0 +1,12 @@
+Domain Blocks 7.x-3.x
+------------------------------------
+
+2012-01-27
+------------------------------------
+Issue #1333788 by Alan D.,Demma10, Road Runner: Domain Block (7.3 branch) compatibility
+
+
+
+Domain Blocks 7.x-3.x, 2011-12-30
+--------------------------------------
+Beginning of 7.x-3.x branch
